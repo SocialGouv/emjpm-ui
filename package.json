@@ -1,0 +1,61 @@
+{
+  "name": "emjpm-ui",
+  "version": "1.0.0",
+  "description": "ui library for emjpm using emotion and rebass",
+  "main": "index.js",
+  "repository": "git@github.com:SocialGouv/emjpm-ui.git",
+  "author": "kwiss <christophe@hooraylabs.com>",
+  "license": "Apache-2.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js,**/*.spec.js",
+    "coverage": "jest --coverage",
+    "deploy-storybook": "storybook-to-ghpages",
+    "dev": "start-storybook -p 5555",
+    "lint:js": "eslint . --ext .js --ignore-pattern lib --ignore-pattern node_modules",
+    "lint:styles": "stylelint './src/**/*.js'",
+    "lint": "yarn lint:js && yarn lint:styles",
+    "prettier": "prettier --write \"**/*.{js,json,md,yml}\"",
+    "lerna-publish": "lerna publish",
+    "unit": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,md,yml}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@emjpm-ui/theme": "1.0.0",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@socialgouv/eslint-config-react": "^0.9.3",
+    "@storybook/react": "^5.1.10",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-emotion": "^10.0.15",
+    "emotion-theming": "^10.0.14",
+    "eslint": "^6.1.0",
+    "husky": "^3.0.2",
+    "lerna": "^3.16.4",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rebass": "^4.0.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-get-off-my-lawn": "^2.0.0",
+    "stylelint-config-standard": "^18.3.0"
+  }
+}
