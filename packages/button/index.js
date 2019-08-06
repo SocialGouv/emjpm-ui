@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Button as RebassButton} from 'rebass';
 
 const Button = (props) => (
@@ -15,3 +16,13 @@ const Button = (props) => (
 );
 
 export default Button;
+
+Button.propTypes = {
+  loading: PropTypes.bool,
+  variant: PropTypes.string
+};
+
+Button.defaultProps = {
+  loading: false,
+  variant: null
+};
