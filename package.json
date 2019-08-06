@@ -1,5 +1,5 @@
 {
-  "name": "@emjpm/design-system",
+  "name": "@emjpm/design-system-test",
   "version": "0.0.1",
   "description": "Emjpm design system",
   "repository": "git@github.com:SocialGouv/emjpm-ui.git",
@@ -8,13 +8,12 @@
   "files": [
     "dist"
   ],
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel src -d dist",
+    "build": "babel packages -d dist",
     "build-docs": "build-storybook --docs",
     "build-storybook": "build-storybook",
     "chromatic": "CHROMATIC_APP_CODE=3zckn0l8m8w chromatic test",
