@@ -8,9 +8,6 @@
   "files": [
     "dist"
   ],
-  "workspaces": [
-    "packages/*"
-  ],
   "main": "dist/index.js",
   "scripts": {
     "build": "babel packages -d dist",
