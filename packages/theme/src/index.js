@@ -3,6 +3,7 @@
 export const preset = {
   colors: {
     text: '#000',
+    black: '#373737',
     background: '#F2F5F9',
     cardPrimary: '#FFFFFF',
     cardSecondary: '#F8FAFC',
@@ -47,6 +48,10 @@ export const preset = {
       fontFamily: 'heading',
       lineHeight: 'heading',
       fontWeight: 'heading'
+    },
+    headingSecondary: {
+      color: 'black',
+      variant: 'text.heading'
     },
     display: {
       fontFamily: 'heading',
@@ -98,7 +103,6 @@ export const preset = {
       }
     }
   },
-
   buttons: {
     primary: {
       fontSize: 2,
