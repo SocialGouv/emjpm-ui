@@ -1,7 +1,7 @@
 module.exports = {
-  arrowParens: "always",
+  arrowParens: 'always',
   bracketSpacing: false,
-  printWidth: 80,
+  printWidth: 120,
   singleQuote: true,
   tabWidth: 2
 };

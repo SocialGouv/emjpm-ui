@@ -3,13 +3,15 @@
 export const preset = {
   colors: {
     text: '#000',
-    background: '#FFFFFF',
+    background: '#F2F5F9',
+    cardPrimary: '#FFFFFF',
+    cardSecondary: '#F8FAFC',
     primary: '#0067EA',
     secondary: '#30c',
     muted: '#f6f6f9',
     success: '#70D54F',
-    warning: 'FFA447',
-    error: 'FF6966',
+    warning: '#FFA447',
+    error: '#FF6966',
     gray: '#dddddf'
   },
   fonts: {
@@ -36,7 +38,8 @@ export const preset = {
     circle: 99999
   },
   shadows: {
-    card: '0 1px 6px rgba(33, 82, 139, .16)'
+    card: '0 1px 1px rgba(33, 82, 139, .16)',
+    pop: '0 1px 1px rgba(33, 82, 139, .16), 0 1px 6px rgba(33, 82, 139, .16)'
   },
   // rebass variants
   text: {
@@ -64,8 +67,21 @@ export const preset = {
     },
     card: {
       p: 2,
-      bg: 'background',
+      borderRadius: 'default',
+      bg: 'cardPrimary',
       boxShadow: 'card'
+    },
+    popCard: {
+      p: 2,
+      borderRadius: 'default',
+      bg: 'cardPrimary',
+      boxShadow: 'pop'
+    },
+    sideCard: {
+      p: 2,
+      borderRadius: 'default',
+      boxShadow: 'card',
+      bg: 'cardSecondary'
     },
     link: {
       color: 'primary'
@@ -82,6 +98,7 @@ export const preset = {
       }
     }
   },
+
   buttons: {
     primary: {
       fontSize: 2,

@@ -1,11 +1,16 @@
-module.exports = {
-  env: {
-    production: {
-      plugins: ['emotion']
-    },
-    development: {
-      plugins: [['emotion', {sourceMap: true}]]
+module.exports = (api) => {
+  api.cache(true);
+
+  return {
+    presets: ['@babel/env', '@babel/react'],
+    plugins: [
+      '@babel/plugin-proposal-object-rest-spread',
+      '@babel/transform-runtime'
+    ],
+    env: {
+      test: {
+        plugins: ['require-context-hook']
+      }
     }
-  },
-  presets: ['@babel/preset-env', '@babel/preset-react']
+  };
 };
