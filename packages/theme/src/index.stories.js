@@ -1,8 +1,7 @@
-import {jsx} from '@emotion/core';
 import React from 'react';
 import styled from '@emotion/styled';
 
-import preset from '../theme/src';
+import {preset} from '.';
 
 const {colors} = preset;
 
@@ -42,12 +41,12 @@ const Page = styled.div`
 const colorfulColors = Object.entries(colors).map(([key, value]) => {
   return {
     color: value,
-    name: key
+    name: key,
   };
 });
 
 export default {
-  title: 'Design System|Colors'
+  title: 'Design System|Colors',
 };
 
 export const all = () => (

@@ -1,5 +1,4 @@
 import React from 'react';
-import {css} from '@emotion/core';
 import {Text as RebassText} from 'rebass';
 
 const baseStyle = {
@@ -36,7 +35,6 @@ export const Text1Bold = (props) => {
 };
 
 // Text 2
-
 export const Text2S = (props) => {
   return <RebassText {...props} sx={baseStyle} fontSize="0" />;
 };
@@ -58,7 +56,6 @@ export const Text2Bold = (props) => {
 };
 
 // Text 3
-
 export const Text3S = (props) => {
   return <RebassText {...props} sx={baseStyle} fontSize="0" color="textTertiary" />;
 };

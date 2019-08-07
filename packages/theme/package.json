@@ -2,5 +2,9 @@
   "name": "@emjpm/design-system-theme",
   "version": "1.0.0",
   "main": "src/index.js",
-  "module": "src/index.js"
+  "module": "src/index.js",
+  "devDependencies": {
+    "@emotion/styled": "^10.0.15",
+    "react": "^16.8.6"
+  }
 }

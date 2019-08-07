@@ -1,6 +1,4 @@
-import {jsx} from '@emotion/core';
-import React, {Component, Fragment} from 'react';
-import styled from '@emotion/styled';
+import React from 'react';
 import {
   Text,
   Text1,
@@ -26,18 +24,17 @@ export default {
 };
 
 export const TextStory = () => (
-  <Fragment>
-    <h2>basic text element</h2>
-    <p>fontSize: 14px</p>
-    <p>fontWeight: 500</p>
-    <p>color: #333333</p>
-    {/* start copy */}
-    <Text>
-      Le MJPM a le devoir d’informer la personne, cette information doit être adaptée au degré de compréhension de la
-      personne protégée.
-    </Text>
-    {/* end copy */}
-  </Fragment>
+  <Text>
+    Le MJPM a le devoir d’informer la personne, cette information doit être adaptée au degré de compréhension de la
+    personne protégée.
+  </Text>
+);
+
+export const Text1SStory = () => (
+  <Text1S>
+    Le MJPM a le devoir d’informer la personne, cette information doit être adaptée au degré de compréhension de la
+    personne protégée.
+  </Text1S>
 );
 
 export const Text1Story = () => (
@@ -78,7 +75,7 @@ export const Text2SStory = () => (
 export const Text2Story = () => (
   <Text2>
     Le MJPM a le devoir d’informer la personne, cette information doit être adaptée au degré de compréhension de la
-    personne protégée. export const HeadingStory1 = () =>{' '}
+    personne protégée.
   </Text2>
 );
 

@@ -1,5 +1,4 @@
-import {jsx} from '@emotion/core';
-import React, {Component} from 'react';
+import React from 'react';
 import styled from '@emotion/styled';
 import {Heading1, Heading2, Heading3, Heading4, Heading5} from '.';
 
