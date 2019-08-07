@@ -13,6 +13,6 @@ jobs:
     - stage: Lint
       install: yarn --frozen-lockfile
       script: 
-      - yarn lerna run --stream lint
+        - yarn lerna run --stream lint
         if: type != pull_request
-        - yarn chromatic
+          - yarn chromatic
