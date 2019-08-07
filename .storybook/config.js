@@ -2,7 +2,7 @@ import React from 'react';
 import {configure, addDecorator} from '@storybook/react';
 import {withA11y} from '@storybook/addon-a11y';
 import {ThemeProvider} from 'emotion-theming';
-import preset from '@emjpm-ui/theme';
+import preset from '@emjpm/design-system-theme';
 import 'storybook-chromatic';
 
 // import {GlobalStyle} from '../src/components/shared/global';
