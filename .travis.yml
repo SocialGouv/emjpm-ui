@@ -8,10 +8,20 @@ cache: yarn
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH="$HOME/.yarn/bin:$PATH"
+
+stages:
+  - name: Chromatic
+    if: NOT type = pull_request
+  - name: Chromatic Master
+    if: (branch = master) AND (NOT (type IN (push, pull_request)))
+    
 jobs:
   include:
-    - stage: Lint
+    - stage: Chromatic
       install: yarn --frozen-lockfile
       script: 
-      - yarn lerna run --stream lint
       - yarn chromatic
+    - stage: Chromatic Master
+      install: yarn --frozen-lockfile
+      script: 
+      - yarn chromatic --auto-accept-changes    
