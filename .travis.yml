@@ -12,5 +12,6 @@ jobs:
   include:
     - stage: Lint
       install: yarn --frozen-lockfile
-      script: yarn lerna run --stream lint
-      after_script: yarn chromatic
+      script: 
+      - yarn lerna run --stream lint
+      - yarn chromatic
