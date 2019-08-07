@@ -16,6 +16,7 @@ export const preset = {
     warning: '#FFA447',
     error: '#FF6966',
     gray: '#dddddf',
+    border: '#D4D4D4',
   },
   fonts: {
     body: '"Open Sans", sans-serif',
