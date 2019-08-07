@@ -1,5 +1,4 @@
 import React from 'react';
-import {css} from '@emotion/core';
 import {Heading as RebassHeading} from 'rebass';
 
 const baseStyle = {

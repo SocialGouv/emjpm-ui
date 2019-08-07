@@ -2,5 +2,11 @@
   "name": "@emjpm/design-system-core",
   "version": "1.0.0",
   "main": "src/index.js",
-  "module": "src/index.js"
+  "module": "src/index.js",
+  "dependencies": {
+    "@emotion/styled": "^10.0.15",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "rebass": "^4.0.1"
+  }
 }

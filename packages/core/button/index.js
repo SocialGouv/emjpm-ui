@@ -10,19 +10,19 @@ const Button = (props) => (
       px: 3,
       py: 2,
       fontSize: 1,
-      fontWeight: 500
+      fontWeight: 500,
     }}
   />
 );
 
-export default Button;
+export {Button};
 
 Button.propTypes = {
   loading: PropTypes.bool,
-  variant: PropTypes.string
+  variant: PropTypes.string,
 };
 
 Button.defaultProps = {
   loading: false,
-  variant: null
+  variant: null,
 };

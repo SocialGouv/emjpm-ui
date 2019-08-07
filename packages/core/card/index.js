@@ -7,9 +7,9 @@ const Card = (props) => (
     sx={{
       mx: 'auto',
       px: 3,
-      py: 2
+      py: 2,
     }}
   />
 );
 
-export default Card;
+export {Card};
