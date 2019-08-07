@@ -14,4 +14,5 @@ jobs:
       install: yarn --frozen-lockfile
       script: 
       - yarn lerna run --stream lint
-      - yarn chromatic
+        if: type != pull_request
+        - yarn chromatic
