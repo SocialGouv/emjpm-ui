@@ -1,25 +1,25 @@
 import React from 'react';
-import {default as Card} from '.';
+import Card from '.';
 
 export default {
   title: 'Design System|Card',
-  component: Card
+  component: Card,
 };
 
-export const normal = () => <Card>{'Ajouter une mesure'}</Card>;
+export const normal = () => <Card>Ajouter une mesure</Card>;
 
-export const popCard = () => <Card variant="popCard">{'Ajouter une mesure'}</Card>;
+export const popCard = () => <Card variant="popCard">Ajouter une mesure</Card>;
 
-export const sideCard = () => <Card variant="sideCard">{'Ajouter une mesure'}</Card>;
+export const sideCard = () => <Card variant="sideCard">Ajouter une mesure</Card>;
 
 normal.story = {
-  name: 'Card'
+  name: 'Card',
 };
 
 popCard.story = {
-  name: 'Card Pop'
+  name: 'Card Pop',
 };
 
 sideCard.story = {
-  name: 'Card Side'
+  name: 'Card Side',
 };

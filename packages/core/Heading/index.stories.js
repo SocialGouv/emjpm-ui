@@ -7,12 +7,6 @@ const Info = styled.div`
   margin-bottom: 3rem;
 `;
 
-const TypeWrapper = styled.div`
-  > * {
-    margin-bottom: 1rem;
-  }
-`;
-
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -22,13 +16,14 @@ const Wrapper = styled.div`
     padding-right: 40px;
   }
 `;
+
 const Page = styled.div`
   padding: 3rem;
 `;
 
 export default {
   title: 'Design System|Heading',
-  component: Heading1
+  component: Heading1,
 };
 
 export const HeadingStory = () => (
@@ -58,6 +53,10 @@ export const HeadingStory = () => (
     </Wrapper>
   </Page>
 );
+
+HeadingStory.story = {
+  name: 'All heading',
+};
 
 export const HeadingStory1 = () => <Heading1>Heading1</Heading1>;
 
