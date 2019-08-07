@@ -1,5 +1,5 @@
 {
-  "name": "@emjpm/design-system-test",
+  "name": "@emjpm/design-system",
   "version": "0.0.1",
   "description": "Emjpm design system",
   "repository": "git@github.com:SocialGouv/emjpm-ui.git",
@@ -59,7 +59,7 @@
     "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "@emjpm-ui/theme": "1.0.0",
+    "@emjpm/design-system-theme": "1.0.0",
     "@emotion/core": "^10.0.15",
     "@emotion/styled": "^10.0.15",
     "@storybook/addon-a11y": "^5.2.0-beta.16",

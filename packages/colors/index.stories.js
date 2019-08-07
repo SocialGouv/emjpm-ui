@@ -1,5 +1,5 @@
-import React from 'react';
 import {jsx} from '@emotion/core';
+import React from 'react';
 import styled from '@emotion/styled';
 
 import preset from '../theme/src';
@@ -39,15 +39,12 @@ const Page = styled.div`
   padding: 3rem;
 `;
 
-console.log(colors);
 const colorfulColors = Object.entries(colors).map(([key, value]) => {
   return {
     color: value,
     name: key
   };
 });
-
-console.log(colorfulColors);
 
 export default {
   title: 'Design System|Colors'

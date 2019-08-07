@@ -6,9 +6,7 @@ import preset from '@emjpm-ui/theme';
 import 'storybook-chromatic';
 
 // import {GlobalStyle} from '../src/components/shared/global';
-const ThemeDecorator = (storyFn) => (
-  <ThemeProvider theme={preset}>{storyFn()}</ThemeProvider>
-);
+const ThemeDecorator = (storyFn) => <ThemeProvider theme={preset}>{storyFn()}</ThemeProvider>;
 
 addDecorator(withA11y);
 addDecorator(ThemeDecorator);
