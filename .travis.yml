@@ -35,5 +35,5 @@ jobs:
         - git config user.email "45039513+SocialGroovyBot@users.noreply.github.com"
         - git remote set-url origin https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
       script:
-        - GH_TOKEN=${GITHUB_TOKEN} yarn lerna version ${LERNA_ARGS:=--no}
-        - yarn lerna publish from-git --no
+        - GH_TOKEN=${GITHUB_TOKEN} yarn lerna version --skip-git
+        - yarn lerna publish from-git --skip-npm
