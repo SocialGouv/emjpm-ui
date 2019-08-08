@@ -14,6 +14,8 @@ stages:
     if: NOT type = pull_request
   - name: Chromatic Master
     if: (branch = master) AND (NOT (type IN (push, pull_request)))
+  - name: Release
+    if: (branch = master)   
     
 jobs:
   include:
@@ -25,3 +27,25 @@ jobs:
       install: yarn --frozen-lockfile
       script: 
       - yarn chromatic --auto-accept-changes    
+
+    - stage: Release
+      if: env(RELEASE)
+      git:
+        # NOTE(douglasduteil): disable git --depth
+        # Try to have all the commits for the release Change Log
+        # see travis-ci/travis-ci#3412
+        depth: 9999999 # Over 9000 !
+      env:
+        - secure: woGhWsQgTF2zRA1yvxpzgF28LSurBuc8gO8YJK34xM3pPxekXQq7d+1+5FL+4uLAagJ2zXtTbCq3BFX65AAciWedqAOTWokFncsa6ekwRaWaqN2pVuikNUUzgcFC32ZhRtCsmwFwW8YbiRuhTP6FAtiuypnVaGVUfrmCzZ8EaIAboCEbpD40BAamrf0BL7B1ZIhPZxJTH1m6T+RQrD5SO6uz67TzALNUR0P3doOtz/hsPYDuvsazx0fa4P98QOH7WIwcZBeBPnjcH5M0mQMEBlHV2hxAnuCTHyknfY4uCdeXx6J7GRjZR/eIUhZTudDcMQ/O8aGuuO2iIce1V31ydWOY6Xe704vAkOUUPl0mMdChkADIc9l5SLgFerZWNay+jCo9jx6S3ycCFtfos+ZCbc2R2XLkNF5STDuI4wnEAWEbFe81ZswXPmBziDES1K6IOOhkHk20WU1EWSEUVIE8fbTA5sIhesKHLd/nehG1i2QYLF+PlCoal00N7ex7/tFtJxqixX8skXBrOzwN3LnS57M98ShPPC6Jpjj/PBHeAdxCHve2/75q3mWfAvWU6uOZa0JHkPjuqv0tgi0P6k20ttKl8eVKSbxEs4luhpiB8E90bEe2zVIJhbmw3tvO3OWtC6Mm+9r2QZYDhvQJY4Kh12fFEl8qbiogUw1xXQz46Rk=
+        - secure: rPQj/jjwqVLkAcuFX6T2GBVuDrR6+mwCuNBw/XhJGs8vS1mz/qF9FrZbC1dTKk8xoIX5bIFHKimAnrKldyM5qBRK+LYdLm6p0jPC06P8sm9HH6QW+BWJuYcHNUH6WfYiZSerB64ayC9l5Cmg65gaZnTiy/mM0XlVHzIAZz62dAc/qPm79K7ezNq81q4i3IjWGIZiEpwPzsQu0UzhMX/CxjyGAaRF7Qeo2GXomHpod70IUyY184woNgImcG687PBme99qMhwfDmevwzCy0Gt2z+5TNcO/AvglQKSRzFi0Lr2qv5lUhd6IUkc6HgDYys31z32tvi9q+sqUKpBpEtSwEtXvQJoEJIFZZjnCeJgbcyZejadp3H3D0qpBxYB3cMkp94RGXMeP5qYaE8vame7OfjMFTkPM3PlZpvN0W5XdeIOejZ/dXfQw/VEzK/ramOf6PeuIgB/XtBLAL3LuHpkfdw7ahDHPWuZSb4BmjRyEuzuOgp1KhmB02w2OlD6NTSob46rFsxB+M95JB04ynIMNmS7tqLULDgc2UrjiYqzvMEWzaP1By3yEgVdB7N+ZQtuH28DiEOxRmMNS/dc8JzW12lTIO2xRUYNrTlKKRRigYGAcNxeLo8PTCtJjBjKYyZvKh6EeI3nvd9yBFGpkaPvXfHWRoyyJSEHw6zb8dWqOMrg=
+      install: yarn --frozen-lockfile
+      before_script:
+        - npm config set access public
+        - npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+        - git checkout ${TRAVIS_BRANCH}
+        - git config user.name "Social Groovy Bot"
+        - git config user.email "45039513+SocialGroovyBot@users.noreply.github.com"
+        - git remote set-url origin https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
+      script:
+        - GH_TOKEN=${GITHUB_TOKEN} yarn lerna version ${LERNA_ARGS:=--yes}
+        - yarn lerna publish from-git --yes      
