@@ -57,7 +57,11 @@ const styles = css`
     padding: 0;
     margin: 0;
   }
-  ${emotionNormalize}
+  ${emotionNormalize},
+  body {
+    font-family: '"Open Sans", sans-serif';
+  }
+  
 `;
 
 export const GlobalStyle = () => {
