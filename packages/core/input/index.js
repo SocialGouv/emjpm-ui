@@ -13,6 +13,7 @@ const InputWrapperStyle = (props) => {
     borderRadius: 'default',
     boxShadow: 'none',
     border: '1px solid',
+    fontFamily: '"Open Sans", sans-serif',
     borderColor: () => {
       if (props.isValid) return 'success';
       if (props.hasError) return 'error';
@@ -23,6 +24,8 @@ const InputWrapperStyle = (props) => {
 
 const InputStyle = (props) => {
   return {
+    fontSize: '1',
+    outline: 'none',
     zIndex: '1',
     bg: 'transparent',
     position: 'relative',
@@ -80,29 +83,27 @@ const InputLabel = (props) => {
 };
 
 export const Input = (props) => {
-  const {placeholder, isLoading, isValid, hasError, name} = props;
+  const {placeholder, isValid, hasError, name, required} = props;
   const [isFocus, toggleFocus] = useState(false);
   const [hasValue, toogleValue] = useState(false);
   const isActive = isFocus || hasValue;
 
   return (
     <InputWrapper isValid={isValid} hasError={hasError}>
-      {isLoading ? (
-        <div>isLoading</div>
-      ) : (
-        <InputElement
-          {...props}
-          placeholder={null}
-          isActive={isActive}
-          name={name}
-          onChange={(e) => {
-            toogleValue(e.target.value.length > 0);
-          }}
-          onBlur={() => toggleFocus(false)}
-          onFocus={() => toggleFocus(true)}
-        />
-      )}
-      <InputLabel htmlFor={name} isActive={isActive}>
+      <InputElement
+        {...props}
+        aria-label={name}
+        aria-required={required}
+        placeholder={null}
+        isActive={isActive}
+        name={name}
+        onChange={(e) => {
+          toogleValue(e.target.value.length > 0);
+        }}
+        onBlur={() => toggleFocus(false)}
+        onFocus={() => toggleFocus(true)}
+      />
+      <InputLabel aria-label={name} htmlFor={name} isActive={isActive}>
         {placeholder}
       </InputLabel>
     </InputWrapper>
@@ -116,13 +117,13 @@ InputLabel.propTypes = {
 Input.propTypes = {
   isValid: PropTypes.bool,
   hasError: PropTypes.bool,
-  isLoading: PropTypes.bool,
   placeholder: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  required: PropTypes.bool,
 };
 
 Input.defaultProps = {
+  required: false,
   isValid: false,
   hasError: false,
-  isLoading: false,
 };
