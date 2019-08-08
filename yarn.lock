@@ -2449,6 +2449,11 @@
   resolved "https://registry.yarnpkg.com/@styled-system/css/-/css-5.0.19.tgz#544c675d227c82b4a1701ce279a4c938c178f560"
   integrity sha512-inz/WZbGVVH4+yd9crNrAHgmLVLmD15MCLRL2mefHfqm4AFGca0V+r0KPtlXMejvlWruO+YfZqVnsoe6U9w+xg==
 
+"@styled-system/css@^5.0.16":
+  version "5.0.20"
+  resolved "https://registry.yarnpkg.com/@styled-system/css/-/css-5.0.20.tgz#b432c5b082045e5b360c6e254f7c93da4daab42c"
+  integrity sha512-k4ab3aEg5X1501EBnHCc9/rfMzcqnAWMEApgTN/3I/UrR4el9rKtFF9hmm0+iAF/yIXI5eNPWjZyax7kX0DODg==
+
 "@styled-system/flexbox@^5.0.18":
   version "5.0.18"
   resolved "https://registry.yarnpkg.com/@styled-system/flexbox/-/flexbox-5.0.18.tgz#6cfd87e72b40d4a8b1500ee877ad6cbd6e111029"
@@ -5013,6 +5018,11 @@ deepmerge@4.0.0, deepmerge@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.0.0.tgz#3e3110ca29205f120d7cb064960a39c3d2087c09"
   integrity sha512-YZ1rOP5+kHor4hMAH+HRQnBQHg+wvS1un1hAOuIcxcBy0hzcUf6Jg2a1w65kpoOUnurOfZbERwjI1TfZxNjcww==
+
+deepmerge@^3.2.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-3.3.0.tgz#d3c47fd6f3a93d517b14426b0628a17b0125f5f7"
+  integrity sha512-GRQOafGHwMHpjPx9iCvTgpu9NojZ49q794EEL94JVEw6VaeA8XTUyBKvAkOOjBX9oJNiV6G3P+T+tihFjo2TqA==
 
 defaults@^1.0.3:
   version "1.0.3"
@@ -10315,7 +10325,7 @@ react-redux@^7.0.2:
     prop-types "^15.7.2"
     react-is "^16.8.6"
 
-react-select@^3.0.0:
+react-select@^3.0.0, react-select@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-select/-/react-select-3.0.4.tgz#16bde37c24fd4f6444914d4681e78f15ffbc86d3"
   integrity sha512-fbVISKa/lSUlLsltuatfUiKcWCNvdLXxFFyrzVQCBUsjxJZH/m7UMPdw/ywmRixAmwXAP++MdbNNZypOsiDEfA==
@@ -10370,7 +10380,7 @@ react-transition-group@^2.2.1:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react@^16.4.1, react@^16.8.3, react@^16.8.6:
+react@^16.4.1, react@^16.8.0, react@^16.8.3, react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
   integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
@@ -11925,6 +11935,16 @@ text-table@0.2.0, text-table@^0.2.0, text-table@~0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
+
+theme-ui@^0.2.31:
+  version "0.2.31"
+  resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.2.31.tgz#c3a1398b77f36f4a573ca06554504cf92fc18e36"
+  integrity sha512-f+0hoqjecTRKEvpOobSu0Yz/mbLDYmdG8X/DpOu+rqIfgm/pH36jaB6X+wO2Zdu4KUMo0fQ49ksuCalc/8GdIw==
+  dependencies:
+    "@emotion/is-prop-valid" "^0.8.1"
+    "@styled-system/css" "^5.0.16"
+    deepmerge "^3.2.0"
+    react "^16.8.0"
 
 thenify-all@^1.0.0:
   version "1.6.0"
