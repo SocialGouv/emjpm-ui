@@ -1,26 +1,31 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import Check from 'emotion-icons/fa-solid/Check';
-import styled from '@emotion/styled';
 import {Box, Text, Flex} from 'rebass';
 
-const InputCheckbox = styled.input`
-  border: 0;
-  clip: rect(0 0 0 0);
-  clippath: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-`;
+const CheckboxInputStyle = () => {
+  return {
+    border: '0',
+    clip: 'rect(0 0 0 0)',
+    clippath: 'inset(50%)',
+    height: '1px',
+    margin: '-1px',
+    overflow: 'hidden',
+    padding: '0',
+    position: 'absolute',
+    whiteSpace: 'nowrap',
+    width: '1px',
+  };
+};
 
-const InputCheckboxWrapper = styled.div`
-  display: inline-block;
-  vertical-align: middle;
-`;
+const CheckboxWrapperStyle = () => {
+  return {
+    fontWeight: '600',
+    fontFamily: 'body',
+    display: 'inline-block',
+    verticalAlign: 'middle',
+  };
+};
 
 const CheckboxStyle = (props) => {
   return {
@@ -59,9 +64,11 @@ export const CheckBox = (props) => {
   const {label, name} = props;
   const [isChecked, toogleCheck] = useState(false);
   return (
-    <InputCheckboxWrapper>
+    <Box sx={CheckboxWrapperStyle}>
       <Box htmlFor={name} as="label">
-        <InputCheckbox
+        <Box
+          sx={CheckboxInputStyle()}
+          as="input"
           name={name}
           id={name}
           checked={isChecked}
@@ -76,7 +83,7 @@ export const CheckBox = (props) => {
           <Text lineHeight="20px">{label}</Text>
         </Flex>
       </Box>
-    </InputCheckboxWrapper>
+    </Box>
   );
 };
 
