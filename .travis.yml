@@ -37,14 +37,6 @@ jobs:
         # see travis-ci/travis-ci#3412
         depth: 9999999 # Over 9000 !
       install: yarn --frozen-lockfile
-      deploy:
-        provider: npm
-        #
-        api_key: "$NPM_TOKEN"
-        email: "$NPM_EMAIL"
-        skip_cleanup: true
-        on:
-          tags: true
       before_script:
         - npm config set access public
         - npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
