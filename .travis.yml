@@ -13,24 +13,18 @@ before_install:
   github_keys: &github_keys
     - secure: 'kY77wKVJtgF1TdvVr6lmpljGAJ2JhChxAGCFJ8nXMGz6QC8/4uICR0J6GpRZxOHCqbyFiXcoaV/lzuyod9KpvvNGuM+GMnU732iAR60iKB8TYQN57up+kKjMXIM3+kw0grfuUYM2/GzqFugt5y52PnXQ573Yycl+glFuOc96L6dV/RuDz05WPU08X1YlvUMfX9adePEl7vSnVFp+p9QsylH5bIpitcL63h4G0fTL8bhekzSEMUlrKCabkHHbsiH4BYjfEwg3IOHWr0phcDjF6adMqGkcVjKTIkiXlesl8BeMMbkug6dMfKpIw3K0RQM8oG4TiGRB9kiV3jSr0XqS6SplgfLa2Zar003IW2dEbfEkf4h9uq4Imli+m4sIPzpClhNnDrTJcMPCsCI+9dWDdlFwFCNlmfFl9hGrLUs+kJAtz18Cp5NJa1h7oKAcYaa6R2zHTyg4EWTBy5KNvWs+6EZq8w+AtE0uePn7t8OYtxRX3YglRzoigSOc+EgmQk8ZEtZr78vQZQbxQi67LiFnzaSrEEykRdEW9CW5knd0QsW1LDJQz+a/kHo6x5jQ5v1RFUFlkFUdSu7WoqOJr0PYVLK+iRm8NTWDL0+/96KAcRP1MrkDAbvJgv0zQj0upYYww7bH7RK0JXw79C4/uBqPP4q060YW/knkAkfNFUCnFkE='
   npm_keys: &npm_keys
-    - secure: 'Plusf4k5+btmykwKRwtgY0EODMNLh2FBgkEqtciHLLPIbWw2JjEppg3E3Q9n+lspr89FJgAblt99TXTYLUpbLeOMmlQrfSTR/UG60KgCVH6cB1iLztEz6iD+Q+B6p1MLhgJ3iPWbaDDxcgwcLY1cXWyFKh7agKlJkyPmJSF2q3FcKfSjBpDNg3oSW9Zwho3snyiSzun4wogv7I2jSI31Ne/yRCRnMtGnwepwUu55fZHPZeVNN42oxz/pIcd/h+DdNDFr9U4HsiHUTCmddQZ8JqnTELE7FXlUaB9ykir5A8ek8yr/m0TdABQl3YVOHSGHVf2sqGNXodB9uj8eNUcdR//VWojMvrLzO5gtvlZeTHgnTDjvgDibGOR16lYLPOGylYr5ckjaOQrHRYmwMWPlka/lG3zifRTxZzZG5v0e9+TgU5oAFWLqavEYQ36HhpK9CoMtDHukuMfaiuGRNbtz5W8FpCJT9Mp8LMq11eJTxjXSh9C+VUpCBQ33i/jcyFiZeqoeNlt3NToIfpUczLX4bHm8vSB2WoS3vj2imRXVvTTER8KTdgOCS1d5qVRlnf6/vJYcWjKpazJUqW8P1QT5G2/e/GwagdkY9FJB3kXMNHaJGa23DaNqeCl/Aqr3WoZISyLz7Jpa4qjATzdNGZUK7M3RqlKwWVdZR0LNNYFSd/w='
-
-stages:
-  - name: Chromatic
-    if: (branch != master) AND NOT type = pull_request
-  - name: Chromatic Master
-    if: (branch = master) AND NOT type = pull_request
-  - name: Release
-    if: (branch = master)   
+    - secure: 'Plusf4k5+btmykwKRwtgY0EODMNLh2FBgkEqtciHLLPIbWw2JjEppg3E3Q9n+lspr89FJgAblt99TXTYLUpbLeOMmlQrfSTR/UG60KgCVH6cB1iLztEz6iD+Q+B6p1MLhgJ3iPWbaDDxcgwcLY1cXWyFKh7agKlJkyPmJSF2q3FcKfSjBpDNg3oSW9Zwho3snyiSzun4wogv7I2jSI31Ne/yRCRnMtGnwepwUu55fZHPZeVNN42oxz/pIcd/h+DdNDFr9U4HsiHUTCmddQZ8JqnTELE7FXlUaB9ykir5A8ek8yr/m0TdABQl3YVOHSGHVf2sqGNXodB9uj8eNUcdR//VWojMvrLzO5gtvlZeTHgnTDjvgDibGOR16lYLPOGylYr5ckjaOQrHRYmwMWPlka/lG3zifRTxZzZG5v0e9+TgU5oAFWLqavEYQ36HhpK9CoMtDHukuMfaiuGRNbtz5W8FpCJT9Mp8LMq11eJTxjXSh9C+VUpCBQ33i/jcyFiZeqoeNlt3NToIfpUczLX4bHm8vSB2WoS3vj2imRXVvTTER8KTdgOCS1d5qVRlnf6/vJYcWjKpazJUqW8P1QT5G2/e/GwagdkY9FJB3kXMNHaJGa23DaNqeCl/Aqr3WoZISyLz7Jpa4qjATzdNGZUK7M3RqlKwWVdZR0LNNYFSd/w='  
     
 jobs:
   include:
     - stage: Chromatic
+      if: (branch != master) AND NOT type = pull_request 
       install: yarn --frozen-lockfile
       script: 
       - yarn chromatic
       
     - stage: Chromatic Master
+      if: (branch = master) AND NOT type = pull_request AND NOT env(RELEASE)
       install: yarn --frozen-lockfile
       script: 
       - yarn chromatic --auto-accept-changes    
