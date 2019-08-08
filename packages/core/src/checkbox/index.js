@@ -73,7 +73,7 @@ export const CheckBox = (props) => {
         />
         <Flex>
           <BaseCheckBox checked={isChecked} />
-          <Text>{label}</Text>
+          <Text lineHeight="20px">{label}</Text>
         </Flex>
       </Box>
     </InputCheckboxWrapper>
