@@ -13,7 +13,7 @@ stages:
   - name: Chromatic
     if: (branch != master) AND NOT type = pull_request
   - name: Chromatic Master
-    if: (branch = master) AND (NOT (type IN (push, pull_request)))
+    if: (branch = master) AND NOT type = pull_request
   - name: Release
     if: (branch = master)   
     
