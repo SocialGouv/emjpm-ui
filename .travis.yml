@@ -9,42 +9,15 @@ before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH="$HOME/.yarn/bin:$PATH"
 
-stages:
-  - name: Chromatic
-    if: (branch != master) AND NOT type = pull_request
-  - name: Chromatic Master
-    if: (branch = master) AND NOT type = pull_request
-  - name: Release
-    if: (branch = master)   
-    
 jobs:
   include:
-    - stage: Chromatic
-      install: yarn --frozen-lockfile
-      script: 
-      - yarn chromatic
-      
-    - stage: Chromatic Master
-      install: yarn --frozen-lockfile
-      script: 
-      - yarn chromatic --auto-accept-changes    
-
     - stage: Release
-      if: env(RELEASE)
       git:
         # NOTE(douglasduteil): disable git --depth
         # Try to have all the commits for the release Change Log
         # see travis-ci/travis-ci#3412
         depth: 9999999 # Over 9000 !
       install: yarn --frozen-lockfile
-      deploy:
-        provider: npm
-        #
-        api_key: "$NPM_TOKEN"
-        email: "$NPM_EMAIL"
-        skip_cleanup: true
-        on:
-          tags: true
       before_script:
         - npm config set access public
         - npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
@@ -53,5 +26,5 @@ jobs:
         - git config user.email "45039513+SocialGroovyBot@users.noreply.github.com"
         - git remote set-url origin https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
       script:
-        - GH_TOKEN=${GITHUB_TOKEN} yarn lerna version ${LERNA_ARGS:=--yes}
-        - yarn lerna publish from-git --yes      
+        - GH_TOKEN=${GITHUB_TOKEN} yarn lerna version ${LERNA_ARGS:=--no}
+        - yarn lerna publish from-git --no
