@@ -1,0 +1,12 @@
+{
+  "name": "@emjpm/design-system-global-style",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "dependencies": {
+    "@emotion/core": "^10.0.15",
+    "emotion-normalize": "^10.1.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.8.6"
+  }
+}

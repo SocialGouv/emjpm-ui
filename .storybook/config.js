@@ -1,12 +1,19 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import {configure, addDecorator} from '@storybook/react';
 import {withA11y} from '@storybook/addon-a11y';
 import {ThemeProvider} from 'theme-ui';
 import preset from '@emjpm/design-system-theme';
 import 'storybook-chromatic';
-
+import {GlobalStyle} from '@emjpm/design-system-global-style';
 // import {GlobalStyle} from '../src/components/shared/global';
-const ThemeDecorator = (storyFn) => <ThemeProvider theme={preset}>{storyFn()}</ThemeProvider>;
+const ThemeDecorator = (storyFn) => {
+  return (
+    <Fragment>
+      <GlobalStyle />
+      <ThemeProvider theme={preset}>{storyFn()}</ThemeProvider>
+    </Fragment>
+  );
+};
 
 addDecorator(withA11y);
 addDecorator(ThemeDecorator);
