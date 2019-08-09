@@ -6,6 +6,7 @@
       "message": "chore(release): version %v"
     }
   },
+  "useGitVersion": true,
   "packages": ["packages/*"],
   "npmClient": "yarn",
   "useWorkspaces": true,

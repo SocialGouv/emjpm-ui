@@ -2,9 +2,9 @@ import React, {Fragment} from 'react';
 import {configure, addDecorator} from '@storybook/react';
 import {withA11y} from '@storybook/addon-a11y';
 import {ThemeProvider} from 'theme-ui';
-import preset from '@emjpm/design-system-theme';
+import preset from '@socialgouv/emjpm-ui-theme';
 import 'storybook-chromatic';
-import {GlobalStyle} from '@emjpm/design-system-global-style';
+import {GlobalStyle} from '@socialgouv/emjpm-ui-global-style';
 // import {GlobalStyle} from '../src/components/shared/global';
 const ThemeDecorator = (storyFn) => {
   return (
