@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.2.0...@socialgouv/emjpm-ui-core@1.3.0) (2019-08-09)
+
+
+### Bug Fixes
+
+* **storybook:** remove package use direct import ([2ec2472](https://github.com/SocialGouv/emjpm-design-system/commit/2ec2472))
+
+
+### Features
+
+* **radio:** add radio group component ([#22](https://github.com/SocialGouv/emjpm-design-system/issues/22)) ([9515d0e](https://github.com/SocialGouv/emjpm-design-system/commit/9515d0e))
+
+
+
+
+
 # 1.2.0 (2019-08-09)
 
 
