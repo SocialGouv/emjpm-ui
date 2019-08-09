@@ -14,7 +14,7 @@
   ],
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel packages -d dist",
+    "build": "lerna run build",
     "build-docs": "build-storybook --docs",
     "build-storybook": "build-storybook",
     "chromatic": "CHROMATIC_APP_CODE=3zckn0l8m8w chromatic test",

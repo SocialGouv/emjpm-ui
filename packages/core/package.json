@@ -3,10 +3,14 @@
   "version": "1.1.0",
   "author": "Incubateur des Ministères Sociaux <dsi-incubateur@sg.social.gouv.fr> (https://incubateur.social.gouv.fr)",
   "license": "Apache-2.0",
+  "homepage": "https://emjpm-design-system.netlify.com" ,
   "bugs": "https://github.com/SocialGouv/emjpm-design-system",
   "repository": "https://github.com/SocialGouv/emjpm-design-system",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "module": "src/index.js",
+  "scripts": {
+    "build": "babel src -d dist"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.15",
     "@emotion/styled": "^10.0.15",
@@ -17,5 +21,14 @@
     "react-select": "^3.0.4",
     "rebass": "^4.0.1",
     "theme-ui": "^0.2.31"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0"
   }
 }
