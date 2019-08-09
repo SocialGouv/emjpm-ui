@@ -8,6 +8,6 @@
   "main": "src/index.js",
   "module": "src/index.js",
   "devDependencies": {
-    "@emotion/styled": "^10.0.15"
+    "@emotion/styled": "10.0.15"
   }
 }
