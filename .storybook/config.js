@@ -2,9 +2,9 @@ import React, {Fragment} from 'react';
 import {configure, addDecorator} from '@storybook/react';
 import {withA11y} from '@storybook/addon-a11y';
 import {ThemeProvider} from 'theme-ui';
-import preset from '@socialgouv/emjpm-ui-theme';
+import preset from '../packages/theme/src';
 import 'storybook-chromatic';
-import {GlobalStyle} from '@socialgouv/emjpm-ui-global-style';
+import {GlobalStyle} from '../packages/globalStyle/src';
 // import {GlobalStyle} from '../src/components/shared/global';
 const ThemeDecorator = (storyFn) => {
   return (
@@ -17,12 +17,5 @@ const ThemeDecorator = (storyFn) => {
 
 addDecorator(withA11y);
 addDecorator(ThemeDecorator);
-// addDecorator((story) => (
-//   <>
-//     <GlobalStyle />
-//     {story()}
-//   </>
-// ));
 
-// automatically import all files ending in *.stories.js
 configure(require.context('../packages', true, /\.stories\.(js|mdx)$/), module);

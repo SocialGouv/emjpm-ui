@@ -2007,6 +2007,22 @@
   dependencies:
     any-observable "^0.3.0"
 
+"@socialgouv/emjpm-ui-global-style@file:packages/globalStyle":
+  version "1.2.0"
+  dependencies:
+    "@emotion/core" "^10.0.15"
+    emotion-normalize "^10.1.0"
+    normalize.css "^8.0.1"
+    react "^16.8.6"
+
+"@socialgouv/emjpm-ui-theme@file:packages/globalStyle":
+  version "1.2.0"
+  dependencies:
+    "@emotion/core" "^10.0.15"
+    emotion-normalize "^10.1.0"
+    normalize.css "^8.0.1"
+    react "^16.8.6"
+
 "@storybook/addon-a11y@^5.2.0-beta.23":
   version "5.2.0-beta.26"
   resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-5.2.0-beta.26.tgz#521c20460729288e535680d59d9553e69661ac3d"

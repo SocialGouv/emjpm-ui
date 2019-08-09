@@ -59,8 +59,6 @@
     "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "@socialgouv/emjpm-ui-global-style": "1.1.0",
-    "@socialgouv/emjpm-ui-theme": "1.1.0",
     "@emotion/core": "^10.0.15",
     "@emotion/styled": "^10.0.15",
     "@storybook/addon-a11y": "^5.2.0-beta.23",
