@@ -29,35 +29,3 @@ const App = () => (
   </ThemeProvider>
 )
 ```
-
-## Global Style (reset/normalise.css)
-
-you can use the package @socialgouv/emjpm-ui-global-style and insert it in your head on anywhere you need
-
-in exemple 
-
-```javascript
-import { GlobalStyle } from '@socialgouv/emjpm-ui-global-style'
-
-const App =() => (
-  <div>
-    <GlobalStyle/>
-  </div>
-)
-```
-
-## Core package
-
-you can find the core component in that package.
-
-exemple usage : 
-
-```javascript
-import {Button} from "@socialgouv/emjpm-ui-core"
-
-const App =() => (
-  <div>
-    <Button>Content<Button/>
-  </div>
-)
-```
