@@ -1,3 +1,4 @@
+import {lighten} from 'polished';
 // default theme preset
 
 export const preset = {
@@ -75,6 +76,15 @@ export const preset = {
     },
   },
   variants: {
+    bgPrimary: {
+      bg: 'primary',
+    },
+    bgLight: {
+      bg: 'cardPrimary',
+    },
+    bgDark: {
+      bg: 'black',
+    },
     avatar: {
       width: 'avatar',
       height: 'avatar',
