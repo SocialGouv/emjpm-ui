@@ -2007,22 +2007,6 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@socialgouv/emjpm-ui-global-style@file:packages/globalStyle":
-  version "1.2.0"
-  dependencies:
-    "@emotion/core" "^10.0.15"
-    emotion-normalize "^10.1.0"
-    normalize.css "^8.0.1"
-    react "^16.8.6"
-
-"@socialgouv/emjpm-ui-theme@file:packages/globalStyle":
-  version "1.2.0"
-  dependencies:
-    "@emotion/core" "^10.0.15"
-    emotion-normalize "^10.1.0"
-    normalize.css "^8.0.1"
-    react "^16.8.6"
-
 "@storybook/addon-a11y@^5.2.0-beta.23":
   version "5.2.0-beta.26"
   resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-5.2.0-beta.26.tgz#521c20460729288e535680d59d9553e69661ac3d"
@@ -9730,7 +9714,7 @@ pnp-webpack-plugin@1.4.3:
   dependencies:
     ts-pnp "^1.1.2"
 
-polished@^3.3.0, polished@^3.3.1:
+polished@^3.3.0, polished@^3.3.1, polished@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/polished/-/polished-3.4.1.tgz#1eb5597ec1792206365635811d465751f5cbf71c"
   integrity sha512-GflTnlP5rrpDoigjczEkS6Ye7NDA4sFvAnlr5hSDrEvjiVj97Xzev3hZlLi3UB27fpxyTS9rWU64VzVLWkG+mg==
@@ -10418,7 +10402,7 @@ react-transition-group@^2.2.1:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react@^16.4.1, react@^16.8.0, react@^16.8.3, react@^16.8.6:
+react@^16.4.1, react@^16.8.0, react@^16.8.3, react@^16.8.6, react@^16.9.0:
   version "16.9.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.9.0.tgz#40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa"
   integrity sha512-+7LQnFBwkiw+BobzOF6N//BdoNw0ouwmSJTEm9cglOOmsg/TMiFHZLe2sEoN5M7LgJTj9oHH0gxklfnQe66S1w==
