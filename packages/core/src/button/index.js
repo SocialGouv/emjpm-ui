@@ -27,6 +27,7 @@ const buttonStyle = {
   py: 2,
   fontSize: 1,
   fontWeight: 500,
+  transition: '150ms ease-in-out opacity',
   '&:active': {
     opacity: '0.8',
   },
