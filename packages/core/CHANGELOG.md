@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.3.1...@socialgouv/emjpm-ui-core@1.4.0) (2019-08-13)
+
+
+### Features
+
+* **button:** add button and spinner ([#23](https://github.com/SocialGouv/emjpm-design-system/issues/23)) ([44e8506](https://github.com/SocialGouv/emjpm-design-system/commit/44e8506))
+
+
+
+
+
 ## [1.3.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.3.0...@socialgouv/emjpm-ui-core@1.3.1) (2019-08-09)
 
 
