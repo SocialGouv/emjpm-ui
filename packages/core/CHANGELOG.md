@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.4.0...@socialgouv/emjpm-ui-core@1.4.1) (2019-08-14)
+
+
+### Bug Fixes
+
+* **icons:** remove emotion-icons add styled icons ([6efcff1](https://github.com/SocialGouv/emjpm-design-system/commit/6efcff1))
+
+
+
+
+
 # [1.4.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.3.1...@socialgouv/emjpm-ui-core@1.4.0) (2019-08-13)
 
 
