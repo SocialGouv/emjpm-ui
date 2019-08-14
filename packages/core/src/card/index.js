@@ -5,7 +5,6 @@ const Card = (props) => (
   <RebassCard
     {...props}
     sx={{
-      mx: 'auto',
       px: 3,
       py: 2,
     }}
