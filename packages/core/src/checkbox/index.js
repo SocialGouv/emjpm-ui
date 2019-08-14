@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
-import Check from 'emotion-icons/fa-solid/Check';
+import {Check} from 'styled-icons/fa-solid';
 import {Box, Text, Flex} from 'rebass';
 
 const CheckboxInputStyle = () => {

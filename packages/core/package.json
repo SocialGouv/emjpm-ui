@@ -14,11 +14,11 @@
   "dependencies": {
     "@emotion/core": "^10.0.15",
     "@emotion/styled": "^10.0.15",
-    "emotion-icons": "^1.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-select": "^3.0.4",
     "rebass": "^4.0.1",
+    "styled-icons": "^8.3.0",
     "theme-ui": "^0.2.31"
   },
   "devDependencies": {
@@ -28,6 +28,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
     "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0"
+    "@babel/preset-react": "^7.0.0",
+    "styled-components": "^4.3.2"
   }
 }
