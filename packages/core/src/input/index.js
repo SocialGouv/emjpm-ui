@@ -8,7 +8,7 @@ const InputWrapperStyle = (props) => {
     width: '100%',
     bg: 'cardPrimary',
     position: 'relative',
-    height: '54px',
+    height: props.size === 'small' ? '44px' : '54px',
     borderRadius: 'default',
     boxShadow: 'none',
     border: '1px solid',
@@ -33,8 +33,8 @@ const InputStyle = (props) => {
     border: '0',
     px: '2',
     py: '1',
-    height: '52px',
-    lineHeight: '32px',
+    height: props.size === 'small' ? '42px' : '52px',
+    lineHeight: props.size === 'small' ? '22px' : '32px',
     color: 'text',
     transition: '150ms ease-in-out all',
     mt: props.isActive ? '5px' : '0px',
@@ -48,8 +48,8 @@ const LabelStyle = (props) => {
     transition: '150ms ease-in-out all',
     zIndex: '0',
     fontWeight: '600',
-    height: '52px',
-    lineHeight: '32px',
+    height: props.size === 'small' ? '42px' : '52px',
+    lineHeight: props.size === 'small' ? '22px' : '32px',
     position: 'absolute',
     left: '0',
     top: props.isActive ? '-12px' : '0px',
@@ -57,7 +57,10 @@ const LabelStyle = (props) => {
       if (props.isActive) return 'primary';
       return 'textSecondary';
     },
-    fontSize: props.isActive ? '0' : '1',
+    fontSize: () => {
+      if (props.isActive) return props.size === 'small' ? '10px' : '0';
+      return '1';
+    },
     px: '2',
     py: '1',
     width: '100%',
@@ -82,15 +85,16 @@ const InputLabel = (props) => {
 };
 
 export const Input = (props) => {
-  const {placeholder, isValid, hasError, name, required} = props;
+  const {placeholder, isValid, hasError, name, required, size} = props;
   const [isFocus, toggleFocus] = useState(false);
   const [hasValue, toogleValue] = useState(false);
   const isActive = isFocus || hasValue;
 
   return (
-    <InputWrapper isValid={isValid} hasError={hasError}>
+    <InputWrapper size={size} isValid={isValid} hasError={hasError}>
       <InputElement
         {...props}
+        size={size}
         aria-label={name}
         aria-required={required}
         placeholder={null}
@@ -102,7 +106,7 @@ export const Input = (props) => {
         onBlur={() => toggleFocus(false)}
         onFocus={() => toggleFocus(true)}
       />
-      <InputLabel aria-label={name} htmlFor={name} isActive={isActive}>
+      <InputLabel size={size} aria-label={name} htmlFor={name} isActive={isActive}>
         {placeholder}
       </InputLabel>
     </InputWrapper>
@@ -114,6 +118,7 @@ InputLabel.propTypes = {
 };
 
 Input.propTypes = {
+  size: PropTypes.string,
   isValid: PropTypes.bool,
   hasError: PropTypes.bool,
   placeholder: PropTypes.string.isRequired,
@@ -125,4 +130,5 @@ Input.defaultProps = {
   required: false,
   isValid: false,
   hasError: false,
+  size: 'large',
 };

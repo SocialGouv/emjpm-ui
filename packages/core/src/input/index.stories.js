@@ -6,8 +6,10 @@ export default {
   component: Input,
 };
 
-export const TextStory = () => <Input name="test" placeholder="Placeholder" />;
+export const InputStory = () => <Input name="test" placeholder="Placeholder" />;
 
-export const TextStoryValid = () => <Input name="test2" isValid placeholder="Placeholder" />;
+export const InputStoryValid = () => <Input name="test2" isValid placeholder="Placeholder" />;
 
-export const TextStoryError = () => <Input name="test2" hasError placeholder="Placeholder" />;
+export const InputStoryError = () => <Input name="test2" hasError placeholder="Placeholder" />;
+
+export const InputStorySmall = () => <Input size="small" name="test2" placeholder="Placeholder" />;
