@@ -6,22 +6,26 @@ const baseStyle = {
   color: 'black',
 };
 
+export const Heading0 = (props) => {
+  return <RebassHeading as="div" fontSize={7} sx={baseStyle} {...props} />;
+};
+
 export const Heading1 = (props) => {
-  return <RebassHeading as="div" {...props} fontSize={6} sx={baseStyle} />;
+  return <RebassHeading as="div" fontSize={6} sx={baseStyle} {...props} />;
 };
 
 export const Heading2 = (props) => {
-  return <RebassHeading as="div" {...props} fontSize={5} sx={baseStyle} />;
+  return <RebassHeading as="div" fontSize={5} sx={baseStyle} {...props} />;
 };
 
 export const Heading3 = (props) => {
-  return <RebassHeading as="div" {...props} fontSize={4} sx={baseStyle} />;
+  return <RebassHeading as="div" fontSize={4} sx={baseStyle} {...props} />;
 };
 
 export const Heading4 = (props) => {
-  return <RebassHeading as="div" {...props} fontSize={3} sx={baseStyle} />;
+  return <RebassHeading as="div" fontSize={3} sx={baseStyle} {...props} />;
 };
 
 export const Heading5 = (props) => {
-  return <RebassHeading as="div" {...props} fontSize={2} sx={baseStyle} />;
+  return <RebassHeading as="div" fontSize={2} sx={baseStyle} {...props} />;
 };

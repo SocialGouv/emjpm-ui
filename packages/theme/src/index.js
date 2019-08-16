@@ -24,7 +24,7 @@ export const preset = {
     heading: 'Quicksand',
     monospace: '"Input Mono", monospace',
   },
-  fontSizes: [12, 14, 16, 18, 22, 26, 30, 46, 54],
+  fontSizes: [12, 14, 16, 18, 22, 26, 30, 40, 46, 54],
   fontWeights: {
     body: 400,
     heading: 700,
