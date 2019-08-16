@@ -8,7 +8,8 @@ const getBorderColor = (state, colors) => {
   return colors.border;
 };
 
-const selectStyles = () => {
+const selectStyles = (props) => {
+  const {size = 'large'} = props;
   const context = useThemeUI();
   const {fontSizes, fonts, colors} = context.theme;
 
@@ -18,7 +19,7 @@ const selectStyles = () => {
       return {
         ...provided,
         fontFamily: fonts.body,
-        minHeight: '54px',
+        minHeight: size === 'small' ? '44px' : '54px',
         boxShadow: '0',
         fontSize: fontSizes[1],
         padding: '0 2px',
@@ -32,5 +33,5 @@ const selectStyles = () => {
 };
 
 export const Select = (props) => {
-  return <ReactSelect {...props} styles={selectStyles()} />;
+  return <ReactSelect styles={selectStyles(props)} {...props} />;
 };
