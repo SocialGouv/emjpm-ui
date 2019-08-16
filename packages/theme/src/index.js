@@ -34,7 +34,7 @@ export const preset = {
     body: 1.5,
     heading: 1.25,
   },
-  space: [0, 10, 12, 20, 24, 32, 42],
+  space: [0, 10, 12, 20, 24, 32, 42, 72],
   sizes: {
     avatar: 48,
   },
