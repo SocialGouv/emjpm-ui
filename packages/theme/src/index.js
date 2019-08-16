@@ -1,4 +1,3 @@
-import {lighten} from 'polished';
 // default theme preset
 
 export const preset = {
