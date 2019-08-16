@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-theme@1.3.0...@socialgouv/emjpm-ui-theme@1.4.0) (2019-08-16)
+
+
+### Features
+
+* **heading:** add new heading size ([80eeb7e](https://github.com/SocialGouv/emjpm-design-system/commit/80eeb7e))
+
+
+
+
+
 # [1.3.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-theme@1.2.0...@socialgouv/emjpm-ui-theme@1.3.0) (2019-08-13)
 
 
