@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.5.0...@socialgouv/emjpm-ui-core@1.6.0) (2019-08-16)
+
+
+### Features
+
+* **input:** add small input ([91fc042](https://github.com/SocialGouv/emjpm-design-system/commit/91fc042))
+* **select:** add small size ([ee8ec53](https://github.com/SocialGouv/emjpm-design-system/commit/ee8ec53))
+
+
+
+
+
 # [1.5.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.4.2...@socialgouv/emjpm-ui-core@1.5.0) (2019-08-16)
 
 
