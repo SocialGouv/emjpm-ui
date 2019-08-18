@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-theme@1.5.0...@socialgouv/emjpm-ui-theme@1.6.0) (2019-08-18)
+
+
+### Features
+
+* **input:** forward onChange, add new colors ([6a85382](https://github.com/SocialGouv/emjpm-design-system/commit/6a85382))
+
+
+
+
+
 # [1.5.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-theme@1.4.0...@socialgouv/emjpm-ui-theme@1.5.0) (2019-08-16)
 
 
