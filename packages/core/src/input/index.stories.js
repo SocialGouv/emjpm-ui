@@ -13,3 +13,5 @@ export const InputStoryValid = () => <Input name="test2" isValid placeholder="Pl
 export const InputStoryError = () => <Input name="test2" hasError placeholder="Placeholder" />;
 
 export const InputStorySmall = () => <Input size="small" name="test2" placeholder="Placeholder" />;
+
+export const InputStoryDate = () => <Input type="date" name="test2" placeholder="Placeholder" />;

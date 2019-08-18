@@ -85,7 +85,7 @@ const InputLabel = (props) => {
 };
 
 export const Input = (props) => {
-  const {placeholder, isValid, hasError, name, required, size} = props;
+  const {onChange, placeholder, isValid, hasError, name, required, size} = props;
   const [isFocus, toggleFocus] = useState(false);
   const [hasValue, toogleValue] = useState(false);
   const isActive = isFocus || hasValue;
@@ -93,7 +93,6 @@ export const Input = (props) => {
   return (
     <InputWrapper size={size} isValid={isValid} hasError={hasError}>
       <InputElement
-        {...props}
         size={size}
         aria-label={name}
         aria-required={required}
@@ -102,9 +101,11 @@ export const Input = (props) => {
         name={name}
         onChange={(e) => {
           toogleValue(e.target.value.length > 0);
+          onChange(e);
         }}
         onBlur={() => toggleFocus(false)}
         onFocus={() => toggleFocus(true)}
+        {...props}
       />
       <InputLabel size={size} aria-label={name} htmlFor={name} isActive={isActive}>
         {placeholder}
@@ -118,6 +119,7 @@ InputLabel.propTypes = {
 };
 
 Input.propTypes = {
+  onChange: PropTypes.func,
   size: PropTypes.string,
   isValid: PropTypes.bool,
   hasError: PropTypes.bool,
@@ -127,6 +129,9 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
+  onChange: (e) => {
+    console.log(e.target.value);
+  },
   required: false,
   isValid: false,
   hasError: false,
