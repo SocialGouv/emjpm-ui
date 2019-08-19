@@ -1,15 +1,10 @@
 import React from 'react';
-import {Box} from 'rebass';
+import {Box, Text} from 'rebass';
 
-const baseStyle = {
-  fontWeight: 700,
-  color: 'black',
-};
-
-export const Navigation = (props) => {
+export const Navigation = () => {
   return (
     <Box>
       <Text>Title</Text>
     </Box>
-  )
+  );
 };
