@@ -61,3 +61,15 @@ const App =() => (
   </div>
 )
 ```
+
+## Release policy
+
+### Auto
+
+Trigger a custom build on [Travis](https://travis-ci.com/SocialGouv/emjpm-ui) (in the "More options" right menu) on the `master` branch with a custom config:
+
+```yml
+env:
+  global:
+    - RELEASE=true
+```
