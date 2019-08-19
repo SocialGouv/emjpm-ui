@@ -85,10 +85,10 @@ const InputLabel = (props) => {
 };
 
 export const Input = (props) => {
-  const {onChange, placeholder, isValid, hasError, name, required, size} = props;
+  const {onChange, placeholder, isValid, hasError, name, required, size, value} = props;
   const [isFocus, toggleFocus] = useState(false);
   const [hasValue, toogleValue] = useState(false);
-  const isActive = isFocus || hasValue;
+  const isActive = isFocus || hasValue || value;
 
   return (
     <InputWrapper size={size} isValid={isValid} hasError={hasError}>
@@ -119,6 +119,7 @@ InputLabel.propTypes = {
 };
 
 Input.propTypes = {
+  value: PropTypes.string,
   onChange: PropTypes.func,
   size: PropTypes.string,
   isValid: PropTypes.bool,
@@ -132,6 +133,7 @@ Input.defaultProps = {
   onChange: (e) => {
     console.log(e.target.value);
   },
+  value: null,
   required: false,
   isValid: false,
   hasError: false,

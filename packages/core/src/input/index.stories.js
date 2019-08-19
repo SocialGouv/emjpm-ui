@@ -14,4 +14,4 @@ export const InputStoryError = () => <Input name="test2" hasError placeholder="P
 
 export const InputStorySmall = () => <Input size="small" name="test2" placeholder="Placeholder" />;
 
-export const InputStoryDate = () => <Input type="date" name="test2" placeholder="Placeholder" />;
+export const InputStoryDate = () => <Input type="date" value="2019-01-01" name="test2" placeholder="Placeholder" />;
