@@ -99,13 +99,13 @@ export const Input = (props) => {
         placeholder={null}
         isActive={isActive}
         name={name}
+        {...props}
         onChange={(e) => {
           toogleValue(e.target.value.length > 0);
           onChange(e);
         }}
         onBlur={() => toggleFocus(false)}
         onFocus={() => toggleFocus(true)}
-        {...props}
       />
       <InputLabel size={size} aria-label={name} htmlFor={name} isActive={isActive}>
         {placeholder}
