@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.7.0...@socialgouv/emjpm-ui-core@1.7.1) (2019-08-19)
+
+
+### Bug Fixes
+
+* **input:** change props override ([1c4eef1](https://github.com/SocialGouv/emjpm-design-system/commit/1c4eef1))
+
+
+
+
+
 # [1.7.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.6.0...@socialgouv/emjpm-ui-core@1.7.0) (2019-08-18)
 
 
