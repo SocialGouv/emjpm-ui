@@ -1,4 +1,5 @@
 export * from './Button';
+export * from './Grid';
 export * from './Card';
 export * from './Checkbox';
 export * from './Heading';

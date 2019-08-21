@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Box,Flex } from 'rebass';
+import { Box, Flex } from 'rebass';
 
-import { wrapperStyle } from './Style';
+import { wrapperStyle } from './style';
 
 const FlexWrapper = (props) => {
   const { children } = props;

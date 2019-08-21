@@ -1,4 +1,4 @@
 import { BoxWrapper, FlexWrapper } from './Grid';
-import { fourColumnStyle, twoColumnStyle } from './Style';
+import { fourColumnStyle, twoColumnStyle, wrapperStyle } from './style';
 
-export { BoxWrapper, FlexWrapper, fourColumnStyle, twoColumnStyle };
+export { BoxWrapper, FlexWrapper, fourColumnStyle, twoColumnStyle, wrapperStyle };
