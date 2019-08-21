@@ -1,8 +1,8 @@
 ---
 to: packages/<%= package %>/src/<%= h.capitalize(name) %>/style.js
 ---
-const HeaderStyle = {
+const <%= h.capitalize(name)Style = {
   bg: 'blue',
 };
 
-export { HeaderStyle };
+export { <%= h.capitalize(name)Style };
