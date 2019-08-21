@@ -1,15 +1,16 @@
-import React, {useState} from 'react';
-import {Select} from '.';
+import React, { useState } from 'react';
+
+import { Select } from '.';
 
 export default {
-  title: 'Design System|Select',
   component: Select,
+  title: 'Core | Select',
 };
 
 const options = [
-  {value: 'chocolate', label: 'Chocolate'},
-  {value: 'strawberry', label: 'Strawberry'},
-  {value: 'vanilla', label: 'Vanilla'},
+  { label: 'Chocolate', value: 'chocolate' },
+  { label: 'Strawberry', value: 'strawberry' },
+  { label: 'Vanilla', value: 'vanilla' },
 ];
 
 export const SelectStory = () => {

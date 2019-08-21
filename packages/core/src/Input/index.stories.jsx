@@ -1,9 +1,10 @@
 import React from 'react';
-import {Input} from '.';
+
+import { Input } from '.';
 
 export default {
-  title: 'Design System|Input',
   component: Input,
+  title: 'Core |Input',
 };
 
 export const InputStory = () => <Input name="test" placeholder="Placeholder" />;

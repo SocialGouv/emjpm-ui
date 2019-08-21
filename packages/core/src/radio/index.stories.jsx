@@ -1,9 +1,10 @@
-import React, {Fragment} from 'react';
-import {Radio} from '.';
+import React, { Fragment } from 'react';
+
+import { Radio } from '.';
 
 export default {
-  title: 'Design System|Radio',
   component: Radio,
+  title: 'Core |Radio',
 };
 
 export const TextStory = () => {

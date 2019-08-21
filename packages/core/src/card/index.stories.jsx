@@ -1,9 +1,10 @@
 import React from 'react';
-import {Card} from '.';
+
+import { Card } from '.';
 
 export default {
-  title: 'Design System|Card',
   component: Card,
+  title: 'Core |Card',
 };
 
 export const normal = () => <Card>Ajouter une mesure</Card>;

@@ -1,26 +1,27 @@
 import React from 'react';
+
 import {
   Text,
   Text1,
   Text1Bold,
-  Text1S,
-  Text1M,
   Text1L,
+  Text1M,
+  Text1S,
   Text2,
   Text2Bold,
-  Text2S,
-  Text2M,
   Text2L,
+  Text2M,
+  Text2S,
   Text3,
   Text3Bold,
-  Text3S,
-  Text3M,
   Text3L,
+  Text3M,
+  Text3S,
 } from '.';
 
 export default {
-  title: 'Design System|Text',
   component: Text,
+  title: 'Core |Text',
 };
 
 export const TextStory = () => (

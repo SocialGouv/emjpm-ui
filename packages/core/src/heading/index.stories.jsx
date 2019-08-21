@@ -1,6 +1,7 @@
-import React from 'react';
 import styled from '@emotion/styled';
-import {Heading1, Heading2, Heading3, Heading4, Heading5} from '.';
+import React from 'react';
+
+import { Heading0, Heading1, Heading2, Heading3, Heading4, Heading5 } from '.';
 
 const Info = styled.div`
   margin-bottom: 3rem;
@@ -21,8 +22,8 @@ const Page = styled.div`
 `;
 
 export default {
-  title: 'Design System|Heading',
   component: Heading1,
+  title: 'Core |Heading',
 };
 
 export const HeadingStory = () => (
@@ -56,6 +57,8 @@ export const HeadingStory = () => (
 HeadingStory.story = {
   name: 'All heading',
 };
+
+export const HeadingStory0 = () => <Heading0>Heading1</Heading0>;
 
 export const HeadingStory1 = () => <Heading1>Heading1</Heading1>;
 

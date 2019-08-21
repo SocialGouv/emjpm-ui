@@ -1,9 +1,10 @@
 import React from 'react';
-import {Button} from '.';
+
+import { Button } from '.';
 
 export default {
-  title: 'Design System|Button',
   component: Button,
+  title: 'Core | Button',
 };
 
 export const normal = () => <Button>Ajouter une mesure</Button>;

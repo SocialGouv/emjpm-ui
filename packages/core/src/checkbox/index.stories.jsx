@@ -1,9 +1,10 @@
 import React from 'react';
-import {CheckBox} from '.';
+
+import { CheckBox } from '.';
 
 export default {
-  title: 'Design System|Checkbox',
   component: CheckBox,
+  title: 'Core |Checkbox',
 };
 
 export const TextStory = () => <CheckBox label="label" name="test" />;

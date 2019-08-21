@@ -18,7 +18,8 @@
     "build-docs": "build-storybook --docs",
     "build-storybook": "build-storybook",
     "chromatic": "CHROMATIC_APP_CODE=3zckn0l8m8w chromatic test",
-    "lint": "eslint .",
+    "lint": "eslint --fix . && echo 'Lint complete.'",
+    "lint:fix": "eslint --fix packages/*",
     "lint:js": "cross-env NODE_ENV=production eslint --cache --cache-location=.cache/eslint --ext .js,.jsx,.html,.ts,.tsx,.mjs --report-unused-disable-directives",
     "lint:package": "sort-package-json",
     "storybook": "start-storybook -p 6006",
@@ -47,6 +48,7 @@
     }
   },
   "dependencies": {
+    "eslint-plugin-react-hooks": "^1.7.0",
     "lerna": "^3.16.4",
     "polished": "^3.3.0",
     "rebass": "^4.0.1"
@@ -77,12 +79,14 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-html": "^5.0.3",
-    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.4.1",
     "eslint-plugin-json": "^1.4.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-simple-import-sort": "^4.0.0",
+    "eslint-plugin-sort-keys-fix": "^1.0.1",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.4",
     "prettier": "^1.16.4",

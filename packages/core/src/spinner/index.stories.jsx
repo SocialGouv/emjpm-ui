@@ -1,9 +1,10 @@
 import React from 'react';
-import {Spinner} from '.';
+
+import { Spinner } from '.';
 
 export default {
-  title: 'Design System|Spinner',
   component: Spinner,
+  title: 'Core |Spinner',
 };
 
 export const SpinnerStory = () => <Spinner />;

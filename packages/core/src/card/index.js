@@ -1,14 +1,3 @@
-import React from 'react';
-import {Card as RebassCard} from 'rebass';
+import { Card } from './Card';
 
-const Card = (props) => (
-  <RebassCard
-    {...props}
-    sx={{
-      px: 3,
-      py: 2,
-    }}
-  />
-);
-
-export {Card};
+export { Card };

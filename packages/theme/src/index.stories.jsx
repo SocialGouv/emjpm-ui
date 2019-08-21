@@ -1,9 +1,9 @@
-import React from 'react';
 import styled from '@emotion/styled';
+import React from 'react';
 
-import {preset} from '.';
+import { preset } from '.';
 
-const {colors} = preset;
+const { colors } = preset;
 
 const Swatch = styled.div`
   width: 100px;
@@ -46,7 +46,7 @@ const colorfulColors = Object.entries(colors).map(([key, value]) => {
 });
 
 export default {
-  title: 'Design System|Colors',
+  title: 'Theme |Colors',
 };
 
 export const all = () => (
@@ -56,10 +56,10 @@ export const all = () => (
         {colorfulColors.map((swatch) => (
           <SwatchGroup key={swatch.color}>
             <SwatchHex>{`${swatch.name}`}</SwatchHex>
-            <Swatch style={{background: swatch.color}} />
-            <Swatch style={{background: swatch.color, opacity: 0.8}} />
-            <Swatch style={{background: swatch.color, opacity: 0.6}} />
-            <Swatch style={{background: swatch.color, opacity: 0.3}} />
+            <Swatch style={{ background: swatch.color }} />
+            <Swatch style={{ background: swatch.color, opacity: 0.8 }} />
+            <Swatch style={{ background: swatch.color, opacity: 0.6 }} />
+            <Swatch style={{ background: swatch.color, opacity: 0.3 }} />
           </SwatchGroup>
         ))}
       </Swatches>
