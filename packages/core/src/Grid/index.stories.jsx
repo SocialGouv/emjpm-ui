@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { Grid } from '.';
+import { BoxWrapper, FlexWrapper } from '.';
 
 export default {
-  component: Grid,
+  component: BoxWrapper,
   title: 'Core | Grid',
 };
 
-export const GridStory = () => <Grid />;
+export const BoxWrapperStory = () => <BoxWrapper />;
+export const FlexWrapperStory = () => <FlexWrapper />;
