@@ -9,3 +9,5 @@ export * from './RadioGroup';
 export * from './Select';
 export * from './Spinner';
 export * from './Type';
+
+export * from './Logo';
