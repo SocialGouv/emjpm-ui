@@ -73,3 +73,17 @@ env:
   global:
     - RELEASE=true
 ```
+
+### Generate a component with hygen
+
+```zsh
+yarn generate:component
+```
+
+```zsh
+yarn generate:core
+```
+
+```zsh
+yarn generate
+```
