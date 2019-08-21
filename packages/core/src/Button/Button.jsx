@@ -24,7 +24,7 @@ const content = (props) => {
 const Button = (props) => {
   const { isLoading, children } = props;
   return (
-    <RebassButton {...props} sx={buttonStyle}>
+    <RebassButton sx={buttonStyle} {...props}>
       {isLoading && (
         <Box sx={spinnerStyle}>
           <Spinner variant="bgLight" />

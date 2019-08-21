@@ -5,8 +5,10 @@ export const preset = {
     outline: {
       bg: 'transparent',
       border: '1px solid rgba(0, 107, 230, .43)',
+      borderRadius: 'default',
       color: 'primary',
-      variant: 'buttons.primary',
+      fontSize: 2,
+      fontWeight: 'bold',
     },
     primary: {
       bg: 'primary',
@@ -17,8 +19,10 @@ export const preset = {
     },
     secondary: {
       bg: 'secondary',
+      borderRadius: 'default',
       color: 'background',
-      variant: 'buttons.primary',
+      fontSize: 2,
+      fontWeight: 'bold',
     },
   },
   colors: {
@@ -31,20 +35,23 @@ export const preset = {
     gray: '#dddddf',
     lightGray: '#555555',
     link: '#007AD9',
+    mediumGray: '#818181',
     muted: '#f6f6f9',
     primary: '#0067EA',
     secondary: '#30c',
     success: '#70D54F',
     text: '#404040',
-    textSecondary: '#6A6A6A',
+    textSecondary: '#818181',
     textTertiary: '#C1C1C1',
     warning: '#FFA447',
+    yellow: '#F4AF00',
   },
   fontSizes: [12, 14, 16, 18, 22, 26, 30, 40, 46, 54],
   fontWeights: {
     body: 400,
     bold: 700,
     heading: 700,
+    semibold: 600,
   },
   fonts: {
     body: '"Open Sans", sans-serif',
@@ -63,10 +70,10 @@ export const preset = {
     card: '0 1px 1px rgba(33, 82, 139, .16)',
     pop: '0 1px 1px rgba(33, 82, 139, .16), 0 1px 6px rgba(33, 82, 139, .16)',
   },
+  // rebass variants
   sizes: {
     avatar: 48,
   },
-  // rebass variants
   space: [0, 10, 12, 20, 24, 32, 42, 72],
   styles: {
     root: {
@@ -76,9 +83,6 @@ export const preset = {
     },
   },
   text: {
-    bold: {
-      fontWeight: 'bold',
-    },
     caps: {
       letterSpacing: '0.1em',
       textTransform: 'uppercase',

@@ -1,37 +1,3 @@
-import {
-  Text,
-  Text1,
-  Text1Bold,
-  Text1L,
-  Text1M,
-  Text1S,
-  Text2,
-  Text2Bold,
-  Text2L,
-  Text2M,
-  Text2S,
-  Text3,
-  Text3Bold,
-  Text3L,
-  Text3M,
-  Text3S,
-} from './Type';
+import { Text } from './Type';
 
-export {
-  Text,
-  Text1,
-  Text1Bold,
-  Text1L,
-  Text1M,
-  Text1S,
-  Text2,
-  Text2Bold,
-  Text2L,
-  Text2M,
-  Text2S,
-  Text3,
-  Text3Bold,
-  Text3L,
-  Text3M,
-  Text3S,
-};
+export { Text };
