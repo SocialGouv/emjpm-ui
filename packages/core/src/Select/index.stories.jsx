@@ -1,14 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { Spinner } from '.';
+import { Select } from '.';
 
 export default {
-  component: Spinner,
-  title: 'Core |Spinner',
+  component: Select,
+  title: 'Core | Select',
 };
 
-export const SpinnerStory = () => <Spinner />;
+const options = [
+  { label: 'Chocolate', value: 'chocolate' },
+  { label: 'Strawberry', value: 'strawberry' },
+  { label: 'Vanilla', value: 'vanilla' },
+];
 
-export const SpinnerStoryLight = () => <Spinner variant="bgLight" />;
+export const SelectStory = () => {
+  const [selectedValue, changeValue] = useState(false);
+  return <Select options={options} value={selectedValue} onChange={(selectedOption) => changeValue(selectedOption)} />;
+};
 
-export const SpinnerStoryPrimary = () => <Spinner variant="bgDark" />;
+export const SelectLargeStory = () => {
+  const [selectedValue, changeValue] = useState(false);
+  return (
+    <Select
+      options={options}
+      size="large"
+      value={selectedValue}
+      onChange={(selectedOption) => changeValue(selectedOption)}
+    />
+  );
+};
+
+export const SelectSmallStory = () => {
+  const [selectedValue, changeValue] = useState(false);
+  return (
+    <Select
+      options={options}
+      size="small"
+      value={selectedValue}
+      onChange={(selectedOption) => changeValue(selectedOption)}
+    />
+  );
+};

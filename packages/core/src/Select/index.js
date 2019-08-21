@@ -1,3 +1,3 @@
-import { Spinner } from './Spinner';
+import { Select } from './Select';
 
-export { Spinner };
+export { Select };
