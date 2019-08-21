@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.7.3...@socialgouv/emjpm-ui-core@1.8.0) (2019-08-21)
+
+
+### Bug Fixes
+
+* **grid:** fix grid story ([8ef6617](https://github.com/SocialGouv/emjpm-design-system/commit/8ef6617))
+
+
+### Features
+
+* **grid:** update grid ([1cf0b81](https://github.com/SocialGouv/emjpm-design-system/commit/1cf0b81))
+* **logo:** add logo update storybook fonts ([72c77f2](https://github.com/SocialGouv/emjpm-design-system/commit/72c77f2))
+* **mandataire-list:** add mandataire list components ([fb866e6](https://github.com/SocialGouv/emjpm-design-system/commit/fb866e6))
+
+
+
+
+
 ## [1.7.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.7.2...@socialgouv/emjpm-ui-core@1.7.3) (2019-08-19)
 
 
