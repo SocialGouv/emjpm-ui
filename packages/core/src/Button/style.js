@@ -4,6 +4,7 @@ const buttonStyle = {
   },
   fontSize: 1,
   fontWeight: 500,
+  lineHeight: '1.2',
   mx: 'auto',
   outline: 'none',
   position: 'relative',
