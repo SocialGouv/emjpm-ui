@@ -1,6 +1,4 @@
-import { Card } from '@socialgouv/emjpm-ui-core/src/Card';
-import { Heading0, Heading4 } from '@socialgouv/emjpm-ui-core/src/Heading';
-import { Spinner } from '@socialgouv/emjpm-ui-core/src/Spinner';
+import { Card, Heading0, Heading4, Spinner } from '@socialgouv/emjpm-ui-core';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Box } from 'rebass';

@@ -7,7 +7,7 @@
   "bugs": "https://github.com/SocialGouv/emjpm-design-system",
   "repository": "https://github.com/SocialGouv/emjpm-design-system",
   "main": "dist/index.js",
-  "module": "dist/index.js",
+  "module": "src/index.js",
   "scripts": {
     "build": "babel src -d dist"
   },

@@ -1,6 +1,4 @@
-import { Button } from '@socialgouv/emjpm-ui-core/src/Button';
-import { Card } from '@socialgouv/emjpm-ui-core/src/Card';
-import { Text } from '@socialgouv/emjpm-ui-core/src/Type';
+import { Button , Card , Text } from '@socialgouv/emjpm-ui-core';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Box, Flex } from 'rebass';
