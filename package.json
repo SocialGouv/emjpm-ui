@@ -14,7 +14,7 @@
   ],
   "main": "dist/index.js",
   "scripts": {
-    "build": "lerna run build",
+    "build": "lerna run build --parallel",
     "build-docs": "build-storybook --docs",
     "build-storybook": "build-storybook",
     "generate:component": "hygen component new --package components",
