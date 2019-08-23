@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.8.3...@socialgouv/emjpm-ui-core@1.9.0) (2019-08-23)
+
+
+### Features
+
+* **button:** update button line height ([d400cc1](https://github.com/SocialGouv/emjpm-design-system/commit/d400cc1))
+* **header:** add header components ([7cf100b](https://github.com/SocialGouv/emjpm-design-system/commit/7cf100b))
+
+
+
+
+
 ## [1.8.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.8.2...@socialgouv/emjpm-ui-core@1.8.3) (2019-08-23)
 
 

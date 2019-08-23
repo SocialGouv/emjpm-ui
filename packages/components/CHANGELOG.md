@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.2.2...@socialgouv/emjpm-ui-components@0.3.0) (2019-08-23)
+
+
+### Features
+
+* **header:** add header components ([7cf100b](https://github.com/SocialGouv/emjpm-design-system/commit/7cf100b))
+
+
+
+
+
 ## [0.2.2](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.2.1...@socialgouv/emjpm-ui-components@0.2.2) (2019-08-23)
 
 
