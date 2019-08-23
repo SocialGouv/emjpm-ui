@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.8.0...@socialgouv/emjpm-ui-core@1.8.1) (2019-08-23)
+
+
+### Bug Fixes
+
+* **grid:** style casing ([28f3f5c](https://github.com/SocialGouv/emjpm-design-system/commit/28f3f5c))
+* **grid:** tmp fix case ([66e11d7](https://github.com/SocialGouv/emjpm-design-system/commit/66e11d7))
+
+
+
+
+
 # [1.8.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.7.3...@socialgouv/emjpm-ui-core@1.8.0) (2019-08-21)
 
 
