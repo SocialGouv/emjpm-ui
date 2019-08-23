@@ -44,6 +44,7 @@ export const preset = {
     textSecondary: '#818181',
     textTertiary: '#C1C1C1',
     warning: '#FFA447',
+    whiteGray: '#EBEFF5',
     yellow: '#F4AF00',
   },
   fontSizes: [12, 14, 16, 18, 22, 26, 30, 40, 46, 54],
