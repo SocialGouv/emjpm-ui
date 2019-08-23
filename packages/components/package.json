@@ -14,12 +14,13 @@
   "dependencies": {
     "@emotion/core": "^10.0.15",
     "@emotion/styled": "^10.0.15",
+    "@socialgouv/emjpm-ui-core": "^1.8.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-select": "^3.0.4",
     "rebass": "^4.0.1",
-    "theme-ui": "^0.2.31",
-    "styled-icons": "^8.3.0"
+    "styled-icons": "^8.3.0",
+    "theme-ui": "^0.2.31"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

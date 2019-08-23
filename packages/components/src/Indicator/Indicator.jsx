@@ -1,10 +1,9 @@
+import { Card } from '@socialgouv/emjpm-ui-core/src/Card';
+import { Heading0, Heading4 } from '@socialgouv/emjpm-ui-core/src/Heading';
+import { Spinner } from '@socialgouv/emjpm-ui-core/src/Spinner';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Box } from 'rebass';
-
-import { Card } from '../../../core/src/Card';
-import { Heading0, Heading4 } from '../../../core/src/Heading';
-import { Spinner } from '../../../core/src/Spinner';
 
 const Indicator = (props) => {
   const { error, loading, indicator, title } = props;

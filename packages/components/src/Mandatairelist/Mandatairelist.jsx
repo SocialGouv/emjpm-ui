@@ -1,11 +1,11 @@
+import { Button } from '@socialgouv/emjpm-ui-core/src/Button';
+import { Card } from '@socialgouv/emjpm-ui-core/src/Card';
+import { Text } from '@socialgouv/emjpm-ui-core/src/Type';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Box, Flex } from 'rebass';
 import { Female, Male } from 'styled-icons/fa-solid';
 
-import { Button } from '../../../core/src/Button';
-import { Card } from '../../../core/src/Card';
-import { Text } from '../../../core/src/Type';
 import { MandatairelistStyle } from './style';
 
 const columnStyle = {
