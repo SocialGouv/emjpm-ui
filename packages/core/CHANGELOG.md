@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.8.2...@socialgouv/emjpm-ui-core@1.8.3) (2019-08-23)
+
+
+### Bug Fixes
+
+* **publish:** publish only dist ([8e045bd](https://github.com/SocialGouv/emjpm-design-system/commit/8e045bd))
+
+
+
+
+
 ## [1.8.2](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.8.1...@socialgouv/emjpm-ui-core@1.8.2) (2019-08-23)
 
 
