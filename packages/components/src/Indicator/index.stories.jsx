@@ -8,5 +8,5 @@ export default {
 };
 
 export const IndicatorStory = () => (
-  <Indicator error={false} loading={false} indicator="4285" title="indicator title" />
+  <Indicator error={false} loading={false} indicator={4285} title="indicator title" />
 );

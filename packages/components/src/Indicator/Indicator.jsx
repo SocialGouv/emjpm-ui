@@ -37,8 +37,8 @@ const Indicator = (props) => {
 
 Indicator.propTypes = {
   error: PropTypes.string.isRequired,
-  indicator: PropTypes.string.isRequired,
-  loading: PropTypes.string.isRequired,
+  indicator: PropTypes.number.isRequired,
+  loading: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
 };
 
