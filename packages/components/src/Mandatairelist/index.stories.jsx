@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FlexWrapper } from '../../../core/src/Grid';
+import { BoxWrapper } from '../../../core/src/Grid';
 import { Mandatairelist } from '.';
 
 export default {
@@ -8,8 +8,39 @@ export default {
   title: 'Components | Mandatairelist',
 };
 
+const datas = [
+  {
+    currentAvailability: 50,
+    cvLink: 'http://google.fr',
+    dispo_max: 150,
+    email: 'sarah@connor.com',
+    id: 123,
+    isAvailable: true,
+    isWoman: true,
+    nom: 'Sarah',
+    prenom: 'Connor',
+    telephone_portable: '0683961487',
+    type: 'individuel',
+    ville: 'Paris',
+  },
+  {
+    currentAvailability: -50,
+    cvLink: 'http://google.fr',
+    dispo_max: 150,
+    email: 'johnhenry@skynet.com',
+    id: 123,
+    isAvailable: true,
+    isWoman: false,
+    nom: 'John',
+    prenom: 'henry',
+    telephone_portable: '0683961487',
+    type: 'service',
+    ville: 'Paris',
+  },
+];
+
 export const MandatairelistStory = () => (
-  <FlexWrapper mt="5">
-    <Mandatairelist />
-  </FlexWrapper>
+  <BoxWrapper mt="5">
+    <Mandatairelist mandataires={datas} />
+  </BoxWrapper>
 );

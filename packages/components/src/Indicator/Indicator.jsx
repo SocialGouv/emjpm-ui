@@ -37,12 +37,13 @@ const Indicator = (props) => {
 
 Indicator.defaultProps = {
   error: false,
+  loading: false,
 };
 
 Indicator.propTypes = {
   error: PropTypes.bool,
   indicator: PropTypes.number.isRequired,
-  loading: PropTypes.bool.isRequired,
+  loading: PropTypes.bool,
   title: PropTypes.string.isRequired,
 };
 
