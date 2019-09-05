@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.4.0...@socialgouv/emjpm-ui-components@0.5.0) (2019-09-05)
+
+
+### Features
+
+* **mandataire:** add responsive component ([8904aca](https://github.com/SocialGouv/emjpm-design-system/commit/8904aca))
+
+
+
+
+
 # [0.4.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.3.1...@socialgouv/emjpm-ui-components@0.4.0) (2019-09-04)
 
 
