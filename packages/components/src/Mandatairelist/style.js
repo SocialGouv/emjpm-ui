@@ -3,8 +3,16 @@ const MandatairelistStyle = {
   justifyContent: 'space-between',
 };
 
-const columnStyle = {
-  flexDirection: 'column',
+const columnStyle = (isMobileHidden, isTabletHidden) => {
+  return {
+    '@media screen and (max-width: 40em)': {
+      display: isMobileHidden ? 'none' : 'flex',
+    },
+    '@media screen and (max-width: 52em)': {
+      display: isTabletHidden ? 'none' : 'flex',
+    },
+    flexDirection: 'column',
+  };
 };
 
 const titleStyle = {

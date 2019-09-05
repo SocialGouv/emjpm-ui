@@ -1,6 +1,7 @@
 // default theme preset
 
 export const preset = {
+  breakpoints: ['40em', '52em', '64em'],
   buttons: {
     outline: {
       bg: 'transparent',
