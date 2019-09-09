@@ -70,7 +70,7 @@ Mandataire.propTypes = {
     cvLink: PropTypes.string.isRequired,
     dispo_max: PropTypes.number.isRequired,
     email: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     isAvailable: PropTypes.bool.isRequired,
     isWoman: PropTypes.bool.isRequired,
     nom: PropTypes.string.isRequired,

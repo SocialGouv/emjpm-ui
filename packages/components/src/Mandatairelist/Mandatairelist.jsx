@@ -20,7 +20,7 @@ Mandatairelist.propTypes = {
       currentAvailability: PropTypes.number.isRequired,
       dispo_max: PropTypes.number.isRequired,
       email: PropTypes.string.isRequired,
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       isAvailable: PropTypes.bool.isRequired,
       nom: PropTypes.string.isRequired,
       prenom: PropTypes.string.isRequired,
