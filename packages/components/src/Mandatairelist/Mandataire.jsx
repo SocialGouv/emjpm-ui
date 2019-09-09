@@ -48,7 +48,7 @@ const Mandataire = (props) => {
           <Text sx={labelStyle}>Email</Text>
           <Text sx={descriptionStyle}>{mandataire.email}</Text>
         </Flex>
-        <Flex sx={columnStyle(true, true)}>
+        <Flex width="100px" sx={columnStyle(true, true)}>
           <Text sx={labelStyle}>Téléphone</Text>
           <Text sx={descriptionStyle}>{mandataire.telephone_portable}</Text>
         </Flex>
