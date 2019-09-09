@@ -24,7 +24,7 @@ const titleStyle = {
   overflow: 'hidden',
   'text-overflow': 'ellipsis',
   'white-space': 'nowrap',
-  width: '100px',
+  width: '130px',
 };
 
 const subtitleStyle = {

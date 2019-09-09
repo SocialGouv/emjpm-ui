@@ -27,7 +27,7 @@ const datas = [
     currentAvailability: -50,
     cvLink: 'http://google.fr',
     dispo_max: 150,
-    email: 'johnhenry@skynet.com',
+    email: 'johnhezfzfzefzfnry@skynet.com',
     id: 123,
     isAvailable: true,
     isWoman: false,
@@ -35,7 +35,7 @@ const datas = [
     prenom: 'henry',
     telephone_portable: '0683961487',
     type: 'service',
-    ville: 'Paris',
+    ville: 'Lions sur mer eeeeeeeeee',
   },
 ];
 

@@ -32,7 +32,7 @@ const Mandataire = (props) => {
             <Text sx={subtitleStyle}>Individuel</Text>
           </Box>
         </Flex>
-        <Flex sx={columnStyle(true, true)}>
+        <Flex width="100px" sx={columnStyle(true, true)}>
           <Text sx={labelStyle}>Ville</Text>
           <Text sx={descriptionStyle}>{mandataire.ville}</Text>
         </Flex>
@@ -44,7 +44,7 @@ const Mandataire = (props) => {
           <Text sx={labelStyle}>Capacité actuelle</Text>
           <Text sx={descriptionStyle(mandataire.currentAvailability > 0)}>{mandataire.currentAvailability}</Text>
         </Flex>
-        <Flex width="150px" sx={columnStyle(true, true)}>
+        <Flex width="200px" sx={columnStyle(true, true)}>
           <Text sx={labelStyle}>Email</Text>
           <Text sx={descriptionStyle}>{mandataire.email}</Text>
         </Flex>
@@ -72,7 +72,7 @@ Mandataire.propTypes = {
     email: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired,
     isAvailable: PropTypes.bool.isRequired,
-    isWoman: PropTypes.bool,
+    isWoman: PropTypes.bool.isRequired,
     nom: PropTypes.string.isRequired,
     prenom: PropTypes.string.isRequired,
     telephone_portable: PropTypes.string.isRequired,
