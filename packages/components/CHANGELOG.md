@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.5.0...@socialgouv/emjpm-ui-components@0.5.1) (2019-09-09)
+
+
+### Bug Fixes
+
+* **mandataires-list:** add size lock ([f9b8c12](https://github.com/SocialGouv/emjpm-design-system/commit/f9b8c12))
+
+
+
+
+
 # [0.5.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.4.0...@socialgouv/emjpm-ui-components@0.5.0) (2019-09-05)
 
 
