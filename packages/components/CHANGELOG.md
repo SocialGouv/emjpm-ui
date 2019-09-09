@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.5.2...@socialgouv/emjpm-ui-components@0.5.3) (2019-09-09)
+
+
+### Bug Fixes
+
+* **mandataire:** fix style dans missing key ([55771d4](https://github.com/SocialGouv/emjpm-design-system/commit/55771d4))
+
+
+
+
+
 ## [0.5.2](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.5.1...@socialgouv/emjpm-ui-components@0.5.2) (2019-09-09)
 
 
