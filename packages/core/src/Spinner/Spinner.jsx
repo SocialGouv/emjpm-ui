@@ -24,7 +24,7 @@ const SpinnerStyle = () => {
 const Bounce = (delay) => {
   return {
     animation: `${animation} 1.4s infinite ease-in-out both`,
-    'animation-delay': delay,
+    animationDelay: delay,
     borderRadius: '100%',
     display: 'inline-block',
     height: '12px',

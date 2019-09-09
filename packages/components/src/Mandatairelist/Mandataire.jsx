@@ -29,7 +29,7 @@ const Mandataire = (props) => {
             <Text sx={titleStyle}>
               {mandataire.nom} {mandataire.prenom}
             </Text>
-            <Text sx={subtitleStyle}>Individuel</Text>
+            <Text sx={subtitleStyle}>{mandataire.type}</Text>
           </Box>
         </Flex>
         <Flex width="100px" sx={columnStyle(true, true)}>
@@ -76,6 +76,7 @@ Mandataire.propTypes = {
     nom: PropTypes.string.isRequired,
     prenom: PropTypes.string.isRequired,
     telephone_portable: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
     ville: PropTypes.string.isRequired,
   }).isRequired,
 };
