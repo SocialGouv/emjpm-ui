@@ -8,7 +8,7 @@ const Mandatairelist = (props) => {
   return (
     <Fragment>
       {mandataires.map((mandataire) => {
-        return <Mandataire mandataire={mandataire} />;
+        return <Mandataire key={mandataire.id} mandataire={mandataire} />;
       })}
     </Fragment>
   );

@@ -22,8 +22,8 @@ const titleStyle = {
   fontWeight: '600',
   my: '4px',
   overflow: 'hidden',
-  'text-overflow': 'ellipsis',
-  'white-space': 'nowrap',
+  textOverflow: 'ellipsis',
+  whiteSpace: 'nowrap',
   width: '130px',
 };
 
@@ -50,8 +50,8 @@ const descriptionStyle = (isPositive) => {
     fontSize: '13px',
     fontWeight: '600',
     overflow: 'hidden',
-    'text-overflow': 'ellipsis',
-    'white-space': 'nowrap',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
   };
 };
 
