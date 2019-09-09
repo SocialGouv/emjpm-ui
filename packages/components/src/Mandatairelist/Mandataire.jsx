@@ -1,7 +1,8 @@
 import { Button, Card, Text } from '@socialgouv/emjpm-ui-core';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Box, Flex } from 'rebass';
+import { BuildingHouse } from 'styled-icons/boxicons-solid';
 import { Female, Male } from 'styled-icons/fa-solid';
 
 import {
@@ -23,7 +24,11 @@ const Mandataire = (props) => {
       <Flex sx={MandatairelistStyle} {...props}>
         <Flex>
           <Box alignSelf="center" my="1px" mr="1">
-            {mandataire.isWoman ? <Female size="24" /> : <Male size="24" />}
+            {mandataire.type === 'service' ? (
+              <BuildingHouse size="24" />
+            ) : (
+              <Fragment>{mandataire.genre === 'F' ? <Female size="24" /> : <Male size="24" />}</Fragment>
+            )}
           </Box>
           <Box>
             <Text sx={titleStyle}>
@@ -70,9 +75,9 @@ Mandataire.propTypes = {
     cvLink: PropTypes.string.isRequired,
     dispo_max: PropTypes.number.isRequired,
     email: PropTypes.string.isRequired,
+    genre: PropTypes.string.isRequired,
     id: PropTypes.string.isRequired,
     isAvailable: PropTypes.bool.isRequired,
-    isWoman: PropTypes.bool.isRequired,
     nom: PropTypes.string.isRequired,
     prenom: PropTypes.string.isRequired,
     telephone_portable: PropTypes.string.isRequired,
