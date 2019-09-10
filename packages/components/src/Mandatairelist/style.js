@@ -1,3 +1,9 @@
+const TYPES = {
+  individuel: '#D6317D',
+  prepose: '#D29E10',
+  service: '#3174D6',
+};
+
 const MandatairelistStyle = {
   bg: 'white',
   justifyContent: 'space-between',
@@ -12,6 +18,16 @@ const columnStyle = (isMobileHidden, isTabletHidden) => {
       display: isTabletHidden ? 'none' : 'flex',
     },
     flexDirection: 'column',
+  };
+};
+
+const availabilityIndicatorStyle = (isAvailable) => {
+  return {
+    bg: isAvailable ? 'success' : 'error',
+    borderRadius: 'default',
+    height: '10px',
+    mr: '1',
+    width: '10px',
   };
 };
 
@@ -55,13 +71,15 @@ const descriptionStyle = (isPositive) => {
   };
 };
 
-const decorationStyle = {
-  bg: 'yellow',
-  height: '100%',
-  left: 0,
-  position: 'absolute',
-  top: 0,
-  width: '3px',
+const decorationStyle = (type) => {
+  return {
+    bg: TYPES[type],
+    height: '100%',
+    left: 0,
+    position: 'absolute',
+    top: 0,
+    width: '3px',
+  };
 };
 
 const cardStyle = {
@@ -72,6 +90,7 @@ const cardStyle = {
 };
 
 export {
+  availabilityIndicatorStyle,
   MandatairelistStyle,
   columnStyle,
   titleStyle,
