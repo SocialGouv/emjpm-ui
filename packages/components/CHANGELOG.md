@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.6.0...@socialgouv/emjpm-ui-components@0.6.1) (2019-09-10)
+
+
+### Bug Fixes
+
+* **mandataire-list:** add availability indicator type color ([63b6ef3](https://github.com/SocialGouv/emjpm-design-system/commit/63b6ef3))
+
+
+
+
+
 # [0.6.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.5.5...@socialgouv/emjpm-ui-components@0.6.0) (2019-09-09)
 
 
