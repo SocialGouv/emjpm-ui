@@ -34,7 +34,7 @@ const datas = [
     nom: 'John',
     prenom: 'henry',
     telephone: '0683961487zfzefzef',
-    type: 'prepose',
+    type: 'préposé',
     ville: 'Lions sur mer eeeeeeeeee',
   },
   {
