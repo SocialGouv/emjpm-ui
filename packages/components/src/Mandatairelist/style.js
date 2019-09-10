@@ -1,6 +1,6 @@
 const TYPES = {
   individuel: '#D6317D',
-  prepose: '#D29E10',
+  préposé: '#D29E10',
   service: '#3174D6',
 };
 
