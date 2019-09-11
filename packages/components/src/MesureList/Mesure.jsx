@@ -31,7 +31,8 @@ const GrayFemale = styled(Female)`
 `;
 
 const Mesure = (props) => {
-  const { type, ville, numeroRg, dateOuverture, age, civilite, status } = props;
+  const { type, ville, numeroRg, dateOuverture, age, civilite, status, id, validate, Link, href } = props;
+  console.log(href);
   return (
     <Card sx={cardStyle} width="100%">
       <Box sx={decorationStyle(status)} />
@@ -65,11 +66,16 @@ const Mesure = (props) => {
         </Flex>
 
         <Box sx={columnStyle(true, true)}>
-          <Button variant="outline">Valider la mesure</Button>
+          <Button onClick={() => validate(id)} variant="outline">
+            Valider la mesure
+          </Button>
         </Box>
+
         <Flex>
           <Box width="15px" alignSelf="center" pt="4px" mr="1">
-            <GrayArrow size="24" />
+            <Link href={href}>
+              <GrayArrow size="24" />
+            </Link>
           </Box>
         </Flex>
       </Flex>
@@ -78,12 +84,16 @@ const Mesure = (props) => {
 };
 
 Mesure.propTypes = {
+  Link: PropTypes.func.isRequired,
   age: PropTypes.number.isRequired,
   civilite: PropTypes.string.isRequired,
   dateOuverture: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   numeroRg: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
+  validate: PropTypes.func.isRequired,
   ville: PropTypes.string.isRequired,
 };
 

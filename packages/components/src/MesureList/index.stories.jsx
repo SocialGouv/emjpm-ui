@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 import { BoxWrapper } from '../../../core/src/Grid';
@@ -13,6 +14,8 @@ const datas = [
     age: 24,
     civilite: 'F',
     dateOuverture: '2019-01-10',
+    href: '/mesure',
+    id: 1,
     numeroRg: '651654654',
     status: 'eteinte',
     type: 'Tutelle aux biens et à la personne',
@@ -22,6 +25,8 @@ const datas = [
     age: 24,
     civilite: 'F',
     dateOuverture: '2019-01-10',
+    href: '/mesure',
+    id: 2,
     numeroRg: '651654654',
     status: 'Mesure en attente',
     type: 'Curatelle renforcée aux biens et à la personne',
@@ -31,6 +36,8 @@ const datas = [
     age: 24,
     civilite: 'F',
     dateOuverture: '2019-01-10',
+    href: '/mesure',
+    id: 3,
     numeroRg: '651654654',
     status: 'Mesure en cours',
     type: 'Tutelle',
@@ -38,8 +45,19 @@ const datas = [
   },
 ];
 
+const Link = (props) => {
+  console.log(props);
+  const { href, children } = props;
+  return <a href={href}>{children}</a>;
+};
+
+Link.propTypes = {
+  children: PropTypes.node.isRequired,
+  href: PropTypes.string.isRequired,
+};
+
 export const MesureListStory = () => (
   <BoxWrapper mt="5">
-    <MesureList mesures={datas} />
+    <MesureList Link={(props) => <Link {...props} />} validate={(id) => console.log(id)} mesures={datas} />
   </BoxWrapper>
 );
