@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.6.2...@socialgouv/emjpm-ui-components@0.6.3) (2019-09-11)
+
+
+### Bug Fixes
+
+* **mandataires-list:** add default NC value when none is fill ([d775636](https://github.com/SocialGouv/emjpm-design-system/commit/d775636))
+
+
+
+
+
 ## [0.6.2](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.6.1...@socialgouv/emjpm-ui-components@0.6.2) (2019-09-10)
 
 
