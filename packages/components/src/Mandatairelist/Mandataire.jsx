@@ -58,11 +58,13 @@ const Mandataire = (props) => {
         </Flex>
         <Flex sx={columnStyle(false, false)}>
           <Text sx={labelStyle}>Disponibilité max</Text>
-          <Text sx={descriptionStyle}>{dispoMax}</Text>
+          <Text sx={descriptionStyle}>{currentAvailability === 0 && dispoMax === 0 ? 'NC' : dispoMax}</Text>
         </Flex>
         <Flex sx={columnStyle(false, false)}>
           <Text sx={labelStyle}>Capacité actuelle</Text>
-          <Text sx={descriptionStyle(currentAvailability > 0)}>{currentAvailability}</Text>
+          <Text sx={descriptionStyle(currentAvailability > 0)}>
+            {currentAvailability === 0 && dispoMax === 0 ? 'NC' : currentAvailability}
+          </Text>
         </Flex>
         <Flex width="200px" sx={columnStyle(true, true)}>
           <Text sx={labelStyle}>Email</Text>
