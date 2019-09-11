@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.6.4...@socialgouv/emjpm-ui-components@0.7.0) (2019-09-11)
+
+
+### Features
+
+* **mesure-list:** add fix for mesures and mandataires list ([5030a25](https://github.com/SocialGouv/emjpm-design-system/commit/5030a25))
+* **mesure-list:** add mesures list component ([16eb736](https://github.com/SocialGouv/emjpm-design-system/commit/16eb736))
+
+
+
+
+
 ## [0.6.4](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.6.3...@socialgouv/emjpm-ui-components@0.6.4) (2019-09-11)
 
 
