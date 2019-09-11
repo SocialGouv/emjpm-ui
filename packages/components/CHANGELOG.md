@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.4](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.6.3...@socialgouv/emjpm-ui-components@0.6.4) (2019-09-11)
+
+
+### Bug Fixes
+
+* **mandataires-list-proptypes:** fix wrong casing ([ebc56f8](https://github.com/SocialGouv/emjpm-design-system/commit/ebc56f8))
+
+
+
+
+
 ## [0.6.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.6.2...@socialgouv/emjpm-ui-components@0.6.3) (2019-09-11)
 
 
