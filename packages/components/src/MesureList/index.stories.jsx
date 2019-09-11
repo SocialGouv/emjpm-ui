@@ -46,7 +46,6 @@ const datas = [
 ];
 
 const Link = (props) => {
-  console.log(props);
   const { href, children } = props;
   return <a href={href}>{children}</a>;
 };
@@ -58,6 +57,6 @@ Link.propTypes = {
 
 export const MesureListStory = () => (
   <BoxWrapper mt="5">
-    <MesureList Link={(props) => <Link {...props} />} validate={(id) => console.log(id)} mesures={datas} />
+    <MesureList LinkComponent={(props) => <Link {...props} />} validate={(id) => console.log(id)} mesures={datas} />
   </BoxWrapper>
 );

@@ -31,12 +31,11 @@ const GrayFemale = styled(Female)`
 `;
 
 const Mesure = (props) => {
-  const { type, ville, numeroRg, dateOuverture, age, civilite, status, id, validate, Link, href } = props;
-  console.log(href);
+  const { type, ville, numeroRg, dateOuverture, age, civilite, status, id, validate, LinkComponent, href } = props;
   return (
     <Card sx={cardStyle} width="100%">
       <Box sx={decorationStyle(status)} />
-      <Flex sx={MandatairelistStyle} {...props}>
+      <Flex sx={MandatairelistStyle}>
         <Box width="300px">
           <Text sx={titleStyle}>
             {numeroRg}
@@ -73,9 +72,9 @@ const Mesure = (props) => {
 
         <Flex>
           <Box width="15px" alignSelf="center" pt="4px" mr="1">
-            <Link href={href}>
+            <LinkComponent href={href}>
               <GrayArrow size="24" />
-            </Link>
+            </LinkComponent>
           </Box>
         </Flex>
       </Flex>
@@ -84,7 +83,7 @@ const Mesure = (props) => {
 };
 
 Mesure.propTypes = {
-  Link: PropTypes.func.isRequired,
+  LinkComponent: PropTypes.func.isRequired,
   age: PropTypes.number.isRequired,
   civilite: PropTypes.string.isRequired,
   dateOuverture: PropTypes.string.isRequired,

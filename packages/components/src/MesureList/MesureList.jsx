@@ -4,18 +4,18 @@ import React, { Fragment } from 'react';
 import { Mesure } from './Mesure';
 
 const MesureList = (props) => {
-  const { mesures, validate, Link } = props;
+  const { mesures, validate, LinkComponent } = props;
   return (
     <Fragment>
       {mesures.map((item) => {
-        return <Mesure Link={Link} validate={validate} key={item.id} {...item} />;
+        return <Mesure LinkComponent={LinkComponent} validate={validate} key={item.id} {...item} />;
       })}
     </Fragment>
   );
 };
 
 MesureList.propTypes = {
-  Link: PropTypes.func.isRequired,
+  LinkComponent: PropTypes.func.isRequired,
   mesures: PropTypes.arrayOf(
     PropTypes.shape({
       age: PropTypes.number.isRequired,
