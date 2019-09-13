@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.11.0...@socialgouv/emjpm-ui-components@0.12.0) (2019-09-13)
+
+
+### Features
+
+* **mesure-list:** update padding for panel ([dde9d96](https://github.com/SocialGouv/emjpm-design-system/commit/dde9d96))
+
+
+
+
+
 # [0.11.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.10.0...@socialgouv/emjpm-ui-components@0.11.0) (2019-09-13)
 
 
