@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.10.0...@socialgouv/emjpm-ui-components@0.11.0) (2019-09-13)
+
+
+### Features
+
+* **mesure-list:** change number for string for age prop ([ea17c19](https://github.com/SocialGouv/emjpm-design-system/commit/ea17c19))
+* **mesure-list:** remove link component ([11e3c9c](https://github.com/SocialGouv/emjpm-design-system/commit/11e3c9c))
+
+
+
+
+
 # [0.10.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.9.0...@socialgouv/emjpm-ui-components@0.10.0) (2019-09-13)
 
 
