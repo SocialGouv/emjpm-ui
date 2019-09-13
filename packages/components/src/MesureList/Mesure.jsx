@@ -145,7 +145,7 @@ Mesure.propTypes = {
   EditComponent: PropTypes.elementType,
   ReactivateComponent: PropTypes.elementType,
   RemoveComponent: PropTypes.elementType,
-  age: PropTypes.number.isRequired,
+  age: PropTypes.string.isRequired,
   civilite: PropTypes.string.isRequired,
   dateOuverture: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,

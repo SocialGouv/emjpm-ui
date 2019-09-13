@@ -50,7 +50,7 @@ MesureList.propTypes = {
   RemoveComponent: PropTypes.elementType,
   mesures: PropTypes.arrayOf(
     PropTypes.shape({
-      age: PropTypes.number.isRequired,
+      age: PropTypes.string.isRequired,
       civilite: PropTypes.string.isRequired,
       dateOuverture: PropTypes.string.isRequired,
       href: PropTypes.string.isRequired,
