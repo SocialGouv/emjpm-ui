@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.9.0...@socialgouv/emjpm-ui-components@0.10.0) (2019-09-13)
+
+
+### Features
+
+* **mesure-list:** update onPanelOpen not required ([ec44f14](https://github.com/SocialGouv/emjpm-design-system/commit/ec44f14))
+
+
+
+
+
 # [0.9.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.8.0...@socialgouv/emjpm-ui-components@0.9.0) (2019-09-13)
 
 
