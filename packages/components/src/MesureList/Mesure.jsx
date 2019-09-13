@@ -123,7 +123,7 @@ const Mesure = (props) => {
         </Flex>
       </Card>
       {currentMesure === id && (
-        <Card pt="5" m="1" mt="-22px">
+        <Card p="0" pt="1" m="1" mt="-20px">
           <MesurePanel
             currentPanelType={currentPanelType}
             EditComponent={EditComponent}
