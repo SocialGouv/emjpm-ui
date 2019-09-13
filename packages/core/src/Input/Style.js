@@ -24,7 +24,7 @@ const InputStyle = (props) => {
     boxShadow: 'none',
     color: 'text',
     fontSize: '1',
-    fontWeight: props.isActive ? '700' : '500',
+    fontWeight: props.isActive ? '600' : '500',
     height: props.size === 'small' ? '42px' : '52px',
     lineHeight: props.size === 'small' ? '22px' : '32px',
     mt: props.isActive ? '5px' : '0px',
