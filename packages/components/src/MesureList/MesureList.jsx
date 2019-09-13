@@ -41,6 +41,7 @@ MesureList.defaultProps = {
   EditComponent: null,
   ReactivateComponent: null,
   RemoveComponent: null,
+  onPanelOpen: null,
 };
 
 MesureList.propTypes = {
@@ -63,7 +64,7 @@ MesureList.propTypes = {
       ville: PropTypes.string.isRequired,
     }),
   ).isRequired,
-  onPanelOpen: PropTypes.func.isRequired,
+  onPanelOpen: PropTypes.func,
 };
 
 export { MesureList };

@@ -53,7 +53,7 @@ const Mesure = (props) => {
       <Card sx={cardStyle} width="100%">
         <Box sx={decorationStyle(status)} />
         <Flex sx={MandatairelistStyle}>
-          <Box width="300px">
+          <Box width="270px">
             <Text sx={titleStyle}>
               {numeroRg || 'RG-XXXXXX'}
               <Text sx={statusStyle(status)}>{status || 'non reseigné'}</Text>
@@ -150,8 +150,8 @@ Mesure.propTypes = {
   dateOuverture: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
   numeroRg: PropTypes.string.isRequired,
+  onPanelOpen: PropTypes.func,
   status: PropTypes.string.isRequired,
-  onPanelOpen: PropTypes.func.isRequired,
   type: PropTypes.string.isRequired,
   ville: PropTypes.string.isRequired,
 };
@@ -162,6 +162,7 @@ Mesure.defaultProps = {
   EditComponent: null,
   ReactivateComponent: null,
   RemoveComponent: null,
+  onPanelOpen: null,
 };
 
 export { Mesure };
