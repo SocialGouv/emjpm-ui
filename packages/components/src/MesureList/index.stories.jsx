@@ -1,62 +1,36 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 import { BoxWrapper } from '../../../core/src/Grid';
 import { MesureList } from '.';
+import { MesureContextProvider } from './context';
+import {
+  AcceptComponent,
+  CloseComponent,
+  EditComponent,
+  Link,
+  ReactivateComponent,
+  RemoveComponent,
+} from './stories/components';
+import { datas } from './stories/data';
 
 export default {
   component: MesureList,
   title: 'Components | MesureList',
 };
 
-const datas = [
-  {
-    age: 24,
-    civilite: 'F',
-    dateOuverture: '2019-01-10',
-    href: '/mesure',
-    id: 1,
-    numeroRg: '651654654',
-    status: 'eteinte',
-    type: 'Tutelle aux biens et à la personne',
-    ville: 'PARIS',
-  },
-  {
-    age: 24,
-    civilite: 'F',
-    dateOuverture: '2019-01-10',
-    href: '/mesure',
-    id: 2,
-    numeroRg: '651654654',
-    status: 'Mesure en attente',
-    type: 'Curatelle renforcée aux biens et à la personne',
-    ville: 'PARIS',
-  },
-  {
-    age: 24,
-    civilite: 'F',
-    dateOuverture: '2019-01-10',
-    href: '/mesure',
-    id: 3,
-    numeroRg: '651654654',
-    status: 'Mesure en cours',
-    type: 'Tutelle',
-    ville: 'PARIS',
-  },
-];
-
-const Link = (props) => {
-  const { href, children } = props;
-  return <a href={href}>{children}</a>;
-};
-
-Link.propTypes = {
-  children: PropTypes.node.isRequired,
-  href: PropTypes.string.isRequired,
-};
-
 export const MesureListStory = () => (
-  <BoxWrapper mt="5">
-    <MesureList LinkComponent={(props) => <Link {...props} />} validate={(id) => console.log(id)} mesures={datas} />
-  </BoxWrapper>
+  <MesureContextProvider>
+    <BoxWrapper mt="5">
+      <MesureList
+        EditComponent={EditComponent}
+        RemoveComponent={RemoveComponent}
+        AcceptComponent={AcceptComponent}
+        CloseComponent={CloseComponent}
+        ReactivateComponent={ReactivateComponent}
+        LinkComponent={(props) => <Link {...props} />}
+        onPanelOpen={(id) => console.log(`onPanelOpen with ${id}`)}
+        mesures={datas}
+      />
+    </BoxWrapper>
+  </MesureContextProvider>
 );

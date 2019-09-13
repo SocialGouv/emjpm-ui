@@ -4,18 +4,52 @@ import React, { Fragment } from 'react';
 import { Mesure } from './Mesure';
 
 const MesureList = (props) => {
-  const { mesures, validate, LinkComponent } = props;
+  const {
+    mesures,
+    onPanelOpen,
+    LinkComponent,
+    AcceptComponent,
+    CloseComponent,
+    EditComponent,
+    ReactivateComponent,
+    RemoveComponent,
+  } = props;
   return (
     <Fragment>
       {mesures.map((item) => {
-        return <Mesure LinkComponent={LinkComponent} validate={validate} key={item.id} {...item} />;
+        return (
+          <Mesure
+            EditComponent={EditComponent}
+            RemoveComponent={RemoveComponent}
+            AcceptComponent={AcceptComponent}
+            CloseComponent={CloseComponent}
+            ReactivateComponent={ReactivateComponent}
+            LinkComponent={LinkComponent}
+            onPanelOpen={onPanelOpen}
+            key={item.id}
+            {...item}
+          />
+        );
       })}
     </Fragment>
   );
 };
 
+MesureList.defaultProps = {
+  AcceptComponent: null,
+  CloseComponent: null,
+  EditComponent: null,
+  ReactivateComponent: null,
+  RemoveComponent: null,
+};
+
 MesureList.propTypes = {
+  AcceptComponent: PropTypes.elementType,
+  CloseComponent: PropTypes.elementType,
+  EditComponent: PropTypes.elementType,
   LinkComponent: PropTypes.func.isRequired,
+  ReactivateComponent: PropTypes.elementType,
+  RemoveComponent: PropTypes.elementType,
   mesures: PropTypes.arrayOf(
     PropTypes.shape({
       age: PropTypes.number.isRequired,
@@ -29,7 +63,7 @@ MesureList.propTypes = {
       ville: PropTypes.string.isRequired,
     }),
   ).isRequired,
-  validate: PropTypes.func.isRequired,
+  onPanelOpen: PropTypes.func.isRequired,
 };
 
 export { MesureList };

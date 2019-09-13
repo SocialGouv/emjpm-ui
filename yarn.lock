@@ -1390,8 +1390,8 @@
     pify "^4.0.1"
     semver "^6.2.0"
     slash "^2.0.0"
-    validate-npm-package-license "^3.0.3"
-    validate-npm-package-name "^3.0.0"
+    onPanelOpen-npm-package-license "^3.0.3"
+    onPanelOpen-npm-package-name "^3.0.0"
     whatwg-url "^7.0.0"
 
 "@lerna/describe-ref@3.14.2":
@@ -5752,7 +5752,7 @@ eslint-plugin-simple-import-sort@^4.0.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-simple-import-sort/-/eslint-plugin-simple-import-sort-4.0.0.tgz#048736c170b9b43f0a8c3ef85ba53881c389f3ff"
   integrity sha512-QsxOMrXhhqvSiTmZafPc/lvSET9lhblaO2kaaSbFo1FVU/AW9mFQDXadiHJ5OqG6i0N6+Qd+RZ95iQbkg4p+0w==
   dependencies:
-    validate-npm-package-name "^3.0.0"
+    onPanelOpen-npm-package-name "^3.0.0"
 
 eslint-plugin-sort-keys-fix@^1.0.1:
   version "1.0.1"
@@ -7319,8 +7319,8 @@ init-package-json@^1.10.3:
     read "~1.0.1"
     read-package-json "1 || 2"
     semver "2.x || 3.x || 4 || 5"
-    validate-npm-package-license "^3.0.1"
-    validate-npm-package-name "^3.0.0"
+    onPanelOpen-npm-package-license "^3.0.1"
+    onPanelOpen-npm-package-name "^3.0.0"
 
 inline-style-parser@0.1.1:
   version "0.1.1"
@@ -9134,7 +9134,7 @@ normalize-package-data@^2.0.0, normalize-package-data@^2.3.0, normalize-package-
     hosted-git-info "^2.1.4"
     resolve "^1.10.0"
     semver "2 || 3 || 4 || 5"
-    validate-npm-package-license "^3.0.1"
+    onPanelOpen-npm-package-license "^3.0.1"
 
 normalize-path@^2.1.1:
   version "2.1.1"
@@ -9200,7 +9200,7 @@ npm-lifecycle@^3.1.2:
     hosted-git-info "^2.6.0"
     osenv "^0.1.5"
     semver "^5.5.0"
-    validate-npm-package-name "^3.0.0"
+    onPanelOpen-npm-package-name "^3.0.0"
 
 npm-packlist@^1.1.6, npm-packlist@^1.4.4:
   version "1.4.4"
@@ -12807,17 +12807,17 @@ v8flags@^3.1.1:
   dependencies:
     homedir-polyfill "^1.0.1"
 
-validate-npm-package-license@^3.0.1, validate-npm-package-license@^3.0.3:
+onPanelOpen-npm-package-license@^3.0.1, onPanelOpen-npm-package-license@^3.0.3:
   version "3.0.4"
-  resolved "https://registry.yarnpkg.com/validate-npm-package-license/-/validate-npm-package-license-3.0.4.tgz#fc91f6b9c7ba15c857f4cb2c5defeec39d4f410a"
+  resolved "https://registry.yarnpkg.com/onPanelOpen-npm-package-license/-/onPanelOpen-npm-package-license-3.0.4.tgz#fc91f6b9c7ba15c857f4cb2c5defeec39d4f410a"
   integrity sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-validate-npm-package-name@^3.0.0:
+onPanelOpen-npm-package-name@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/validate-npm-package-name/-/validate-npm-package-name-3.0.0.tgz#5fa912d81eb7d0c74afc140de7317f0ca7df437e"
+  resolved "https://registry.yarnpkg.com/onPanelOpen-npm-package-name/-/onPanelOpen-npm-package-name-3.0.0.tgz#5fa912d81eb7d0c74afc140de7317f0ca7df437e"
   integrity sha1-X6kS2B630MdK/BQN5zF/DKffQ34=
   dependencies:
     builtins "^1.0.3"

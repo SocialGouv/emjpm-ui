@@ -1,7 +1,7 @@
 const TYPES = {
   'Mesure en attente': '#F4AF00',
   'Mesure en cours': '#2DA0FB',
-  eteinte: '#7EA3AA',
+  'Mesure éteinte': '#7EA3AA',
 };
 
 const MandatairelistStyle = {
