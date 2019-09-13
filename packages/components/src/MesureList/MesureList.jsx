@@ -7,7 +7,6 @@ const MesureList = (props) => {
   const {
     mesures,
     onPanelOpen,
-    LinkComponent,
     AcceptComponent,
     CloseComponent,
     EditComponent,
@@ -24,7 +23,6 @@ const MesureList = (props) => {
             AcceptComponent={AcceptComponent}
             CloseComponent={CloseComponent}
             ReactivateComponent={ReactivateComponent}
-            LinkComponent={LinkComponent}
             onPanelOpen={onPanelOpen}
             key={item.id}
             {...item}
@@ -48,7 +46,6 @@ MesureList.propTypes = {
   AcceptComponent: PropTypes.elementType,
   CloseComponent: PropTypes.elementType,
   EditComponent: PropTypes.elementType,
-  LinkComponent: PropTypes.func.isRequired,
   ReactivateComponent: PropTypes.elementType,
   RemoveComponent: PropTypes.elementType,
   mesures: PropTypes.arrayOf(
