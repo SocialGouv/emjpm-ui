@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.4](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.12.3...@socialgouv/emjpm-ui-components@0.12.4) (2019-09-16)
+
+
+### Bug Fixes
+
+* **mesure:** numeroDossier in camel ([729fd15](https://github.com/SocialGouv/emjpm-design-system/commit/729fd15))
+
+
+
+
+
 ## [0.12.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.12.2...@socialgouv/emjpm-ui-components@0.12.3) (2019-09-16)
 
 
