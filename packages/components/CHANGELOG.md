@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.14.0...@socialgouv/emjpm-ui-components@0.15.0) (2019-09-16)
+
+
+### Features
+
+* **mandataire:** fix missing export for context ([8e36b89](https://github.com/SocialGouv/emjpm-design-system/commit/8e36b89))
+
+
+
+
+
 # [0.14.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.13.0...@socialgouv/emjpm-ui-components@0.14.0) (2019-09-16)
 
 
