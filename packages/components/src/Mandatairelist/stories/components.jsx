@@ -18,7 +18,7 @@ export const ChooseComponent = (props) => {
         <Button
           onClick={() => {
             setPanelType(PANEL_TYPE.EDIT);
-            setCurrentMandataire();
+            setCurrentMandataire(currentMandataire);
           }}
         >
           Fermer
