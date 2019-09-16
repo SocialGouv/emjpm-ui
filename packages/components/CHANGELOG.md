@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.12.4...@socialgouv/emjpm-ui-components@0.13.0) (2019-09-16)
+
+
+### Bug Fixes
+
+* **mesure:** replace isMandataire for isMagistrat ([09c8c71](https://github.com/SocialGouv/emjpm-design-system/commit/09c8c71))
+
+
+### Features
+
+* **mesure-mandataire:** add mandataire support on mesure list ([a775bc0](https://github.com/SocialGouv/emjpm-design-system/commit/a775bc0))
+
+
+
+
+
 ## [0.12.4](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.12.3...@socialgouv/emjpm-ui-components@0.12.4) (2019-09-16)
 
 
