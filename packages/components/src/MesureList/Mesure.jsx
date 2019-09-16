@@ -50,6 +50,7 @@ const Mesure = (props) => {
     codePostal,
     numeroDossier,
     antenneId,
+    isMandataire,
   } = props;
 
   return (
@@ -86,12 +87,15 @@ const Mesure = (props) => {
           </Flex>
 
           <Box mr="1" width="120px" sx={columnStyle(true, true)}>
-            {(status === MESURE_TYPE.IN_PROGRESS || status === MESURE_TYPE.CLOSED) && (
+            {(status === MESURE_TYPE.IN_PROGRESS ||
+              status === MESURE_TYPE.CLOSED ||
+              (status === MESURE_TYPE.WAITING && isMandataire)) && (
               <Button
                 width="120px"
                 onClick={() => {
                   // Move me to dedicated function
                   setCurrentMesure(id);
+                  if (status === MESURE_TYPE.WAITING && isMandataire) setPanelType(PANEL_TYPE.EDIT);
                   if (status === MESURE_TYPE.CLOSED) setPanelType(PANEL_TYPE.REMOVE);
                   if (status === MESURE_TYPE.IN_PROGRESS) setPanelType(PANEL_TYPE.EDIT);
                   // Remove if useless
@@ -99,6 +103,7 @@ const Mesure = (props) => {
                 }}
                 variant="outline"
               >
+                {status === MESURE_TYPE.WAITING && isMandataire && <Fragment>Modifier</Fragment>}
                 {status === MESURE_TYPE.IN_PROGRESS && <Fragment>Modifier</Fragment>}
                 {status === MESURE_TYPE.CLOSED && <Fragment>Supprimer</Fragment>}
               </Button>
@@ -111,15 +116,17 @@ const Mesure = (props) => {
               onClick={() => {
                 // Move me to dedicated function
                 setCurrentMesure(id);
-                if (status === MESURE_TYPE.WAITING) setPanelType(PANEL_TYPE.ACCEPT);
-                if (status === MESURE_TYPE.IN_PROGRESS) setPanelType(PANEL_TYPE.CLOSE);
-                if (status === MESURE_TYPE.CLOSED) setPanelType(PANEL_TYPE.REACTIVATE);
+                if (status === MESURE_TYPE.WAITING && isMandataire) setPanelType(PANEL_TYPE.REMOVE);
+                else if (status === MESURE_TYPE.WAITING) setPanelType(PANEL_TYPE.ACCEPT);
+                else if (status === MESURE_TYPE.IN_PROGRESS) setPanelType(PANEL_TYPE.CLOSE);
+                else if (status === MESURE_TYPE.CLOSED) setPanelType(PANEL_TYPE.REACTIVATE);
                 // Remove if useless
                 onPanelOpen(id);
               }}
               variant="outline"
             >
-              {status === MESURE_TYPE.WAITING && <Fragment>Accepter la mesure</Fragment>}
+              {status === MESURE_TYPE.WAITING && isMandataire && <Fragment>Supprimer la mesure</Fragment>}
+              {status === MESURE_TYPE.WAITING && !isMandataire && <Fragment>Accepter la mesure</Fragment>}
               {status === MESURE_TYPE.IN_PROGRESS && <Fragment>Fermer la mesure</Fragment>}
               {status === MESURE_TYPE.CLOSED && <Fragment>Reactiver la mesure</Fragment>}
             </Button>
@@ -170,6 +177,7 @@ Mesure.propTypes = {
   codePostal: PropTypes.string.isRequired,
   dateOuverture: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
+  isMandataire: PropTypes.bool,
   numeroDossier: PropTypes.string.isRequired,
   numeroRg: PropTypes.string.isRequired,
   onPanelOpen: PropTypes.func,
@@ -185,6 +193,7 @@ Mesure.defaultProps = {
   EditComponent: null,
   ReactivateComponent: null,
   RemoveComponent: null,
+  isMandataire: false,
   onPanelOpen: null,
 };
 

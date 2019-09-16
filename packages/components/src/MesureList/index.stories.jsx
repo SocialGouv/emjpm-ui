@@ -11,7 +11,7 @@ import {
   ReactivateComponent,
   RemoveComponent,
 } from './stories/components';
-import { datas } from './stories/data';
+import { datas, mandataireDatas } from './stories/data';
 
 export default {
   component: MesureList,
@@ -30,6 +30,21 @@ export const MesureListStory = () => (
         LinkComponent={(props) => <Link {...props} />}
         onPanelOpen={(id) => console.log(`onPanelOpen with ${id}`)}
         mesures={datas}
+      />
+    </BoxWrapper>
+  </MesureContextProvider>
+);
+
+export const mandataireMesureListStory = () => (
+  <MesureContextProvider>
+    <BoxWrapper mt="5">
+      <MesureList
+        isMandataire
+        EditComponent={EditComponent}
+        RemoveComponent={RemoveComponent}
+        LinkComponent={(props) => <Link {...props} />}
+        onPanelOpen={(id) => console.log(`onPanelOpen with ${id}`)}
+        mesures={mandataireDatas}
       />
     </BoxWrapper>
   </MesureContextProvider>

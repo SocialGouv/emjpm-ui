@@ -12,12 +12,14 @@ const MesureList = (props) => {
     EditComponent,
     ReactivateComponent,
     RemoveComponent,
+    isMandataire,
   } = props;
   return (
     <Fragment>
       {mesures.map((item) => {
         return (
           <Mesure
+            isMandataire={isMandataire}
             EditComponent={EditComponent}
             RemoveComponent={RemoveComponent}
             AcceptComponent={AcceptComponent}
@@ -39,6 +41,7 @@ MesureList.defaultProps = {
   EditComponent: null,
   ReactivateComponent: null,
   RemoveComponent: null,
+  isMandataire: false,
   onPanelOpen: null,
 };
 
@@ -48,6 +51,7 @@ MesureList.propTypes = {
   EditComponent: PropTypes.elementType,
   ReactivateComponent: PropTypes.elementType,
   RemoveComponent: PropTypes.elementType,
+  isMandataire: PropTypes.bool,
   mesures: PropTypes.arrayOf(
     PropTypes.shape({
       age: PropTypes.string.isRequired,
