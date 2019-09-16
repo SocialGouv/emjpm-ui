@@ -53,7 +53,6 @@ MesureList.propTypes = {
       age: PropTypes.string.isRequired,
       civilite: PropTypes.string.isRequired,
       dateOuverture: PropTypes.string.isRequired,
-      href: PropTypes.string.isRequired,
       id: PropTypes.number.isRequired,
       numeroRg: PropTypes.string.isRequired,
       status: PropTypes.string.isRequired,

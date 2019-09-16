@@ -126,7 +126,7 @@ const Mesure = (props) => {
         <Card overflow="hidden" p="0" pt="1" m="1" mt="-20px">
           <MesurePanel
             currentPanelType={currentPanelType}
-            EditComponent={EditComponent}
+            EditComponent={() => <EditComponent />}
             RemoveComponent={RemoveComponent}
             AcceptComponent={AcceptComponent}
             CloseComponent={CloseComponent}
