@@ -132,6 +132,7 @@ const Mesure = (props) => {
             currentPanelType={currentPanelType}
             EditComponent={() => (
               <EditComponent
+                currentMesure={currentMesure}
                 dateOuverture={dateOuverture}
                 type={type}
                 residence={residence}
@@ -164,7 +165,7 @@ Mesure.propTypes = {
   ReactivateComponent: PropTypes.elementType,
   RemoveComponent: PropTypes.elementType,
   age: PropTypes.string.isRequired,
-  antenneId: PropTypes.string.isRequired,
+  antenneId: PropTypes.number.isRequired,
   civilite: PropTypes.string.isRequired,
   codePostal: PropTypes.string.isRequired,
   dateOuverture: PropTypes.string.isRequired,
