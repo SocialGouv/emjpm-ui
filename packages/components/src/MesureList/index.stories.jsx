@@ -39,7 +39,7 @@ export const mandataireMesureListStory = () => (
   <MesureContextProvider>
     <BoxWrapper mt="5">
       <MesureList
-        isMandataire
+        isMagistrat
         EditComponent={EditComponent}
         RemoveComponent={RemoveComponent}
         LinkComponent={(props) => <Link {...props} />}
