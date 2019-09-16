@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.12.2...@socialgouv/emjpm-ui-components@0.12.3) (2019-09-16)
+
+
+### Bug Fixes
+
+* **mesure:** change antenne_id proptype add missing current mesure ([9420cb6](https://github.com/SocialGouv/emjpm-design-system/commit/9420cb6))
+
+
+
+
+
 ## [0.12.2](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.12.1...@socialgouv/emjpm-ui-components@0.12.2) (2019-09-16)
 
 
