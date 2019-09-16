@@ -2,6 +2,8 @@ import React from 'react';
 
 import { BoxWrapper } from '../../../core/src/Grid';
 import { Mandatairelist } from '.';
+import { MandataireContextProvider } from './context';
+import { ChooseComponent } from './stories/components';
 
 export default {
   component: Mandatairelist,
@@ -29,7 +31,7 @@ const datas = [
     dispoMax: 150,
     email: 'johnhezfzfzefzfnry@skynet.com',
     genre: 'H',
-    id: 123,
+    id: 1234,
     isAvailable: true,
     nom: 'John',
     prenom: 'henry',
@@ -43,7 +45,7 @@ const datas = [
     dispoMax: 150,
     email: 'johnhezfzfzefzfnry@skynet.com',
     genre: 'H',
-    id: 123,
+    id: 12345,
     isAvailable: true,
     nom: 'John',
     prenom: 'henry',
@@ -57,4 +59,12 @@ export const MandatairelistStory = () => (
   <BoxWrapper mt="5">
     <Mandatairelist mandataires={datas} />
   </BoxWrapper>
+);
+
+export const MandataireMagristratlistStory = () => (
+  <MandataireContextProvider>
+    <BoxWrapper mt="5">
+      <Mandatairelist ChooseComponent={ChooseComponent} isMagistrat mandataires={datas} />
+    </BoxWrapper>
+  </MandataireContextProvider>
 );
