@@ -46,6 +46,10 @@ const Mesure = (props) => {
     AcceptComponent,
     CloseComponent,
     ReactivateComponent,
+    residence,
+    codePostal,
+    numeroDossier,
+    antenneId,
   } = props;
 
   return (
@@ -126,7 +130,21 @@ const Mesure = (props) => {
         <Card overflow="hidden" p="0" pt="1" m="1" mt="-20px">
           <MesurePanel
             currentPanelType={currentPanelType}
-            EditComponent={() => <EditComponent />}
+            EditComponent={() => (
+              <EditComponent
+                dateOuverture={dateOuverture}
+                type={type}
+                residence={residence}
+                codePostal={codePostal}
+                ville={ville}
+                civilite={civilite}
+                age={age}
+                numero_dossier={numeroDossier}
+                numeroRg={numeroRg}
+                status={status}
+                antenneId={antenneId}
+              />
+            )}
             RemoveComponent={RemoveComponent}
             AcceptComponent={AcceptComponent}
             CloseComponent={CloseComponent}
@@ -146,11 +164,15 @@ Mesure.propTypes = {
   ReactivateComponent: PropTypes.elementType,
   RemoveComponent: PropTypes.elementType,
   age: PropTypes.string.isRequired,
+  antenneId: PropTypes.string.isRequired,
   civilite: PropTypes.string.isRequired,
+  codePostal: PropTypes.string.isRequired,
   dateOuverture: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
+  numeroDossier: PropTypes.string.isRequired,
   numeroRg: PropTypes.string.isRequired,
   onPanelOpen: PropTypes.func,
+  residence: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   ville: PropTypes.string.isRequired,
