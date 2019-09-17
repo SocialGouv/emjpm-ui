@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.19.0...@socialgouv/emjpm-ui-components@0.20.0) (2019-09-17)
+
+
+### Features
+
+* **mandataire-list:** add missing address and postal code ([a862507](https://github.com/SocialGouv/emjpm-design-system/commit/a862507))
+
+
+
+
+
 # [0.19.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.18.0...@socialgouv/emjpm-ui-components@0.19.0) (2019-09-17)
 
 
