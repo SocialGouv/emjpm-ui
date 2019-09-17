@@ -127,7 +127,7 @@ const Mesure = (props) => {
             >
               {status === MESURE_TYPE.WAITING && isMagistrat && <Fragment>Supprimer la mesure</Fragment>}
               {status === MESURE_TYPE.WAITING && !isMagistrat && <Fragment>Accepter la mesure</Fragment>}
-              {status === MESURE_TYPE.IN_PROGRESS && <Fragment>Fermer la mesure</Fragment>}
+              {status === MESURE_TYPE.IN_PROGRESS && <Fragment>Fin de mandat</Fragment>}
               {status === MESURE_TYPE.CLOSED && <Fragment>Reactiver la mesure</Fragment>}
             </Button>
           </Box>
