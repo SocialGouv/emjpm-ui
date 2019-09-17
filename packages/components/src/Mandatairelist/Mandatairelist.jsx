@@ -26,6 +26,8 @@ Mandatairelist.propTypes = {
   isMagistrat: PropTypes.bool,
   mandataires: PropTypes.arrayOf(
     PropTypes.shape({
+      adresse: PropTypes.string.isRequired,
+      codePostal: PropTypes.string.isRequired,
       currentAvailability: PropTypes.number.isRequired,
       cvLink: PropTypes.string.isRequired,
       dispoMax: PropTypes.number.isRequired,

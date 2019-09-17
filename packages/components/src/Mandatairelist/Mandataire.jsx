@@ -28,6 +28,8 @@ const Mandataire = (props) => {
     dispoMax,
     email,
     genre,
+    adresse,
+    codePostal,
     hasCV,
     isAvailable,
     nom,
@@ -141,6 +143,8 @@ const Mandataire = (props) => {
                 currentAvailability={currentAvailability}
                 dispoMax={dispoMax}
                 email={email}
+                adresse={adresse}
+                codePostal={codePostal}
                 genre={genre}
                 mesuresInProgress={mesuresInProgress}
                 hasCV={hasCV}
@@ -172,6 +176,8 @@ Mandataire.defaultProps = {
 
 Mandataire.propTypes = {
   ChooseComponent: PropTypes.elementType,
+  adresse: PropTypes.string.isRequired,
+  codePostal: PropTypes.string.isRequired,
   currentAvailability: PropTypes.number.isRequired,
   cvLink: PropTypes.string.isRequired,
   dispoMax: PropTypes.number.isRequired,
