@@ -38,6 +38,7 @@ const Mandataire = (props) => {
     tis,
     id,
     isMagistrat,
+    mesuresInProgress,
     ChooseComponent,
   } = props;
   return (
@@ -141,6 +142,7 @@ const Mandataire = (props) => {
                 dispoMax={dispoMax}
                 email={email}
                 genre={genre}
+                mesuresInProgress={mesuresInProgress}
                 hasCV={hasCV}
                 isAvailable={isAvailable}
                 nom={nom}
@@ -179,6 +181,7 @@ Mandataire.propTypes = {
   id: PropTypes.string.isRequired,
   isAvailable: PropTypes.bool.isRequired,
   isMagistrat: PropTypes.bool,
+  mesuresInProgress: PropTypes.number.isRequired,
   nom: PropTypes.string.isRequired,
   prenom: PropTypes.string.isRequired,
   telephone: PropTypes.string.isRequired,
