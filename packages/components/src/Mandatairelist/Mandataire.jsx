@@ -134,8 +134,25 @@ const Mandataire = (props) => {
         <Card overflow="hidden" p="0" pt="1" m="1" mt="-20px">
           <MandatairePanel
             currentPanelType={currentPanelType}
-            ChooseComponent={() => <ChooseComponent currentMesure={currentMandataire} />}
-            currentMesure={currentMandataire}
+            ChooseComponent={() => (
+              <ChooseComponent
+                currentAvailability={currentAvailability}
+                dispoMax={dispoMax}
+                email={email}
+                genre={genre}
+                hasCV={hasCV}
+                isAvailable={isAvailable}
+                nom={nom}
+                prenom={prenom}
+                telephone={telephone}
+                type={type}
+                ville={ville}
+                isMagistrat={isMagistrat}
+                ChooseComponent={ChooseComponent}
+                currentMandataire={currentMandataire}
+              />
+            )}
+            currentMandataire={currentMandataire}
           />
         </Card>
       )}
