@@ -147,7 +147,7 @@ Mandataire.propTypes = {
   email: PropTypes.string.isRequired,
   genre: PropTypes.string.isRequired,
   hasCV: PropTypes.bool,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   isAvailable: PropTypes.bool.isRequired,
   isMagistrat: PropTypes.bool,
   nom: PropTypes.string.isRequired,

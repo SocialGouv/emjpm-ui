@@ -172,7 +172,7 @@ Mesure.propTypes = {
   ReactivateComponent: PropTypes.elementType,
   RemoveComponent: PropTypes.elementType,
   age: PropTypes.string.isRequired,
-  antenneId: PropTypes.number.isRequired,
+  antenneId: PropTypes.number,
   civilite: PropTypes.string.isRequired,
   codePostal: PropTypes.string.isRequired,
   dateOuverture: PropTypes.string.isRequired,
@@ -193,6 +193,7 @@ Mesure.defaultProps = {
   EditComponent: null,
   ReactivateComponent: null,
   RemoveComponent: null,
+  antenneId: null,
   isMagistrat: false,
   onPanelOpen: null,
 };
