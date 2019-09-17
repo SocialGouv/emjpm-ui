@@ -193,8 +193,8 @@ Mandataire.propTypes = {
   telephone: PropTypes.string.isRequired,
   tis: PropTypes.arrayOf(
     PropTypes.shape({
-      etablissement: PropTypes.string.isRequired,
-      id: PropTypes.number.isRequired,
+      etablissement: PropTypes.string,
+      id: PropTypes.number,
     }),
   ),
   type: PropTypes.string.isRequired,
