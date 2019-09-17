@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.15.1...@socialgouv/emjpm-ui-components@0.16.0) (2019-09-17)
+
+
+### Features
+
+* **mandataire-list:** add click handler on div if magistrat ([a79c545](https://github.com/SocialGouv/emjpm-design-system/commit/a79c545))
+
+
+
+
+
 ## [0.15.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.15.0...@socialgouv/emjpm-ui-components@0.15.1) (2019-09-17)
 
 
