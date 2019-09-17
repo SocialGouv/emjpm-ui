@@ -35,6 +35,7 @@ const Mandataire = (props) => {
     telephone,
     type,
     ville,
+    tis,
     id,
     isMagistrat,
     ChooseComponent,
@@ -147,8 +148,8 @@ const Mandataire = (props) => {
                 telephone={telephone}
                 type={type}
                 ville={ville}
+                tis={tis}
                 isMagistrat={isMagistrat}
-                ChooseComponent={ChooseComponent}
                 currentMandataire={currentMandataire}
               />
             )}
@@ -164,6 +165,7 @@ Mandataire.defaultProps = {
   ChooseComponent: null,
   hasCV: false,
   isMagistrat: false,
+  tis: [],
 };
 
 Mandataire.propTypes = {
@@ -180,6 +182,12 @@ Mandataire.propTypes = {
   nom: PropTypes.string.isRequired,
   prenom: PropTypes.string.isRequired,
   telephone: PropTypes.string.isRequired,
+  tis: PropTypes.arrayOf(
+    PropTypes.shape({
+      etablissement: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+    }),
+  ),
   type: PropTypes.string.isRequired,
   ville: PropTypes.string.isRequired,
 };
