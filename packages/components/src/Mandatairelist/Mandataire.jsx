@@ -43,7 +43,17 @@ const Mandataire = (props) => {
     <Fragment>
       <Card sx={cardStyle} width="100%">
         <Box sx={decorationStyle(type)} />
-        <Flex sx={MandatairelistStyle} {...props}>
+        <Flex
+          onClick={() => {
+            if (isMagistrat) {
+              // Move me to dedicated function
+              setCurrentMandataire(id);
+              setPanelType(PANEL_TYPE.CHOOSE);
+            }
+          }}
+          sx={MandatairelistStyle}
+          {...props}
+        >
           <Flex>
             <Box alignSelf="center" my="1px" mr="1">
               {type === 'service' ? (
