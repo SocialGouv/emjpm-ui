@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.20.0...@socialgouv/emjpm-ui-components@0.21.0) (2019-09-17)
+
+
+### Features
+
+* **mandataire-list:** remove required props for tis ([bf503f2](https://github.com/SocialGouv/emjpm-design-system/commit/bf503f2))
+* **mesure:** fix mesure wording ([6077f40](https://github.com/SocialGouv/emjpm-design-system/commit/6077f40))
+
+
+
+
+
 # [0.20.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.19.0...@socialgouv/emjpm-ui-components@0.20.0) (2019-09-17)
 
 
