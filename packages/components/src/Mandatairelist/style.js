@@ -59,6 +59,18 @@ const labelStyle = {
   mt: '7px',
 };
 
+const dispoDescriptionStyle = (isPositive) => {
+  return {
+    color: isPositive ? 'success' : 'error',
+    fontFamily: 'heading',
+    fontSize: '13px',
+    fontWeight: '600',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+  };
+};
+
 const descriptionStyle = (isPositive) => {
   return {
     color: isPositive ? 'black' : 'error',
@@ -90,6 +102,7 @@ const cardStyle = {
 };
 
 export {
+  dispoDescriptionStyle,
   availabilityIndicatorStyle,
   MandatairelistStyle,
   columnStyle,

@@ -14,6 +14,7 @@ import {
   columnStyle,
   decorationStyle,
   descriptionStyle,
+  dispoDescriptionStyle,
   labelStyle,
   MandatairelistStyle,
   subtitleStyle,
@@ -78,16 +79,6 @@ const Mandataire = (props) => {
             <Text sx={labelStyle}>Ville</Text>
             <Text sx={descriptionStyle}>{ville}</Text>
           </Flex>
-          <Flex sx={columnStyle(false, false)}>
-            <Text sx={labelStyle}>Disponibilité max</Text>
-            <Text sx={descriptionStyle}>{currentAvailability === 0 && dispoMax === 0 ? 'NC' : dispoMax}</Text>
-          </Flex>
-          <Flex sx={columnStyle(false, false)}>
-            <Text sx={labelStyle}>Capacité actuelle</Text>
-            <Text sx={descriptionStyle(currentAvailability > 0)}>
-              {currentAvailability === 0 && dispoMax === 0 ? 'NC' : currentAvailability}
-            </Text>
-          </Flex>
           {isMagistrat && (
             <Flex alignItems="center">
               <Box sx={availabilityIndicatorStyle(currentAvailability > 0)} />
@@ -114,6 +105,22 @@ const Mandataire = (props) => {
               )}
             </Box>
           )}
+
+          <Flex sx={columnStyle(false, false)}>
+            <Text sx={labelStyle}>Disponibilité max</Text>
+            <Text sx={descriptionStyle}>{currentAvailability === 0 && dispoMax === 0 ? 'NC' : dispoMax}</Text>
+          </Flex>
+          <Flex sx={columnStyle(false, false)}>
+            <Text sx={labelStyle}>Disponibilité actuelle</Text>
+            <Text sx={dispoDescriptionStyle(currentAvailability > 0)}>
+              {currentAvailability === 0 && dispoMax === 0 ? 'NC' : currentAvailability}
+            </Text>
+          </Flex>
+          {!isMagistrat && (
+            <Flex alignItems="center">
+              <Box sx={availabilityIndicatorStyle(currentAvailability > 0)} />
+            </Flex>
+          )}
           {isMagistrat && (
             <Box sx={columnStyle(true, true)} width="185px">
               <Button
@@ -126,11 +133,6 @@ const Mandataire = (props) => {
                 Choisir ce mandataire
               </Button>
             </Box>
-          )}
-          {!isMagistrat && (
-            <Flex alignItems="center">
-              <Box sx={availabilityIndicatorStyle(currentAvailability > 0)} />
-            </Flex>
           )}
         </Flex>
       </Card>
