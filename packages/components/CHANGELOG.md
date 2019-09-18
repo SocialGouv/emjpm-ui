@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.22.0...@socialgouv/emjpm-ui-components@0.22.1) (2019-09-18)
+
+
+### Bug Fixes
+
+* **mandataire-list:** add new props for panel component ([155d0ac](https://github.com/SocialGouv/emjpm-design-system/commit/155d0ac))
+* **panel:** remove overflow ([0e2cb3e](https://github.com/SocialGouv/emjpm-design-system/commit/0e2cb3e))
+
+
+
+
+
 # [0.22.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.21.0...@socialgouv/emjpm-ui-components@0.22.0) (2019-09-17)
 
 
