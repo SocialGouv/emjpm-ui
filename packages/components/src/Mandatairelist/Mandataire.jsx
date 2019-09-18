@@ -137,7 +137,7 @@ const Mandataire = (props) => {
         </Flex>
       </Card>
       {currentMandataire === id && (
-        <Card overflow="hidden" p="0" pt="1" m="1" mt="-20px">
+        <Card p="0" pt="1" m="1" mt="-20px">
           <MandatairePanel
             currentPanelType={currentPanelType}
             ChooseComponent={() => (
