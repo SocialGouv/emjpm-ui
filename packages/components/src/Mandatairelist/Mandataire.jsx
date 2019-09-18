@@ -35,6 +35,8 @@ const Mandataire = (props) => {
     isAvailable,
     nom,
     prenom,
+    antenneId,
+    mandataireId,
     telephone,
     type,
     ville,
@@ -153,6 +155,8 @@ const Mandataire = (props) => {
                 isAvailable={isAvailable}
                 nom={nom}
                 prenom={prenom}
+                antenneId={antenneId}
+                mandataireId={mandataireId}
                 telephone={telephone}
                 type={type}
                 ville={ville}
@@ -171,14 +175,17 @@ const Mandataire = (props) => {
 
 Mandataire.defaultProps = {
   ChooseComponent: null,
+  antenneId: null,
   hasCV: false,
   isMagistrat: false,
+  mandataireId: null,
   tis: [],
 };
 
 Mandataire.propTypes = {
   ChooseComponent: PropTypes.elementType,
   adresse: PropTypes.string.isRequired,
+  antenneId: PropTypes.number,
   codePostal: PropTypes.string.isRequired,
   currentAvailability: PropTypes.number.isRequired,
   cvLink: PropTypes.string.isRequired,
@@ -189,6 +196,7 @@ Mandataire.propTypes = {
   id: PropTypes.string.isRequired,
   isAvailable: PropTypes.bool.isRequired,
   isMagistrat: PropTypes.bool,
+  mandataireId: PropTypes.number,
   mesuresInProgress: PropTypes.number.isRequired,
   nom: PropTypes.string.isRequired,
   prenom: PropTypes.string.isRequired,
