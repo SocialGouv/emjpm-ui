@@ -14,11 +14,7 @@ const Logo = (props) => {
       </Box>
       {hasTitle && (
         <Box>
-          <Text sx={logoTextStyle}>
-            empjm.
-            <b>beta.gouv</b>
-            .fr
-          </Text>
+          <Text sx={logoTextStyle}>e-MJPM</Text>
         </Box>
       )}
     </Flex>
