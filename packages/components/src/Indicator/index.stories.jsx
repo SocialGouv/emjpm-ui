@@ -10,3 +10,7 @@ export default {
 export const IndicatorStory = () => (
   <Indicator error={false} loading={false} indicator={4285} title="indicator title" />
 );
+
+export const IndicatorNegativeStory = () => (
+  <Indicator error={false} loading={false} indicator={-50} title="indicator title" />
+);

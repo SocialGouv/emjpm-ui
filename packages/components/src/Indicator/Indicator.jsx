@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Box } from 'rebass';
 
+import { IndicatorTextStyle } from './style';
+
 const Indicator = (props) => {
   const { error, loading, indicator, title } = props;
   if (error) {
@@ -30,7 +32,9 @@ const Indicator = (props) => {
   return (
     <Card height="100%">
       <Heading4>{title}</Heading4>
-      <Heading0 mt="7">{indicator}</Heading0>
+      <Heading0 sx={IndicatorTextStyle(indicator < 0)} mt="7">
+        {indicator}
+      </Heading0>
     </Card>
   );
 };
