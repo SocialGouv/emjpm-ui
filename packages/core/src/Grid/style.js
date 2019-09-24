@@ -1,6 +1,6 @@
 const wrapperStyle = {
   margin: '0 auto',
-  maxWidth: '1024px',
+  maxWidth: '1160px',
 };
 
 const fourColumnStyle = {

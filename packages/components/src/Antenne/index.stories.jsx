@@ -9,9 +9,10 @@ export default {
 };
 
 const antenne = {
+  headquarters: true,
   id: 1,
-  mesures_in_progress: 200,
-  mesures_max: 200,
+  mesures_in_progress: 230,
+  mesures_max: 221,
   name: 'antenne name',
   preferences: ['Paris', 'New-york'],
 };

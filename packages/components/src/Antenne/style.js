@@ -42,7 +42,7 @@ const preferenceText = {
 
 const availabilityIndicatorStyle = (isAvailable) => {
   return {
-    bg: isAvailable ? 'success' : 'error',
+    bg: isAvailable ? 'error' : 'success',
     borderRadius: 'default',
     height: '10px',
     mr: '1',
