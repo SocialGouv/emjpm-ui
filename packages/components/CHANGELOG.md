@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.25.2](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.25.1...@socialgouv/emjpm-ui-components@0.25.2) (2019-09-24)
+
+
+### Bug Fixes
+
+* **layout:** fix layout fix antenne ([633f3a1](https://github.com/SocialGouv/emjpm-design-system/commit/633f3a1))
+
+
+
+
+
 ## [0.25.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.25.0...@socialgouv/emjpm-ui-components@0.25.1) (2019-09-24)
 
 
