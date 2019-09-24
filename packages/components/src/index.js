@@ -8,6 +8,4 @@ export * from './DropDownMenu';
 
 export * from './MesureList';
 
-export * from './Component';
-
 export * from './Antenne';
