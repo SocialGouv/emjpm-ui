@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.25.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.25.2...@socialgouv/emjpm-ui-components@0.25.3) (2019-09-26)
+
+
+### Bug Fixes
+
+* **service:** fix mandataire ([8bc99fc](https://github.com/SocialGouv/emjpm-design-system/commit/8bc99fc))
+
+
+
+
+
 ## [0.25.2](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.25.1...@socialgouv/emjpm-ui-components@0.25.2) (2019-09-24)
 
 
