@@ -59,7 +59,7 @@ const Mesure = (props) => {
   } else {
     currentStatus = status;
   }
-
+  const currentYear = new Date().getFullYear();
   return (
     <Fragment>
       <Card sx={cardStyle} width="100%">
@@ -79,7 +79,7 @@ const Mesure = (props) => {
             </Box>
             <Box>
               <Text sx={labelStyle}>Age</Text>
-              <Text sx={descriptionStyle}>{age || 'nc'}</Text>
+              <Text sx={descriptionStyle}>{currentYear - age || 'nc'}</Text>
             </Box>
           </Flex>
 
