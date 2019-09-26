@@ -43,6 +43,7 @@ const Mandataire = (props) => {
     tis,
     id,
     isMagistrat,
+    etablissement,
     mesuresInProgress,
     ChooseComponent,
   } = props;
@@ -72,7 +73,13 @@ const Mandataire = (props) => {
             </Box>
             <Box>
               <Text sx={titleStyle}>
-                {nom} {prenom}
+                {type === 'service' ? (
+                  <Fragment>{etablissement}</Fragment>
+                ) : (
+                  <Fragment>
+                    {nom} {prenom}
+                  </Fragment>
+                )}
               </Text>
               <Text sx={subtitleStyle}>{type}</Text>
             </Box>
@@ -176,6 +183,7 @@ const Mandataire = (props) => {
 Mandataire.defaultProps = {
   ChooseComponent: null,
   antenneId: null,
+  etablissement: null,
   hasCV: false,
   isMagistrat: false,
   mandataireId: null,
@@ -191,6 +199,7 @@ Mandataire.propTypes = {
   cvLink: PropTypes.string.isRequired,
   dispoMax: PropTypes.number.isRequired,
   email: PropTypes.string.isRequired,
+  etablissement: PropTypes.string,
   genre: PropTypes.string.isRequired,
   hasCV: PropTypes.bool,
   id: PropTypes.string.isRequired,

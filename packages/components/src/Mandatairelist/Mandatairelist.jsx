@@ -32,6 +32,7 @@ Mandatairelist.propTypes = {
       cvLink: PropTypes.string.isRequired,
       dispoMax: PropTypes.number.isRequired,
       email: PropTypes.string.isRequired,
+      etablissement: PropTypes.string,
       genre: PropTypes.string.isRequired,
       id: PropTypes.string.isRequired,
       isAvailable: PropTypes.bool.isRequired,

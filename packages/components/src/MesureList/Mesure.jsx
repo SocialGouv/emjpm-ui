@@ -53,6 +53,13 @@ const Mesure = (props) => {
     isMagistrat,
   } = props;
 
+  let currentStatus;
+  if (status === 'Eteindre mesure') {
+    currentStatus = 'Mesure éteinte';
+  } else {
+    currentStatus = status;
+  }
+
   return (
     <Fragment>
       <Card sx={cardStyle} width="100%">
@@ -61,7 +68,7 @@ const Mesure = (props) => {
           <Box width="270px">
             <Text sx={titleStyle}>
               {numeroRg || 'RG-XXXXXX'}
-              <Text sx={statusStyle(status)}>{status || 'non reseigné'}</Text>
+              <Text sx={statusStyle(status)}>{currentStatus || 'non reseigné'}</Text>
             </Text>
             <Text sx={subtitleStyle}>{type || 'type de mesure non reseigné'}</Text>
           </Box>
