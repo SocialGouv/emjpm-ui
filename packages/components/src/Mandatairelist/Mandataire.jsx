@@ -45,6 +45,7 @@ const Mandataire = (props) => {
     isMagistrat,
     etablissement,
     mesuresInProgress,
+    mesuresAwaiting,
     ChooseComponent,
   } = props;
   return (
@@ -88,11 +89,7 @@ const Mandataire = (props) => {
             <Text sx={labelStyle}>Ville</Text>
             <Text sx={descriptionStyle}>{ville}</Text>
           </Flex>
-          {isMagistrat && (
-            <Flex alignItems="center">
-              <Box sx={availabilityIndicatorStyle(currentAvailability > 0)} />
-            </Flex>
-          )}
+
           {!isMagistrat && (
             <Fragment>
               <Flex width="200px" sx={columnStyle(true, true)}>
@@ -105,6 +102,7 @@ const Mandataire = (props) => {
               </Flex>
             </Fragment>
           )}
+
           {hasCV && (
             <Box sx={columnStyle(true, true)} width="101px">
               {cvLink && (
@@ -116,15 +114,26 @@ const Mandataire = (props) => {
           )}
 
           <Flex sx={columnStyle(false, false)}>
+            <Text sx={labelStyle}>Mesure en attente</Text>
+            <Text sx={descriptionStyle}>{mesuresAwaiting}</Text>
+          </Flex>
+
+          <Flex sx={columnStyle(false, false)}>
             <Text sx={labelStyle}>Disponibilité max</Text>
             <Text sx={descriptionStyle}>{currentAvailability === 0 && dispoMax === 0 ? 'NC' : dispoMax}</Text>
           </Flex>
+
           <Flex sx={columnStyle(false, false)}>
             <Text sx={labelStyle}>Disponibilité actuelle</Text>
             <Text sx={dispoDescriptionStyle(currentAvailability > 0)}>
               {currentAvailability === 0 && dispoMax === 0 ? 'NC' : currentAvailability}
             </Text>
           </Flex>
+          {isMagistrat && (
+            <Flex alignItems="center">
+              <Box sx={availabilityIndicatorStyle(currentAvailability > 0)} />
+            </Flex>
+          )}
           {!isMagistrat && (
             <Flex alignItems="center">
               <Box sx={availabilityIndicatorStyle(currentAvailability > 0)} />
@@ -187,6 +196,7 @@ Mandataire.defaultProps = {
   hasCV: false,
   isMagistrat: false,
   mandataireId: null,
+  mesuresAwaiting: 0,
   tis: [],
 };
 
@@ -206,6 +216,7 @@ Mandataire.propTypes = {
   isAvailable: PropTypes.bool.isRequired,
   isMagistrat: PropTypes.bool,
   mandataireId: PropTypes.number,
+  mesuresAwaiting: PropTypes.number,
   mesuresInProgress: PropTypes.number.isRequired,
   nom: PropTypes.string.isRequired,
   prenom: PropTypes.string.isRequired,

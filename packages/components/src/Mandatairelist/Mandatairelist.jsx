@@ -36,6 +36,7 @@ Mandatairelist.propTypes = {
       genre: PropTypes.string.isRequired,
       id: PropTypes.string.isRequired,
       isAvailable: PropTypes.bool.isRequired,
+      mesuresAwaiting: PropTypes.number,
       nom: PropTypes.string.isRequired,
       prenom: PropTypes.string.isRequired,
       telephone: PropTypes.string.isRequired,
