@@ -83,6 +83,11 @@ const Mesure = (props) => {
             </Box>
           </Flex>
 
+          <Flex width="120px" sx={columnStyle(true, true)}>
+            <Text sx={labelStyle}>Numero de dossier</Text>
+            <Text sx={descriptionStyle}>{numeroDossier || 'numeroDossier non reseigné'}</Text>
+          </Flex>
+
           <Flex width="150px" sx={columnStyle(true, true)}>
             <Text sx={labelStyle}>Commune</Text>
             <Text sx={descriptionStyle}>{ville || 'ville non reseigné'}</Text>
@@ -185,7 +190,7 @@ Mesure.propTypes = {
   dateOuverture: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
   isMagistrat: PropTypes.bool,
-  numeroDossier: PropTypes.string.isRequired,
+  numeroDossier: PropTypes.string,
   numeroRg: PropTypes.string.isRequired,
   onPanelOpen: PropTypes.func,
   residence: PropTypes.string.isRequired,
@@ -202,6 +207,7 @@ Mesure.defaultProps = {
   RemoveComponent: null,
   antenneId: null,
   isMagistrat: false,
+  numeroDossier: null,
   onPanelOpen: null,
 };
 
