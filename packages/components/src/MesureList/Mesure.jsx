@@ -35,6 +35,7 @@ const Mesure = (props) => {
     type,
     ville,
     numeroRg,
+    dateOuvertureFormated,
     dateOuverture,
     age,
     civilite,
@@ -95,7 +96,7 @@ const Mesure = (props) => {
 
           <Flex width="80px" textAlign="left" sx={columnStyle(false, false)}>
             <Text sx={labelStyle}>Decision du</Text>
-            <Text sx={descriptionStyle}>{dateOuverture || 'non reseigné'}</Text>
+            <Text sx={descriptionStyle}>{dateOuvertureFormated || 'non reseigné'}</Text>
           </Flex>
 
           <Box mr="1" width="120px" sx={columnStyle(true, true)}>
@@ -188,6 +189,7 @@ Mesure.propTypes = {
   civilite: PropTypes.string.isRequired,
   codePostal: PropTypes.string.isRequired,
   dateOuverture: PropTypes.string.isRequired,
+  dateOuvertureFormated: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
   isMagistrat: PropTypes.bool,
   numeroDossier: PropTypes.string,
