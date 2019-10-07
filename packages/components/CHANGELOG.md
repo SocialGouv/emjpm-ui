@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.25.6](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.25.5...@socialgouv/emjpm-ui-components@0.25.6) (2019-10-07)
+
+
+### Bug Fixes
+
+* **mesure-date:** add formated date ([#32](https://github.com/SocialGouv/emjpm-design-system/issues/32)) ([7da85e2](https://github.com/SocialGouv/emjpm-design-system/commit/7da85e2))
+
+
+
+
+
 ## [0.25.5](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.25.4...@socialgouv/emjpm-ui-components@0.25.5) (2019-10-03)
 
 **Note:** Version bump only for package @socialgouv/emjpm-ui-components
