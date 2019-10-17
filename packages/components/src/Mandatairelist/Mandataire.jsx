@@ -45,6 +45,7 @@ const Mandataire = (props) => {
     isMagistrat,
     isMagistratMap,
     etablissement,
+    serviceId,
     mesuresInProgress,
     mesuresAwaiting,
     ChooseComponent,
@@ -62,7 +63,7 @@ const Mandataire = (props) => {
               setPanelType(PANEL_TYPE.CHOOSE);
             }
             if (isMagistratMap) {
-              selectCurrentMandataire(id);
+              selectCurrentMandataire(mandataireId, serviceId);
             }
           }}
           sx={MandatairelistStyle}
@@ -236,6 +237,7 @@ Mandataire.propTypes = {
   nom: PropTypes.string.isRequired,
   prenom: PropTypes.string.isRequired,
   selectCurrentMandataire: PropTypes.func,
+  serviceId: PropTypes.number.isRequired,
   telephone: PropTypes.string.isRequired,
   tis: PropTypes.arrayOf(
     PropTypes.shape({
