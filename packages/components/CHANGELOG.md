@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.25.6...@socialgouv/emjpm-ui-components@0.26.0) (2019-10-17)
+
+
+### Features
+
+* **mandataire-list:** add mandataire map list case ([a49e31c](https://github.com/SocialGouv/emjpm-design-system/commit/a49e31c))
+
+
+
+
+
 ## [0.25.6](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.25.5...@socialgouv/emjpm-ui-components@0.25.6) (2019-10-07)
 
 
