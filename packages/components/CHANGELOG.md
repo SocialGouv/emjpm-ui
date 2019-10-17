@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.29.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.28.0...@socialgouv/emjpm-ui-components@0.29.0) (2019-10-17)
+
+
+### Features
+
+* **mandataire:** fix proptypes ([8b01179](https://github.com/SocialGouv/emjpm-design-system/commit/8b01179))
+* **mandataire-list:** update selectCurrentMandataire ([d0406d5](https://github.com/SocialGouv/emjpm-design-system/commit/d0406d5))
+* **mandataire-list:** update selectCurrentMandataire ([9ee007e](https://github.com/SocialGouv/emjpm-design-system/commit/9ee007e))
+
+
+
+
+
 # [0.28.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.27.0...@socialgouv/emjpm-ui-components@0.28.0) (2019-10-17)
 
 
