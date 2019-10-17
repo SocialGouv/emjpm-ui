@@ -49,7 +49,7 @@ Mandatairelist.propTypes = {
       mesuresAwaiting: PropTypes.number,
       nom: PropTypes.string.isRequired,
       prenom: PropTypes.string.isRequired,
-      serviceId: PropTypes.number.isRequired,
+      serviceId: PropTypes.number,
       telephone: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
       ville: PropTypes.string.isRequired,

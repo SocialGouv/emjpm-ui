@@ -212,6 +212,7 @@ Mandataire.defaultProps = {
   mandataireId: null,
   mesuresAwaiting: 0,
   selectCurrentMandataire: null,
+  serviceId: null,
   tis: [],
 };
 
@@ -237,7 +238,7 @@ Mandataire.propTypes = {
   nom: PropTypes.string.isRequired,
   prenom: PropTypes.string.isRequired,
   selectCurrentMandataire: PropTypes.func,
-  serviceId: PropTypes.number.isRequired,
+  serviceId: PropTypes.number,
   telephone: PropTypes.string.isRequired,
   tis: PropTypes.arrayOf(
     PropTypes.shape({

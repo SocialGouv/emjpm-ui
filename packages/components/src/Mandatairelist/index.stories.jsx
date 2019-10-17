@@ -86,7 +86,7 @@ export const MandataireMagristratMaplistStory = () => (
   <MandataireContextProvider>
     <BoxWrapper mt="5">
       <Mandatairelist
-        selectCurrentMandataire={(id) => console.log(id)}
+        selectCurrentMandataire={(mandataireId, serviceId) => console.log(mandataireId, serviceId)}
         ChooseComponent={ChooseComponent}
         isMagistratMap
         mandataires={datas}
