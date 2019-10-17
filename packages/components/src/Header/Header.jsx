@@ -11,7 +11,7 @@ const BlueUserCircle = styled(UserCircle)`
 `;
 
 const Header = (props) => {
-  const { DropDownMenu, username, dropDownLinks, Link, disconnect } = props;
+  const { DropDownMenu, username, dropDownLinks, Link, disconnect, isDisconnected } = props;
   const ref = useRef();
   const [state, setState] = useState(false);
   useOnClickOutside(ref, () => setState(false));
@@ -26,24 +26,30 @@ const Header = (props) => {
       <Box p={1}>
         <Logo hasTitle />
       </Box>
-      <Box ref={ref} p={1} sx={{ position: 'relative' }}>
-        <Flex onClick={toggle} sx={{ cursor: 'pointer' }} alignItems="center">
-          <Box height="25px">
-            <BlueUserCircle size={25} />
-          </Box>
-          <Box>
-            <Text color="black" fontWeight="600" ml={1}>
-              {username}
-            </Text>
-          </Box>
-          <Box height="25px">
-            <ChevronDown size={25} />
-          </Box>
-        </Flex>
-        {state && <DropDownMenu disconnect={disconnect} Link={Link} dropDownLinks={dropDownLinks} />}
-      </Box>
+      {!isDisconnected && (
+        <Box ref={ref} p={1} sx={{ position: 'relative' }}>
+          <Flex onClick={toggle} sx={{ cursor: 'pointer' }} alignItems="center">
+            <Box height="25px">
+              <BlueUserCircle size={25} />
+            </Box>
+            <Box>
+              <Text color="black" fontWeight="600" ml={1}>
+                {username}
+              </Text>
+            </Box>
+            <Box height="25px">
+              <ChevronDown size={25} />
+            </Box>
+          </Flex>
+          {state && <DropDownMenu disconnect={disconnect} Link={Link} dropDownLinks={dropDownLinks} />}
+        </Box>
+      )}
     </Flex>
   );
+};
+
+Header.defaultProps = {
+  isDisconnected: false,
 };
 
 Header.propTypes = {
@@ -56,6 +62,7 @@ Header.propTypes = {
       url: PropTypes.string.isRequired,
     }),
   ).isRequired,
+  isDisconnected: PropTypes.bool,
   username: PropTypes.string.isRequired,
 };
 
