@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.30.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.30.0...@socialgouv/emjpm-ui-components@0.30.1) (2019-10-17)
+
+
+### Bug Fixes
+
+* **header:** no more required props ([f5c1a2c](https://github.com/SocialGouv/emjpm-design-system/commit/f5c1a2c))
+
+
+
+
+
 # [0.30.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.29.0...@socialgouv/emjpm-ui-components@0.30.0) (2019-10-17)
 
 
