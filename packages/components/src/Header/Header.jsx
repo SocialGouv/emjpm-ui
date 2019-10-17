@@ -49,21 +49,26 @@ const Header = (props) => {
 };
 
 Header.defaultProps = {
+  DropDownMenu: null,
+  Link: null,
+  disconnect: null,
+  dropDownLinks: null,
   isDisconnected: false,
+  username: null,
 };
 
 Header.propTypes = {
-  DropDownMenu: PropTypes.elementType.isRequired,
-  Link: PropTypes.elementType.isRequired,
-  disconnect: PropTypes.func.isRequired,
+  DropDownMenu: PropTypes.elementType,
+  Link: PropTypes.elementType,
+  disconnect: PropTypes.func,
   dropDownLinks: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
     }),
-  ).isRequired,
+  ),
   isDisconnected: PropTypes.bool,
-  username: PropTypes.string.isRequired,
+  username: PropTypes.string,
 };
 
 export { Header };
