@@ -63,7 +63,7 @@ const Mandataire = (props) => {
               setPanelType(PANEL_TYPE.CHOOSE);
             }
             if (isMagistratMap) {
-              selectCurrentMandataire(mandataireId, serviceId);
+              selectCurrentMandataire({ mandataireId, serviceId, type });
             }
           }}
           sx={MandatairelistStyle}
