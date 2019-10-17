@@ -71,3 +71,11 @@ export const MandataireMagristratlistStory = () => (
     </BoxWrapper>
   </MandataireContextProvider>
 );
+
+export const MandataireMagristratMaplistStory = () => (
+  <MandataireContextProvider>
+    <BoxWrapper mt="5">
+      <Mandatairelist ChooseComponent={ChooseComponent} isMagistratMap mandataires={datas} />
+    </BoxWrapper>
+  </MandataireContextProvider>
+);

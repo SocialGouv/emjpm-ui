@@ -43,6 +43,7 @@ const Mandataire = (props) => {
     tis,
     id,
     isMagistrat,
+    isMagistratMap,
     etablissement,
     mesuresInProgress,
     mesuresAwaiting,
@@ -92,14 +93,18 @@ const Mandataire = (props) => {
 
           {!isMagistrat && (
             <Fragment>
-              <Flex width="200px" sx={columnStyle(true, true)}>
-                <Text sx={labelStyle}>Email</Text>
-                <Text sx={descriptionStyle}>{email}</Text>
-              </Flex>
-              <Flex width="100px" sx={columnStyle(true, true)}>
-                <Text sx={labelStyle}>Téléphone</Text>
-                <Text sx={descriptionStyle}>{telephone}</Text>
-              </Flex>
+              {!isMagistratMap && (
+                <Fragment>
+                  <Flex width="200px" sx={columnStyle(true, true)}>
+                    <Text sx={labelStyle}>Email</Text>
+                    <Text sx={descriptionStyle}>{email}</Text>
+                  </Flex>
+                  <Flex width="100px" sx={columnStyle(true, true)}>
+                    <Text sx={labelStyle}>Téléphone</Text>
+                    <Text sx={descriptionStyle}>{telephone}</Text>
+                  </Flex>
+                </Fragment>
+              )}
             </Fragment>
           )}
 
@@ -118,10 +123,12 @@ const Mandataire = (props) => {
             <Text sx={descriptionStyle}>{mesuresAwaiting}</Text>
           </Flex>
 
-          <Flex sx={columnStyle(false, false)}>
-            <Text sx={labelStyle}>Disponibilité max</Text>
-            <Text sx={descriptionStyle}>{currentAvailability === 0 && dispoMax === 0 ? 'NC' : dispoMax}</Text>
-          </Flex>
+          {!isMagistratMap && (
+            <Flex sx={columnStyle(false, false)}>
+              <Text sx={labelStyle}>Disponibilité max</Text>
+              <Text sx={descriptionStyle}>{currentAvailability === 0 && dispoMax === 0 ? 'NC' : dispoMax}</Text>
+            </Flex>
+          )}
 
           <Flex sx={columnStyle(false, false)}>
             <Text sx={labelStyle}>Disponibilité actuelle</Text>
@@ -139,7 +146,7 @@ const Mandataire = (props) => {
               <Box sx={availabilityIndicatorStyle(currentAvailability > 0)} />
             </Flex>
           )}
-          {isMagistrat && (
+          {(isMagistrat || !isMagistratMap) && (
             <Box sx={columnStyle(true, true)} width="185px">
               <Button
                 onClick={() => {
@@ -177,6 +184,7 @@ const Mandataire = (props) => {
                 type={type}
                 ville={ville}
                 tis={tis}
+                isMagistratMap={isMagistratMap}
                 isMagistrat={isMagistrat}
                 currentMandataire={currentMandataire}
               />
@@ -195,6 +203,7 @@ Mandataire.defaultProps = {
   etablissement: null,
   hasCV: false,
   isMagistrat: false,
+  isMagistratMap: false,
   mandataireId: null,
   mesuresAwaiting: 0,
   tis: [],
@@ -215,6 +224,7 @@ Mandataire.propTypes = {
   id: PropTypes.string.isRequired,
   isAvailable: PropTypes.bool.isRequired,
   isMagistrat: PropTypes.bool,
+  isMagistratMap: PropTypes.bool,
   mandataireId: PropTypes.number,
   mesuresAwaiting: PropTypes.number,
   mesuresInProgress: PropTypes.number.isRequired,
