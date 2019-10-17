@@ -26,3 +26,16 @@ export const HeaderStory = () => (
     username="test"
   />
 );
+
+export const HeaderIsDisconnectedStory = () => (
+  <Header
+    Link={Link}
+    isDisconnected
+    dropDownLinks={dropDownLinks}
+    disconnect={() => {
+      console.log('disconnect');
+    }}
+    DropDownMenu={DropDownMenu}
+    username="test"
+  />
+);
