@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.30.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.29.0...@socialgouv/emjpm-ui-components@0.30.0) (2019-10-17)
+
+
+### Features
+
+* **header:** add disconnected ([e193f65](https://github.com/SocialGouv/emjpm-design-system/commit/e193f65))
+* **header:** add disconnected storie ([6f92064](https://github.com/SocialGouv/emjpm-design-system/commit/6f92064))
+
+
+
+
+
 # [0.29.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.28.0...@socialgouv/emjpm-ui-components@0.29.0) (2019-10-17)
 
 
