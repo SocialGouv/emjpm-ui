@@ -21,10 +21,12 @@ const datas = [
     genre: 'H',
     id: '123',
     isAvailable: true,
+    mandataireId: 123,
     mesuresAwaiting: 2,
     mesuresInProgress: 2,
     nom: 'Sarahzzzzsrtzrrg',
     prenom: 'Connor',
+    serviceId: 134,
     telephone: '0683961487',
     type: 'individuel',
     ville: 'Paris',
@@ -39,10 +41,12 @@ const datas = [
     genre: 'H',
     id: '1234',
     isAvailable: true,
+    mandataireId: 123,
     mesuresAwaiting: 20,
     mesuresInProgress: 2,
     nom: 'John',
     prenom: 'henry',
+    serviceId: 134,
     telephone: '0683961487zfzefzef',
     type: 'préposé',
     ville: 'Lions sur mer eeeeeeeeee',
@@ -58,10 +62,12 @@ const datas = [
     genre: 'H',
     id: '12345',
     isAvailable: true,
+    mandataireId: 123,
     mesuresAwaiting: 20,
     mesuresInProgress: 2,
     nom: 'John',
     prenom: 'henry',
+    serviceId: 134,
     telephone: '0683961487zfzefzef',
     type: 'service',
     ville: 'Lions sur mer eeeeeeeeee',
@@ -86,7 +92,7 @@ export const MandataireMagristratMaplistStory = () => (
   <MandataireContextProvider>
     <BoxWrapper mt="5">
       <Mandatairelist
-        selectCurrentMandataire={(mandataireId, serviceId) => console.log(mandataireId, serviceId)}
+        selectCurrentMandataire={(data) => console.log(data)}
         ChooseComponent={ChooseComponent}
         isMagistratMap
         mandataires={datas}
