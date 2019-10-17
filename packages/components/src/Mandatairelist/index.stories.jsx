@@ -12,14 +12,17 @@ export default {
 
 const datas = [
   {
+    adresse: 'test',
+    codePostal: '75017',
     currentAvailability: 50,
     cvLink: 'http://google.fr',
     dispoMax: 150,
     email: 'sarah@connor.cdom',
     genre: 'H',
-    id: 123,
+    id: '123',
     isAvailable: true,
-    mesuresAwaiting: '2',
+    mesuresAwaiting: 2,
+    mesuresInProgress: 2,
     nom: 'Sarahzzzzsrtzrrg',
     prenom: 'Connor',
     telephone: '0683961487',
@@ -27,13 +30,17 @@ const datas = [
     ville: 'Paris',
   },
   {
+    adresse: 'test',
+    codePostal: '75017',
     currentAvailability: -50,
     cvLink: 'http://google.fr',
     dispoMax: 150,
     email: 'johnhezfzfzefzfnry@skynet.com',
     genre: 'H',
-    id: 1234,
+    id: '1234',
     isAvailable: true,
+    mesuresAwaiting: 20,
+    mesuresInProgress: 2,
     nom: 'John',
     prenom: 'henry',
     telephone: '0683961487zfzefzef',
@@ -41,15 +48,18 @@ const datas = [
     ville: 'Lions sur mer eeeeeeeeee',
   },
   {
+    adresse: 'test',
+    codePostal: '75017',
     currentAvailability: -50,
     cvLink: 'http://google.fr',
     dispoMax: 150,
     email: 'johnhezfzfzefzfnry@skynet.com',
     etablissement: 'henry',
     genre: 'H',
-    id: 12345,
+    id: '12345',
     isAvailable: true,
-    mesuresAwaiting: '20',
+    mesuresAwaiting: 20,
+    mesuresInProgress: 2,
     nom: 'John',
     prenom: 'henry',
     telephone: '0683961487zfzefzef',
@@ -75,7 +85,12 @@ export const MandataireMagristratlistStory = () => (
 export const MandataireMagristratMaplistStory = () => (
   <MandataireContextProvider>
     <BoxWrapper mt="5">
-      <Mandatairelist ChooseComponent={ChooseComponent} isMagistratMap mandataires={datas} />
+      <Mandatairelist
+        selectCurrentMandataire={(id) => console.log(id)}
+        ChooseComponent={ChooseComponent}
+        isMagistratMap
+        mandataires={datas}
+      />
     </BoxWrapper>
   </MandataireContextProvider>
 );

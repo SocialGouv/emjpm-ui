@@ -4,12 +4,13 @@ import React, { Fragment } from 'react';
 import { Mandataire } from './Mandataire';
 
 const Mandatairelist = (props) => {
-  const { mandataires, isMagistrat, isMagistratMap, ChooseComponent } = props;
+  const { selectCurrentMandataire, mandataires, isMagistrat, isMagistratMap, ChooseComponent } = props;
   return (
     <Fragment>
       {mandataires.map((mandataire) => {
         return (
           <Mandataire
+            selectCurrentMandataire={selectCurrentMandataire}
             ChooseComponent={ChooseComponent}
             isMagistratMap={isMagistratMap}
             isMagistrat={isMagistrat}
@@ -26,6 +27,7 @@ Mandatairelist.defaultProps = {
   ChooseComponent: null,
   isMagistrat: false,
   isMagistratMap: false,
+  selectCurrentMandataire: null,
 };
 
 Mandatairelist.propTypes = {
@@ -52,6 +54,7 @@ Mandatairelist.propTypes = {
       ville: PropTypes.string.isRequired,
     }),
   ).isRequired,
+  selectCurrentMandataire: PropTypes.func,
 };
 
 export { Mandatairelist };

@@ -48,6 +48,7 @@ const Mandataire = (props) => {
     mesuresInProgress,
     mesuresAwaiting,
     ChooseComponent,
+    selectCurrentMandataire,
   } = props;
   return (
     <Fragment>
@@ -59,6 +60,9 @@ const Mandataire = (props) => {
               // Move me to dedicated function
               setCurrentMandataire(id);
               setPanelType(PANEL_TYPE.CHOOSE);
+            }
+            if (isMagistratMap) {
+              selectCurrentMandataire(id);
             }
           }}
           sx={MandatairelistStyle}
@@ -206,6 +210,7 @@ Mandataire.defaultProps = {
   isMagistratMap: false,
   mandataireId: null,
   mesuresAwaiting: 0,
+  selectCurrentMandataire: null,
   tis: [],
 };
 
@@ -230,6 +235,7 @@ Mandataire.propTypes = {
   mesuresInProgress: PropTypes.number.isRequired,
   nom: PropTypes.string.isRequired,
   prenom: PropTypes.string.isRequired,
+  selectCurrentMandataire: PropTypes.func,
   telephone: PropTypes.string.isRequired,
   tis: PropTypes.arrayOf(
     PropTypes.shape({
