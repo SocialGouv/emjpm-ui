@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.31.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.30.1...@socialgouv/emjpm-ui-components@0.31.0) (2019-10-23)
+
+
+### Features
+
+* **mandataire-list:** add lat long ([43a0b3d](https://github.com/SocialGouv/emjpm-design-system/commit/43a0b3d))
+
+
+
+
+
 ## [0.30.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.30.0...@socialgouv/emjpm-ui-components@0.30.1) (2019-10-17)
 
 
