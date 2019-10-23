@@ -50,6 +50,8 @@ const Mandataire = (props) => {
     mesuresAwaiting,
     ChooseComponent,
     selectCurrentMandataire,
+    latitude,
+    longitude,
   } = props;
   return (
     <Fragment>
@@ -63,7 +65,7 @@ const Mandataire = (props) => {
               setPanelType(PANEL_TYPE.CHOOSE);
             }
             if (isMagistratMap) {
-              selectCurrentMandataire({ mandataireId, serviceId, type });
+              selectCurrentMandataire({ latitude, longitude, mandataireId, serviceId, type });
             }
           }}
           sx={MandatairelistStyle}
@@ -209,6 +211,8 @@ Mandataire.defaultProps = {
   hasCV: false,
   isMagistrat: false,
   isMagistratMap: false,
+  latitude: null,
+  longitude: null,
   mandataireId: null,
   mesuresAwaiting: 0,
   selectCurrentMandataire: null,
@@ -232,6 +236,8 @@ Mandataire.propTypes = {
   isAvailable: PropTypes.bool.isRequired,
   isMagistrat: PropTypes.bool,
   isMagistratMap: PropTypes.bool,
+  latitude: PropTypes.number,
+  longitude: PropTypes.number,
   mandataireId: PropTypes.number,
   mesuresAwaiting: PropTypes.number,
   mesuresInProgress: PropTypes.number.isRequired,
