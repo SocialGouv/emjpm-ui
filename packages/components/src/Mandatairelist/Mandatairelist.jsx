@@ -38,6 +38,9 @@ Mandatairelist.propTypes = {
     PropTypes.shape({
       adresse: PropTypes.string.isRequired,
       codePostal: PropTypes.string.isRequired,
+      commentaires: PropTypes.shape({
+        comment: PropTypes.string,
+      }),
       currentAvailability: PropTypes.number.isRequired,
       cvLink: PropTypes.string.isRequired,
       dispoMax: PropTypes.number.isRequired,

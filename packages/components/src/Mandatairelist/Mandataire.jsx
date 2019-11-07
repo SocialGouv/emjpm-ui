@@ -24,6 +24,7 @@ import {
 const Mandataire = (props) => {
   const { currentMandataire, currentPanelType, setCurrentMandataire, setPanelType } = useContext(MandataireContext);
   const {
+    commentaires,
     currentAvailability,
     cvLink,
     dispoMax,
@@ -174,6 +175,7 @@ const Mandataire = (props) => {
             currentPanelType={currentPanelType}
             ChooseComponent={() => (
               <ChooseComponent
+                commentaires={commentaires}
                 currentAvailability={currentAvailability}
                 dispoMax={dispoMax}
                 email={email}
@@ -207,6 +209,7 @@ const Mandataire = (props) => {
 Mandataire.defaultProps = {
   ChooseComponent: null,
   antenneId: null,
+  commentaires: null,
   etablissement: null,
   hasCV: false,
   isMagistrat: false,
@@ -225,6 +228,9 @@ Mandataire.propTypes = {
   adresse: PropTypes.string.isRequired,
   antenneId: PropTypes.number,
   codePostal: PropTypes.string.isRequired,
+  commentaires: PropTypes.shape({
+    comment: PropTypes.string,
+  }),
   currentAvailability: PropTypes.number.isRequired,
   cvLink: PropTypes.string.isRequired,
   dispoMax: PropTypes.number.isRequired,
