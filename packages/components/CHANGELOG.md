@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.33.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.32.0...@socialgouv/emjpm-ui-components@0.33.0) (2019-11-08)
+
+
+### Features
+
+* **mesures:** add cabinet ([180477a](https://github.com/SocialGouv/emjpm-design-system/commit/180477a))
+
+
+
+
+
 # [0.32.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.31.0...@socialgouv/emjpm-ui-components@0.32.0) (2019-11-07)
 
 
