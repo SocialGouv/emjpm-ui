@@ -39,6 +39,7 @@ const Mesure = (props) => {
     dateOuverture,
     age,
     civilite,
+    cabinet,
     status,
     id,
     onPanelOpen,
@@ -155,6 +156,7 @@ const Mesure = (props) => {
                 currentMesure={currentMesure}
                 dateOuverture={dateOuverture}
                 type={type}
+                cabinet={cabinet}
                 residence={residence}
                 codePostal={codePostal}
                 ville={ville}
@@ -186,6 +188,7 @@ Mesure.propTypes = {
   RemoveComponent: PropTypes.elementType,
   age: PropTypes.string.isRequired,
   antenneId: PropTypes.number,
+  cabinet: PropTypes.string,
   civilite: PropTypes.string.isRequired,
   codePostal: PropTypes.string.isRequired,
   dateOuverture: PropTypes.string.isRequired,
@@ -208,6 +211,7 @@ Mesure.defaultProps = {
   ReactivateComponent: null,
   RemoveComponent: null,
   antenneId: null,
+  cabinet: null,
   isMagistrat: false,
   numeroDossier: null,
   onPanelOpen: null,

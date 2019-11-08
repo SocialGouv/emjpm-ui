@@ -55,6 +55,7 @@ MesureList.propTypes = {
   mesures: PropTypes.arrayOf(
     PropTypes.shape({
       age: PropTypes.string.isRequired,
+      cabinet: PropTypes.string,
       civilite: PropTypes.string.isRequired,
       dateOuverture: PropTypes.string.isRequired,
       dateOuvertureFormated: PropTypes.string.isRequired,
