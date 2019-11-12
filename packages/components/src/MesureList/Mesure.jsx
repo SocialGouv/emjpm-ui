@@ -53,6 +53,7 @@ const Mesure = (props) => {
     numeroDossier,
     antenneId,
     isMagistrat,
+    tribunal,
   } = props;
 
   let currentStatus;
@@ -93,6 +94,13 @@ const Mesure = (props) => {
           <Flex width="150px" sx={columnStyle(true, true)}>
             <Text sx={labelStyle}>Commune</Text>
             <Text sx={descriptionStyle}>{ville || 'ville non reseigné'}</Text>
+          </Flex>
+
+          <Flex width="150px" sx={columnStyle(true, true)}>
+            <Text sx={labelStyle}>Tribunal</Text>
+            <Text sx={descriptionStyle}>
+              {tribunal || 'cabinet non reseigné'} {cabinet || null}
+            </Text>
           </Flex>
 
           <Flex width="80px" textAlign="left" sx={columnStyle(false, false)}>
@@ -156,6 +164,7 @@ const Mesure = (props) => {
                 currentMesure={currentMesure}
                 dateOuverture={dateOuverture}
                 type={type}
+                tribunal={tribunal}
                 cabinet={cabinet}
                 residence={residence}
                 codePostal={codePostal}
@@ -200,6 +209,7 @@ Mesure.propTypes = {
   onPanelOpen: PropTypes.func,
   residence: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,
+  tribunal: PropTypes.string,
   type: PropTypes.string.isRequired,
   ville: PropTypes.string.isRequired,
 };
@@ -215,6 +225,7 @@ Mesure.defaultProps = {
   isMagistrat: false,
   numeroDossier: null,
   onPanelOpen: null,
+  tribunal: null,
 };
 
 export { Mesure };
