@@ -5,6 +5,7 @@ const TYPES = {
 };
 
 const MandatairelistStyle = {
+  alignItems: 'center',
   bg: 'white',
   justifyContent: 'space-between',
 };

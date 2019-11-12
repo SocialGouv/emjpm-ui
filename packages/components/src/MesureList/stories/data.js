@@ -1,7 +1,6 @@
 export const datas = [
   {
     age: 1924,
-    cabinet: 'test',
     civilite: 'F',
     dateOuverture: '2019-01-10',
     dateOuvertureFormated: '2019/01/10',
@@ -16,7 +15,6 @@ export const datas = [
     numeroDossier: '315126646',
     numeroRg: '651654654',
     status: 'Eteindre mesure',
-    tribunal: 'test',
     type: 'Tutelle aux biens et à la personne',
     ville: 'PARIS',
   },

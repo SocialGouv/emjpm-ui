@@ -74,6 +74,9 @@ const Mesure = (props) => {
               <Text sx={statusStyle(status)}>{currentStatus || 'non reseigné'}</Text>
             </Text>
             <Text sx={subtitleStyle}>{type || 'type de mesure non reseigné'}</Text>
+            <Text mt="4px" sx={subtitleStyle}>
+              {tribunal || 'Tribunal non renseigné'} {cabinet}
+            </Text>
           </Box>
 
           <Flex width="70px">
@@ -95,13 +98,6 @@ const Mesure = (props) => {
               <Flex width="150px" sx={columnStyle(true, true)}>
                 <Text sx={labelStyle}>Commune</Text>
                 <Text sx={descriptionStyle}>{ville || 'ville non reseigné'}</Text>
-              </Flex>
-
-              <Flex width="150px" sx={columnStyle(true, true)}>
-                <Text sx={labelStyle}>Tribunal</Text>
-                <Text sx={descriptionStyle}>
-                  {tribunal || 'cabinet non reseigné'} {cabinet || null}
-                </Text>
               </Flex>
 
               <Flex width="80px" textAlign="left" sx={columnStyle(false, false)}>
