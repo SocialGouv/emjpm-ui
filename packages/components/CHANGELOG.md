@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.33.0...@socialgouv/emjpm-ui-components@0.34.0) (2019-11-12)
+
+
+### Features
+
+* **mesures:** add tribunal and cabinet ([a4f166f](https://github.com/SocialGouv/emjpm-design-system/commit/a4f166f))
+
+
+
+
+
 # [0.33.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.32.0...@socialgouv/emjpm-ui-components@0.33.0) (2019-11-08)
 
 
