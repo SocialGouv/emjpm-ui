@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.34.0...@socialgouv/emjpm-ui-components@0.35.0) (2019-11-12)
+
+
+### Features
+
+* **mesures:** fix magistrats mesure tribunal ([a88bf8c](https://github.com/SocialGouv/emjpm-design-system/commit/a88bf8c))
+* **mesures:** hide magistrat useless informations ([4f7db26](https://github.com/SocialGouv/emjpm-design-system/commit/4f7db26))
+
+
+
+
+
 # [0.34.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.33.0...@socialgouv/emjpm-ui-components@0.34.0) (2019-11-12)
 
 
