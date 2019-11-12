@@ -74,9 +74,11 @@ const Mesure = (props) => {
               <Text sx={statusStyle(status)}>{currentStatus || 'non reseigné'}</Text>
             </Text>
             <Text sx={subtitleStyle}>{type || 'type de mesure non reseigné'}</Text>
-            <Text mt="4px" sx={subtitleStyle}>
-              {tribunal || 'Tribunal non renseigné'} {cabinet}
-            </Text>
+            {!isMagistrat && (
+              <Text mt="4px" sx={subtitleStyle}>
+                {tribunal || 'Tribunal non renseigné'} {cabinet}
+              </Text>
+            )}
           </Box>
 
           <Flex width="70px">
@@ -99,13 +101,13 @@ const Mesure = (props) => {
                 <Text sx={labelStyle}>Commune</Text>
                 <Text sx={descriptionStyle}>{ville || 'ville non reseigné'}</Text>
               </Flex>
-
-              <Flex width="80px" textAlign="left" sx={columnStyle(false, false)}>
-                <Text sx={labelStyle}>Decision du</Text>
-                <Text sx={descriptionStyle}>{dateOuvertureFormated || 'non reseigné'}</Text>
-              </Flex>
             </Fragment>
           )}
+
+          <Flex width="80px" textAlign="left" sx={columnStyle(false, false)}>
+            <Text sx={labelStyle}>Decision du</Text>
+            <Text sx={descriptionStyle}>{dateOuvertureFormated || 'non reseigné'}</Text>
+          </Flex>
 
           <Box mr="1" width="120px" sx={columnStyle(true, true)}>
             {(status === MESURE_TYPE.IN_PROGRESS ||
