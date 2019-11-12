@@ -86,27 +86,30 @@ const Mesure = (props) => {
             </Box>
           </Flex>
 
-          <Flex width="120px" sx={columnStyle(true, true)}>
-            <Text sx={labelStyle}>Numero de dossier</Text>
-            <Text sx={descriptionStyle}>{numeroDossier || 'numeroDossier non reseigné'}</Text>
-          </Flex>
+          {!isMagistrat && (
+            <Fragment>
+              <Flex width="120px" sx={columnStyle(true, true)}>
+                <Text sx={labelStyle}>Numero de dossier</Text>
+                <Text sx={descriptionStyle}>{numeroDossier || 'numeroDossier non reseigné'}</Text>
+              </Flex>
+              <Flex width="150px" sx={columnStyle(true, true)}>
+                <Text sx={labelStyle}>Commune</Text>
+                <Text sx={descriptionStyle}>{ville || 'ville non reseigné'}</Text>
+              </Flex>
 
-          <Flex width="150px" sx={columnStyle(true, true)}>
-            <Text sx={labelStyle}>Commune</Text>
-            <Text sx={descriptionStyle}>{ville || 'ville non reseigné'}</Text>
-          </Flex>
+              <Flex width="150px" sx={columnStyle(true, true)}>
+                <Text sx={labelStyle}>Tribunal</Text>
+                <Text sx={descriptionStyle}>
+                  {tribunal || 'cabinet non reseigné'} {cabinet || null}
+                </Text>
+              </Flex>
 
-          <Flex width="150px" sx={columnStyle(true, true)}>
-            <Text sx={labelStyle}>Tribunal</Text>
-            <Text sx={descriptionStyle}>
-              {tribunal || 'cabinet non reseigné'} {cabinet || null}
-            </Text>
-          </Flex>
-
-          <Flex width="80px" textAlign="left" sx={columnStyle(false, false)}>
-            <Text sx={labelStyle}>Decision du</Text>
-            <Text sx={descriptionStyle}>{dateOuvertureFormated || 'non reseigné'}</Text>
-          </Flex>
+              <Flex width="80px" textAlign="left" sx={columnStyle(false, false)}>
+                <Text sx={labelStyle}>Decision du</Text>
+                <Text sx={descriptionStyle}>{dateOuvertureFormated || 'non reseigné'}</Text>
+              </Flex>
+            </Fragment>
+          )}
 
           <Box mr="1" width="120px" sx={columnStyle(true, true)}>
             {(status === MESURE_TYPE.IN_PROGRESS ||
