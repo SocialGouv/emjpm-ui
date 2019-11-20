@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.37.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.36.0...@socialgouv/emjpm-ui-components@0.37.0) (2019-11-20)
+
+
+### Features
+
+* **mesure:** add tiId to mesure ([c3a0fc8](https://github.com/SocialGouv/emjpm-design-system/commit/c3a0fc8))
+
+
+
+
+
 # [0.36.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.35.0...@socialgouv/emjpm-ui-components@0.36.0) (2019-11-12)
 
 
