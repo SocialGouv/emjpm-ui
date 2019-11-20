@@ -63,6 +63,7 @@ MesureList.propTypes = {
       numeroDossier: PropTypes.string.isRequired,
       numeroRg: PropTypes.string.isRequired,
       status: PropTypes.string.isRequired,
+      tiId: PropTypes.number,
       type: PropTypes.string.isRequired,
       ville: PropTypes.string.isRequired,
     }),
