@@ -36,7 +36,6 @@ const Mandataire = (props) => {
     isAvailable,
     nom,
     prenom,
-    antenneId,
     mandataireId,
     telephone,
     type,
@@ -187,7 +186,7 @@ const Mandataire = (props) => {
                 isAvailable={isAvailable}
                 nom={nom}
                 prenom={prenom}
-                antenneId={antenneId}
+                serviceId={serviceId}
                 mandataireId={mandataireId}
                 telephone={telephone}
                 type={type}
@@ -208,7 +207,6 @@ const Mandataire = (props) => {
 
 Mandataire.defaultProps = {
   ChooseComponent: null,
-  antenneId: null,
   commentaires: null,
   etablissement: null,
   hasCV: false,
@@ -226,7 +224,6 @@ Mandataire.defaultProps = {
 Mandataire.propTypes = {
   ChooseComponent: PropTypes.elementType,
   adresse: PropTypes.string.isRequired,
-  antenneId: PropTypes.number,
   codePostal: PropTypes.string.isRequired,
   commentaires: PropTypes.shape({
     comment: PropTypes.string,
