@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.38.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.37.0...@socialgouv/emjpm-ui-components@0.38.0) (2019-11-21)
+
+
+### Features
+
+* **antenne:** remove headquarters props ([#36](https://github.com/SocialGouv/emjpm-design-system/issues/36)) ([3f1a54f](https://github.com/SocialGouv/emjpm-design-system/commit/3f1a54f))
+* **choose-mandataire:** add serviceId in props ([#35](https://github.com/SocialGouv/emjpm-design-system/issues/35)) ([45fa080](https://github.com/SocialGouv/emjpm-design-system/commit/45fa080))
+
+
+
+
+
 # [0.37.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.36.0...@socialgouv/emjpm-ui-components@0.37.0) (2019-11-20)
 
 
