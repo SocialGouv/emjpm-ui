@@ -17,7 +17,7 @@ const Antenne = (props) => {
   const { Link, linkText, href, sx, antenne } = props;
   return (
     <Card sx={sx}>
-      <Heading4 sx={antenneTitleStyle}>{antenne.headquarters ? `Siège ${antenne.name}` : antenne.name}</Heading4>
+      <Heading4 sx={antenneTitleStyle}>{antenne.name}</Heading4>
       <Flex sx={{ alignItems: 'center', mb: '3' }}>
         <Box sx={availabilityIndicatorStyle(antenne.mesures_max <= antenne.mesures_in_progress)} />
         <Text sx={{ color: 'black', fontSize: '1', fontWeight: 'semibold' }}>
@@ -58,7 +58,6 @@ Antenne.defaultProps = {
 Antenne.propTypes = {
   Link: PropTypes.oneOfType([PropTypes.element, PropTypes.func]).isRequired,
   antenne: PropTypes.shape({
-    headquarters: PropTypes.bool,
     mesures_in_progress: PropTypes.number.isRequired,
     mesures_max: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
