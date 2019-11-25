@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.40.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.39.0...@socialgouv/emjpm-ui-components@0.40.0) (2019-11-25)
+
+
+### Features
+
+* **mesures-urgency:** add urgence icons ([541d9ad](https://github.com/SocialGouv/emjpm-design-system/commit/541d9ad))
+
+
+
+
+
 # [0.39.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.38.0...@socialgouv/emjpm-ui-components@0.39.0) (2019-11-25)
 
 
