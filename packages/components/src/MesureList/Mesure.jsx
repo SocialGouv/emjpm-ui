@@ -3,7 +3,9 @@ import { Button, Card, Text } from '@socialgouv/emjpm-ui-core';
 import PropTypes from 'prop-types';
 import React, { Fragment, useContext } from 'react';
 import { Box, Flex } from 'rebass';
+import { MailSend } from 'styled-icons/boxicons-regular';
 import { Female, Male } from 'styled-icons/fa-solid';
+import { Warning } from 'styled-icons/material';
 
 import { MESURE_TYPE, PANEL_TYPE } from './constants/type';
 import { MesureContext } from './context';
@@ -52,6 +54,8 @@ const Mesure = (props) => {
     codePostal,
     numeroDossier,
     antenneId,
+    judgmentDate,
+    isUrgent,
     isMagistrat,
     tribunal,
     tiId,
@@ -104,16 +108,48 @@ const Mesure = (props) => {
               </Flex>
             </Fragment>
           )}
+          {status === MESURE_TYPE.WAITING && (
+            <Fragment>
+              <Flex width="120px" textAlign="left" sx={columnStyle(false, false)}>
+                <Text sx={labelStyle}>Date provisionnel</Text>
+                <Text sx={descriptionStyle}>{judgmentDate || 'non reseigné'}</Text>
+              </Flex>
+              <Flex width="130px">
+                <Box alignSelf="center" pt="4px" mr="1">
+                  <Fragment>
+                    {isUrgent ? (
+                      <Flex alignItems="center">
+                        <Warning size="24" />
+                        <Text ml="1" sx={descriptionStyle}>
+                          Urgent
+                        </Text>
+                      </Flex>
+                    ) : (
+                      <Flex alignItems="center">
+                        <MailSend ml="1" size="24" />
+                        <Text ml="1" sx={descriptionStyle}>
+                          en cours
+                        </Text>
+                      </Flex>
+                    )}
+                  </Fragment>
+                </Box>
+              </Flex>
+            </Fragment>
+          )}
+          {status !== MESURE_TYPE.WAITING && (
+            <Fragment>
+              <Flex width="120px" textAlign="left" sx={columnStyle(false, false)}>
+                <Text sx={labelStyle}>Decision du</Text>
+                <Text sx={descriptionStyle}>{dateOuvertureFormated || 'non reseigné'}</Text>
+              </Flex>
+            </Fragment>
+          )}
 
-          <Flex width="80px" textAlign="left" sx={columnStyle(false, false)}>
-            <Text sx={labelStyle}>Decision du</Text>
-            <Text sx={descriptionStyle}>{dateOuvertureFormated || 'non reseigné'}</Text>
-          </Flex>
-
-          <Box mr="1" width="120px" sx={columnStyle(true, true)}>
-            {(status === MESURE_TYPE.IN_PROGRESS ||
-              status === MESURE_TYPE.CLOSED ||
-              (status === MESURE_TYPE.WAITING && isMagistrat)) && (
+          {(status === MESURE_TYPE.IN_PROGRESS ||
+            status === MESURE_TYPE.CLOSED ||
+            (status === MESURE_TYPE.WAITING && isMagistrat)) && (
+            <Box mr="1" width="120px" sx={columnStyle(true, true)}>
               <Button
                 width="120px"
                 onClick={() => {
@@ -131,8 +167,8 @@ const Mesure = (props) => {
                 {status === MESURE_TYPE.IN_PROGRESS && <Fragment>Modifier</Fragment>}
                 {status === MESURE_TYPE.CLOSED && <Fragment>Supprimer</Fragment>}
               </Button>
-            )}
-          </Box>
+            </Box>
+          )}
 
           <Box sx={columnStyle(true, true)}>
             <Button
@@ -207,6 +243,8 @@ Mesure.propTypes = {
   dateOuvertureFormated: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
   isMagistrat: PropTypes.bool,
+  isUrgent: PropTypes.bool,
+  judgmentDate: PropTypes.string,
   numeroDossier: PropTypes.string,
   numeroRg: PropTypes.string.isRequired,
   onPanelOpen: PropTypes.func,
@@ -227,6 +265,8 @@ Mesure.defaultProps = {
   antenneId: null,
   cabinet: null,
   isMagistrat: false,
+  isUrgent: false,
+  judgmentDate: null,
   numeroDossier: null,
   onPanelOpen: null,
   tiId: null,

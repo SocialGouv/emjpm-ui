@@ -60,6 +60,8 @@ MesureList.propTypes = {
       dateOuverture: PropTypes.string.isRequired,
       dateOuvertureFormated: PropTypes.string.isRequired,
       id: PropTypes.number.isRequired,
+      isUrgent: PropTypes.bool,
+      judgmentDate: PropTypes.date,
       numeroDossier: PropTypes.string.isRequired,
       numeroRg: PropTypes.string.isRequired,
       status: PropTypes.string.isRequired,

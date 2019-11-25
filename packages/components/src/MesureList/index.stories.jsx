@@ -35,7 +35,7 @@ export const MesureListStory = () => (
   </MesureContextProvider>
 );
 
-export const mandataireMesureListStory = () => (
+export const magistratMesureListStory = () => (
   <MesureContextProvider>
     <BoxWrapper mt="5">
       <MesureList
