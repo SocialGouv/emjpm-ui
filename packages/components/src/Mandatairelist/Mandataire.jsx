@@ -174,6 +174,7 @@ const Mandataire = (props) => {
             currentPanelType={currentPanelType}
             ChooseComponent={() => (
               <ChooseComponent
+                etablissement={etablissement}
                 commentaires={commentaires}
                 currentAvailability={currentAvailability}
                 dispoMax={dispoMax}
