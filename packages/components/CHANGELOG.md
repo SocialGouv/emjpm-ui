@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.38.0...@socialgouv/emjpm-ui-components@0.39.0) (2019-11-25)
+
+
+### Features
+
+* **mandataire-list:** add etablissement ([22f4f30](https://github.com/SocialGouv/emjpm-design-system/commit/22f4f30))
+
+
+
+
+
 # [0.38.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.37.0...@socialgouv/emjpm-ui-components@0.38.0) (2019-11-21)
 
 
