@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.41.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.40.0...@socialgouv/emjpm-ui-components@0.41.0) (2019-11-26)
+
+
+### Bug Fixes
+
+* **mesure:** update label ([717b174](https://github.com/SocialGouv/emjpm-design-system/commit/717b174))
+
+
+### Features
+
+* **mesure:** display only emergency indicator ([#38](https://github.com/SocialGouv/emjpm-design-system/issues/38)) ([1c15cc9](https://github.com/SocialGouv/emjpm-design-system/commit/1c15cc9))
+
+
+
+
+
 # [0.40.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.39.0...@socialgouv/emjpm-ui-components@0.40.0) (2019-11-25)
 
 
