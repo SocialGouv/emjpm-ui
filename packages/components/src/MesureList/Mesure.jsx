@@ -111,7 +111,7 @@ const Mesure = (props) => {
           {status === MESURE_TYPE.WAITING && (
             <Fragment>
               <Flex width="120px" textAlign="left" sx={columnStyle(false, false)}>
-                <Text sx={labelStyle}>Date provisionnel</Text>
+                <Text sx={labelStyle}>Date prév. juge.</Text>
                 <Text sx={descriptionStyle}>{judgmentDate || 'non reseigné'}</Text>
               </Flex>
               <Flex width="130px">
