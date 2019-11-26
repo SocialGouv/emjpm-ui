@@ -117,18 +117,11 @@ const Mesure = (props) => {
               <Flex width="130px">
                 <Box alignSelf="center" pt="4px" mr="1">
                   <Fragment>
-                    {isUrgent ? (
+                    {isUrgent && (
                       <Flex alignItems="center">
                         <Warning size="24" />
                         <Text ml="1" sx={descriptionStyle}>
                           Urgent
-                        </Text>
-                      </Flex>
-                    ) : (
-                      <Flex alignItems="center">
-                        <MailSend ml="1" size="24" />
-                        <Text ml="1" sx={descriptionStyle}>
-                          en cours
                         </Text>
                       </Flex>
                     )}
