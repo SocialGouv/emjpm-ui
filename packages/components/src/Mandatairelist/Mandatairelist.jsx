@@ -49,7 +49,7 @@ Mandatairelist.propTypes = {
       genre: PropTypes.string.isRequired,
       id: PropTypes.string.isRequired,
       isAvailable: PropTypes.bool.isRequired,
-      lastLogin: PropTypes.string.isRequired,
+      lastLogin: PropTypes.string,
       latitude: PropTypes.number,
       longitude: PropTypes.number,
       mesuresAwaiting: PropTypes.number,
