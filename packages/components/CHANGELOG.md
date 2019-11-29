@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.44.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.43.1...@socialgouv/emjpm-ui-components@0.44.0) (2019-11-29)
+
+
+### Features
+
+* **mandataire-list:** update disponibility ([faf157b](https://github.com/SocialGouv/emjpm-design-system/commit/faf157b))
+
+
+
+
+
 ## [0.43.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.43.0...@socialgouv/emjpm-ui-components@0.43.1) (2019-11-29)
 
 **Note:** Version bump only for package @socialgouv/emjpm-ui-components
