@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.43.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.42.0...@socialgouv/emjpm-ui-components@0.43.0) (2019-11-29)
+
+
+### Features
+
+* **choose-mandataire:** add lastLoginIsCritical to props ([#40](https://github.com/SocialGouv/emjpm-design-system/issues/40)) ([833e157](https://github.com/SocialGouv/emjpm-design-system/commit/833e157))
+
+
+
+
+
 # [0.42.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.41.0...@socialgouv/emjpm-ui-components@0.42.0) (2019-11-28)
 
 
