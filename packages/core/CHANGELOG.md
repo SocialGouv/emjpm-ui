@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.10.1...@socialgouv/emjpm-ui-core@1.11.0) (2019-11-29)
+
+
+### Features
+
+* **input:** fix chrome autofill padding instead of margin ([474d6ee](https://github.com/SocialGouv/emjpm-design-system/commit/474d6ee))
+
+
+
+
+
 ## [1.10.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.10.0...@socialgouv/emjpm-ui-core@1.10.1) (2019-09-24)
 
 
