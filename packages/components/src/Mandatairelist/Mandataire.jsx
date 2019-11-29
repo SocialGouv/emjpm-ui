@@ -127,31 +127,26 @@ const Mandataire = (props) => {
             </Box>
           )}
 
-          <Flex sx={columnStyle(false, false)}>
-            <Text sx={labelStyle}>Mesure en attente</Text>
-            <Text sx={descriptionStyle}>{mesuresAwaiting}</Text>
+          <Flex alignItems="center">
+            <Box sx={availabilityIndicatorStyle(currentAvailability > 0)} />
           </Flex>
-
           {!isMagistratMap && (
-            <Flex sx={columnStyle(false, false)}>
-              <Text sx={labelStyle}>Disponibilité</Text>
-              <Text sx={dispoDescriptionStyle(currentAvailability > 0)}>
-                {mesuresInProgress === 0 && dispoMax === 0 ? 'NC' : mesuresInProgress}/
-                {mesuresInProgress === 0 && dispoMax === 0 ? 'NC' : dispoMax}
-              </Text>
-            </Flex>
+            <Fragment>
+              <Flex sx={columnStyle(false, false)}>
+                <Text sx={labelStyle}>Disponibilité</Text>
+                <Text sx={dispoDescriptionStyle(currentAvailability > 0)}>
+                  {mesuresInProgress === 0 && dispoMax === 0 ? 'NC' : mesuresInProgress}/
+                  {mesuresInProgress === 0 && dispoMax === 0 ? 'NC' : dispoMax}
+                </Text>
+              </Flex>
+
+              <Flex sx={columnStyle(false, false)}>
+                <Text sx={labelStyle}>Mesure en attente</Text>
+                <Text sx={descriptionStyle}>{mesuresAwaiting}</Text>
+              </Flex>
+            </Fragment>
           )}
 
-          {isMagistrat && (
-            <Flex alignItems="center">
-              <Box sx={availabilityIndicatorStyle(currentAvailability > 0)} />
-            </Flex>
-          )}
-          {!isMagistrat && (
-            <Flex alignItems="center">
-              <Box sx={availabilityIndicatorStyle(currentAvailability > 0)} />
-            </Flex>
-          )}
           {(isMagistrat || !isMagistratMap) && (
             <Box sx={columnStyle(true, true)} width="185px">
               <Button
