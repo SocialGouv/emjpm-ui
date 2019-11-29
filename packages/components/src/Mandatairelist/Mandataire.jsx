@@ -37,6 +37,7 @@ const Mandataire = (props) => {
     nom,
     prenom,
     lastLogin,
+    lastLoginIsCritical,
     mandataireId,
     telephone,
     type,
@@ -184,6 +185,7 @@ const Mandataire = (props) => {
                 codePostal={codePostal}
                 genre={genre}
                 lastLogin={lastLogin}
+                lastLoginIsCritical={lastLoginIsCritical}
                 mesuresInProgress={mesuresInProgress}
                 hasCV={hasCV}
                 isAvailable={isAvailable}
@@ -216,6 +218,7 @@ Mandataire.defaultProps = {
   isMagistrat: false,
   isMagistratMap: false,
   lastLogin: null,
+  lastLoginIsCritical: false,
   latitude: null,
   longitude: null,
   mandataireId: null,
@@ -244,6 +247,7 @@ Mandataire.propTypes = {
   isMagistrat: PropTypes.bool,
   isMagistratMap: PropTypes.bool,
   lastLogin: PropTypes.string,
+  lastLoginIsCritical: PropTypes.bool,
   latitude: PropTypes.number,
   longitude: PropTypes.number,
   mandataireId: PropTypes.number,

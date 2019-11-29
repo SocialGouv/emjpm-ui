@@ -7,13 +7,14 @@ import { PANEL_TYPE } from '../constants/type';
 import { MandataireContext } from '../context';
 
 export const ChooseComponent = (props) => {
-  const { currentMandataire, lastLogin } = props;
+  const { currentMandataire, lastLogin, lastLoginIsCritical } = props;
   const { setCurrentMandataire, setPanelType } = useContext(MandataireContext);
   return (
     <Flex flexDirection="column">
       <Box mb="2">
         <Text>ChooseComponent id: {currentMandataire}</Text>
         <Text>Last login: {lastLogin}</Text>
+        <Text>Last login is critical: {lastLoginIsCritical.toString()}</Text>
       </Box>
       <Box mb="1">
         <Button
@@ -31,10 +32,12 @@ export const ChooseComponent = (props) => {
 
 ChooseComponent.defaultProps = {
   currentMandataire: null,
-  lastLogin: null
+  lastLogin: null,
+  lastLoginIsCritical: false
 };
 
 ChooseComponent.propTypes = {
   currentMandataire: PropTypes.number,
-  lastLogin: PropTypes.string
+  lastLogin: PropTypes.string,
+  lastLoginIsCritical: PropTypes.bool
 };
