@@ -134,17 +134,14 @@ const Mandataire = (props) => {
 
           {!isMagistratMap && (
             <Flex sx={columnStyle(false, false)}>
-              <Text sx={labelStyle}>Disponibilité max</Text>
-              <Text sx={descriptionStyle}>{currentAvailability === 0 && dispoMax === 0 ? 'NC' : dispoMax}</Text>
+              <Text sx={labelStyle}>Disponibilité</Text>
+              <Text sx={dispoDescriptionStyle(currentAvailability > 0)}>
+                {mesuresInProgress === 0 && dispoMax === 0 ? 'NC' : mesuresInProgress}/
+                {mesuresInProgress === 0 && dispoMax === 0 ? 'NC' : dispoMax}
+              </Text>
             </Flex>
           )}
 
-          <Flex sx={columnStyle(false, false)}>
-            <Text sx={labelStyle}>Disponibilité actuelle</Text>
-            <Text sx={dispoDescriptionStyle(currentAvailability > 0)}>
-              {currentAvailability === 0 && dispoMax === 0 ? 'NC' : currentAvailability}
-            </Text>
-          </Flex>
           {isMagistrat && (
             <Flex alignItems="center">
               <Box sx={availabilityIndicatorStyle(currentAvailability > 0)} />
