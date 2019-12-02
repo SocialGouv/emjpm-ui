@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.46.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.46.0...@socialgouv/emjpm-ui-components@0.46.1) (2019-12-02)
+
+
+### Bug Fixes
+
+* **magistrat-list:** test if currentAvailability is undefined ([48bbbbd](https://github.com/SocialGouv/emjpm-design-system/commit/48bbbbd))
+
+
+
+
+
 # [0.46.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.45.0...@socialgouv/emjpm-ui-components@0.46.0) (2019-12-02)
 
 
