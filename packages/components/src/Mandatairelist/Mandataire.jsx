@@ -124,7 +124,7 @@ const Mandataire = (props) => {
               <Flex sx={columnStyle(false, false)}>
                 <Text sx={labelStyle}>Disponibilité</Text>
                 <Text sx={dispoDescriptionStyle(currentAvailability > 0)}>
-                  {currentAvailability ? currentAvailability : 'NC'}
+                  {currentAvailability === undefined ? 'NC' : currentAvailability}
                 </Text>
               </Flex>
               <Flex sx={columnStyle(false, false)}>
