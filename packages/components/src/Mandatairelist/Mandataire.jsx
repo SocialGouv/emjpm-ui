@@ -4,22 +4,11 @@ import React, { Fragment, useContext } from 'react';
 import { Box, Flex } from 'rebass';
 import { BuildingHouse } from 'styled-icons/boxicons-solid';
 import { Female, Male } from 'styled-icons/fa-solid';
-
 import { PANEL_TYPE } from './constants/type';
 import { MandataireContext } from './context';
 import { MandatairePanel } from './MandatairePanel';
-import {
-  availabilityIndicatorStyle,
-  cardStyle,
-  columnStyle,
-  decorationStyle,
-  descriptionStyle,
-  dispoDescriptionStyle,
-  labelStyle,
-  MandatairelistStyle,
-  subtitleStyle,
-  titleStyle,
-} from './style';
+import { availabilityIndicatorStyle, cardStyle, columnStyle, decorationStyle, descriptionStyle, dispoDescriptionStyle, labelStyle, MandatairelistStyle, subtitleStyle, titleStyle } from './style';
+
 
 const Mandataire = (props) => {
   const { currentMandataire, currentPanelType, setCurrentMandataire, setPanelType } = useContext(MandataireContext);
@@ -135,13 +124,19 @@ const Mandataire = (props) => {
               <Flex sx={columnStyle(false, false)}>
                 <Text sx={labelStyle}>Disponibilité</Text>
                 <Text sx={dispoDescriptionStyle(currentAvailability > 0)}>
+                  {currentAvailability ? currentAvailability : 'NC'}
+                </Text>
+              </Flex>
+              <Flex sx={columnStyle(false, false)}>
+                <Text sx={labelStyle}>En cours / souhaitée</Text>
+                <Text sx={dispoDescriptionStyle(currentAvailability > 0)}>
                   {mesuresInProgress === 0 && dispoMax === 0 ? 'NC' : mesuresInProgress}/
                   {mesuresInProgress === 0 && dispoMax === 0 ? 'NC' : dispoMax}
                 </Text>
               </Flex>
 
               <Flex sx={columnStyle(false, false)}>
-                <Text sx={labelStyle}>Mesure en attente</Text>
+                <Text sx={labelStyle}>En attente</Text>
                 <Text sx={descriptionStyle}>{mesuresAwaiting}</Text>
               </Flex>
             </Fragment>
@@ -261,3 +256,4 @@ Mandataire.propTypes = {
 };
 
 export { Mandataire };
+
