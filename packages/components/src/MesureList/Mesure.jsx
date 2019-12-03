@@ -51,6 +51,7 @@ const Mesure = (props) => {
     numeroDossier,
     antenneId,
     isMagistrat,
+    serviceId,
   } = props;
 
   return (
@@ -150,6 +151,7 @@ const Mesure = (props) => {
                 numeroDossier={numeroDossier}
                 numeroRg={numeroRg}
                 status={status}
+                serviceId={serviceId}
                 antenneId={antenneId}
               />
             )}
@@ -182,6 +184,7 @@ Mesure.propTypes = {
   numeroRg: PropTypes.string.isRequired,
   onPanelOpen: PropTypes.func,
   residence: PropTypes.string.isRequired,
+  serviceId: PropTypes.number,
   status: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   ville: PropTypes.string.isRequired,
@@ -196,6 +199,7 @@ Mesure.defaultProps = {
   antenneId: null,
   isMagistrat: false,
   onPanelOpen: null,
+  serviceId: null,
 };
 
 export { Mesure };
