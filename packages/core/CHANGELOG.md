@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.11.0...@socialgouv/emjpm-ui-core@1.11.1) (2019-12-07)
+
+
+### Bug Fixes
+
+* **icons:** update package ([921f9a6](https://github.com/SocialGouv/emjpm-design-system/commit/921f9a6))
+
+
+
+
+
 # [1.11.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.10.1...@socialgouv/emjpm-ui-core@1.11.0) (2019-11-29)
 
 
