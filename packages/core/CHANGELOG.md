@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.11.1...@socialgouv/emjpm-ui-core@1.12.0) (2019-12-11)
+
+
+### Features
+
+* **add-tabs:** aad tabs comps ([#42](https://github.com/SocialGouv/emjpm-design-system/issues/42)) ([6ed6fcc](https://github.com/SocialGouv/emjpm-design-system/commit/6ed6fcc))
+
+
+
+
+
 ## [1.11.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.11.0...@socialgouv/emjpm-ui-core@1.11.1) (2019-12-07)
 
 
