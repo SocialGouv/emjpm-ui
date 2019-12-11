@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "eslint-plugin-react-hooks": "^1.7.0",
-    "lerna": "^3.16.4",
+    "lerna": "^3.19.0",
     "polished": "^3.3.0",
     "rebass": "^4.0.1"
   },
