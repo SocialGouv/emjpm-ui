@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.46.5](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.46.4...@socialgouv/emjpm-ui-components@0.46.5) (2019-12-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-select to ^3.0.8 ([#57](https://github.com/SocialGouv/emjpm-design-system/issues/57)) ([f55ba5b](https://github.com/SocialGouv/emjpm-design-system/commit/f55ba5b))
+* **deps:** update dependency rebass to ^4.0.7 ([#58](https://github.com/SocialGouv/emjpm-design-system/issues/58)) ([3d496f2](https://github.com/SocialGouv/emjpm-design-system/commit/3d496f2))
+* **deps:** update dependency theme-ui to ^0.2.49 ([#59](https://github.com/SocialGouv/emjpm-design-system/issues/59)) ([a292da2](https://github.com/SocialGouv/emjpm-design-system/commit/a292da2))
+* **deps:** update emotion monorepo ([#60](https://github.com/SocialGouv/emjpm-design-system/issues/60)) ([e6b73a2](https://github.com/SocialGouv/emjpm-design-system/commit/e6b73a2))
+* **deps:** update react monorepo to ^16.12.0 ([#62](https://github.com/SocialGouv/emjpm-design-system/issues/62)) ([b0bad6f](https://github.com/SocialGouv/emjpm-design-system/commit/b0bad6f))
+
+
+
+
+
 ## [0.46.4](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.46.3...@socialgouv/emjpm-ui-components@0.46.4) (2019-12-11)
 
 **Note:** Version bump only for package @socialgouv/emjpm-ui-components

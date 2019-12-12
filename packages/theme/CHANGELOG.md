@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-theme@1.9.0...@socialgouv/emjpm-ui-theme@1.9.1) (2019-12-12)
+
+
+### Bug Fixes
+
+* **deps:** update emotion monorepo ([#60](https://github.com/SocialGouv/emjpm-design-system/issues/60)) ([e6b73a2](https://github.com/SocialGouv/emjpm-design-system/commit/e6b73a2))
+* **deps:** update react monorepo to ^16.12.0 ([#62](https://github.com/SocialGouv/emjpm-design-system/issues/62)) ([b0bad6f](https://github.com/SocialGouv/emjpm-design-system/commit/b0bad6f))
+
+
+
+
+
 # [1.9.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-theme@1.8.0...@socialgouv/emjpm-ui-theme@1.9.0) (2019-09-05)
 
 
