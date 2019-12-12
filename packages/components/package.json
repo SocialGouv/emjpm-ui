@@ -22,7 +22,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-select": "^3.0.8",
-    "rebass": "^4.0.1",
+    "rebass": "^4.0.7",
     "styled-icons": "^9.0.1",
     "theme-ui": "^0.2.31"
   },
