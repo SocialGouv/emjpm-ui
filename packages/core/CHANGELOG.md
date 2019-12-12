@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.13.0...@socialgouv/emjpm-ui-core@1.13.1) (2019-12-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency styled-icons to ^9.1.0 ([#77](https://github.com/SocialGouv/emjpm-design-system/issues/77)) ([58b04e9](https://github.com/SocialGouv/emjpm-design-system/commit/58b04e9))
+
+
+
+
+
 # [1.13.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.12.1...@socialgouv/emjpm-ui-core@1.13.0) (2019-12-12)
 
 

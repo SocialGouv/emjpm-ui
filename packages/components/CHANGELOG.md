@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.47.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.46.5...@socialgouv/emjpm-ui-components@0.47.0) (2019-12-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency styled-icons to ^9.1.0 ([#77](https://github.com/SocialGouv/emjpm-design-system/issues/77)) ([58b04e9](https://github.com/SocialGouv/emjpm-design-system/commit/58b04e9))
+
+
+### Features
+
+* **mandataires-list:** add discriminator to list ([bbf9894](https://github.com/SocialGouv/emjpm-design-system/commit/bbf9894))
+
+
+
+
+
 ## [0.46.5](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.46.4...@socialgouv/emjpm-ui-components@0.46.5) (2019-12-12)
 
 
