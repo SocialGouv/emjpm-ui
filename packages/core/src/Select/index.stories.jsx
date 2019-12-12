@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { Box } from "rebass";
 
-import { Select } from '.';
+import { AsyncSelect, Select } from '.';
 
 export default {
   component: Select,
@@ -39,5 +40,24 @@ export const SelectSmallStory = () => {
       value={selectedValue}
       onChange={(selectedOption) => changeValue(selectedOption)}
     />
+  );
+};
+
+export const SelectAsync = () => {
+  const promiseOptions = () =>
+    new Promise(resolve => {
+      setTimeout(() => resolve(options), 1000);
+    });
+
+  return (
+    <Box my={20}>
+      <AsyncSelect
+        loadOptions={promiseOptions}
+        cacheOptions
+        placeholder="Ville, code postal, ..."
+        noOptionsMessage={() => "Pas de résultats"}
+        isClearable
+ />
+    </Box>
   );
 };

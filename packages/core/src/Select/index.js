@@ -1,3 +1,4 @@
+import { AsyncSelect } from "./AsyncSelect";
 import { Select } from './Select';
 
-export { Select };
+export { AsyncSelect, Select };
