@@ -19,7 +19,7 @@
     "@emotion/styled": "^10.0.15",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-select": "^3.0.4",
+    "react-select": "^3.0.8",
     "react-tabs": "^3.0.0",
     "rebass": "^4.0.1",
     "styled-icons": "^9.0.1",
