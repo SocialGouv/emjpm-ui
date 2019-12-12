@@ -43,6 +43,7 @@ Mandatairelist.propTypes = {
       }),
       currentAvailability: PropTypes.number.isRequired,
       cvLink: PropTypes.string.isRequired,
+      discriminator: PropTypes.string,
       dispoMax: PropTypes.number.isRequired,
       email: PropTypes.string.isRequired,
       etablissement: PropTypes.string,

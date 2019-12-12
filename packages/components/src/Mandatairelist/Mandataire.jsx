@@ -4,11 +4,22 @@ import React, { Fragment, useContext } from 'react';
 import { Box, Flex } from 'rebass';
 import { BuildingHouse } from 'styled-icons/boxicons-solid';
 import { Female, Male } from 'styled-icons/fa-solid';
+
 import { PANEL_TYPE } from './constants/type';
 import { MandataireContext } from './context';
 import { MandatairePanel } from './MandatairePanel';
-import { availabilityIndicatorStyle, cardStyle, columnStyle, decorationStyle, descriptionStyle, dispoDescriptionStyle, labelStyle, MandatairelistStyle, subtitleStyle, titleStyle } from './style';
-
+import {
+  availabilityIndicatorStyle,
+  cardStyle,
+  columnStyle,
+  decorationStyle,
+  descriptionStyle,
+  dispoDescriptionStyle,
+  labelStyle,
+  MandatairelistStyle,
+  subtitleStyle,
+  titleStyle,
+} from './style';
 
 const Mandataire = (props) => {
   const { currentMandataire, currentPanelType, setCurrentMandataire, setPanelType } = useContext(MandataireContext);
@@ -37,6 +48,7 @@ const Mandataire = (props) => {
     isMagistratMap,
     etablissement,
     serviceId,
+    discriminator,
     mesuresInProgress,
     mesuresAwaiting,
     ChooseComponent,
@@ -56,7 +68,7 @@ const Mandataire = (props) => {
               setPanelType(PANEL_TYPE.CHOOSE);
             }
             if (isMagistratMap) {
-              selectCurrentMandataire({ latitude, longitude, mandataireId, serviceId, type });
+              selectCurrentMandataire({ discriminator, latitude, longitude, mandataireId, serviceId });
             }
           }}
           sx={MandatairelistStyle}
@@ -200,6 +212,7 @@ const Mandataire = (props) => {
 Mandataire.defaultProps = {
   ChooseComponent: null,
   commentaires: null,
+  discriminator: null,
   etablissement: null,
   hasCV: false,
   isMagistrat: false,
@@ -224,6 +237,7 @@ Mandataire.propTypes = {
   }),
   currentAvailability: PropTypes.number.isRequired,
   cvLink: PropTypes.string.isRequired,
+  discriminator: PropTypes.string,
   dispoMax: PropTypes.number.isRequired,
   email: PropTypes.string.isRequired,
   etablissement: PropTypes.string,
@@ -256,4 +270,3 @@ Mandataire.propTypes = {
 };
 
 export { Mandataire };
-
