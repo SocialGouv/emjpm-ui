@@ -91,7 +91,7 @@
     "eslint-plugin-simple-import-sort": "^5.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.0",
     "husky": "^3.1.0",
-    "hygen": "^4.0.8",
+    "hygen": "^5.0.3",
     "lint-staged": "^8.1.4",
     "prettier": "^1.19.1",
     "prettier-eslint": "^9.0.1",
