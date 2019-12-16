@@ -44,7 +44,7 @@ const MesureListItem = (props) => {
               {tribunal || 'Non renseigné'} {cabinet}
             </Text>
           </Box>
-          <Flex width="70px">
+          <Flex width="100px">
             <Box alignSelf="center" pt="4px" mr="1">
               {civilite && <Fragment>{civilite === 'F' ? <GrayFemale size="24" /> : <GrayMale size="24" />}</Fragment>}
             </Box>
@@ -54,7 +54,7 @@ const MesureListItem = (props) => {
             </Box>
           </Flex>
           <Flex width="120px" sx={columnStyle(true, true)}>
-            <Text sx={labelStyle}>Numero de dossier</Text>
+            <Text sx={labelStyle}>Dossier</Text>
             <Text sx={descriptionStyle}>{numeroDossier || 'numeroDossier non reseigné'}</Text>
           </Flex>
           <Flex width="150px" sx={columnStyle(true, true)}>
