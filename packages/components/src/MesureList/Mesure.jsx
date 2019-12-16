@@ -3,7 +3,6 @@ import { Button, Card, Text } from '@socialgouv/emjpm-ui-core';
 import PropTypes from 'prop-types';
 import React, { Fragment, useContext } from 'react';
 import { Box, Flex } from 'rebass';
-import { MailSend } from 'styled-icons/boxicons-regular';
 import { Female, Male } from 'styled-icons/fa-solid';
 import { Warning } from 'styled-icons/material';
 
