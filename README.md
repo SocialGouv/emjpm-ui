@@ -3,6 +3,14 @@ ui library for emjpm
 
 Storybook with auto docs can be found here https://emjpm-design-system.netlify.com
 
+Components
+
+[![npm version](https://badge.fury.io/js/%40socialgouv%2Femjpm-ui-components.svg)](https://badge.fury.io/js/%40socialgouv%2Femjpm-ui-components)
+
+Core Package
+
+[![npm version](https://badge.fury.io/js/%40socialgouv%2Femjpm-ui-core.svg)](https://badge.fury.io/js/%40socialgouv%2Femjpm-ui-core)
+
 # Installation and Usage
 
 ## theming
