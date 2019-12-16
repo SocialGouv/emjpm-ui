@@ -1,6 +1,6 @@
 const error = 2;
-const warn = 1;
 const ignore = 0;
+const warn = 1;
 
 module.exports = {
   root: true,
@@ -10,6 +10,7 @@ module.exports = {
   rules: {
     'simple-import-sort/sort': error,
     'sort-keys-fix/sort-keys-fix': [error, 'asc'],
+    'react/jsx-fragments': [error, 'element'],
     'import/prefer-default-export': ignore,
     'import/no-extraneous-dependencies': [error, { devDependencies: ['**/*.stories.js'] }],
   },
