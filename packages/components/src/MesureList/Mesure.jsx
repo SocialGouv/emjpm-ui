@@ -58,6 +58,8 @@ const Mesure = (props) => {
     isMagistrat,
     tribunal,
     tiId,
+    latitude,
+    longitude
   } = props;
 
   let currentStatus;
@@ -198,6 +200,8 @@ const Mesure = (props) => {
                 cabinet={cabinet}
                 residence={residence}
                 codePostal={codePostal}
+                latitude={latitude}
+                longitude={longitude}
                 ville={ville}
                 civilite={civilite}
                 age={age}
@@ -237,6 +241,8 @@ Mesure.propTypes = {
   isMagistrat: PropTypes.bool,
   isUrgent: PropTypes.bool,
   judgmentDate: PropTypes.string,
+  latitude: PropTypes.number.isRequired,
+  longitude: PropTypes.number.isRequired,
   numeroDossier: PropTypes.string,
   numeroRg: PropTypes.string.isRequired,
   onPanelOpen: PropTypes.func,

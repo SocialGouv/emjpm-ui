@@ -7,12 +7,12 @@ import { PANEL_TYPE } from '../constants/type';
 import { MesureContext } from '../context';
 
 export const EditComponent = (props) => {
-  const { currentMesure } = props;
+  const { currentMesure, latitude } = props;
   const { setCurrentMesure, setPanelType } = useContext(MesureContext);
   return (
     <Flex flexDirection="column">
       <Box mb="2">
-        <Text>EditComponent id: {currentMesure}</Text>
+        <Text>EditComponent id: {currentMesure} lat: {latitude}</Text>
       </Box>
       <Box mb="1">
         <Button
@@ -30,6 +30,7 @@ export const EditComponent = (props) => {
 
 EditComponent.propTypes = {
   currentMesure: PropTypes.number.isRequired,
+  latitude: PropTypes.number.isRequired
 };
 
 export const RemoveComponent = (props) => {
