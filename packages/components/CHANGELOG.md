@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.49.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.48.0...@socialgouv/emjpm-ui-components@0.49.0) (2019-12-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency theme-ui to ^0.2.52 ([#80](https://github.com/SocialGouv/emjpm-design-system/issues/80)) ([1bcbc58](https://github.com/SocialGouv/emjpm-design-system/commit/1bcbc58))
+
+
+### Features
+
+* **mesure-lat-lng:** add mesure lat/lng props ([d2a74dd](https://github.com/SocialGouv/emjpm-design-system/commit/d2a74dd))
+
+
+
+
+
 # [0.48.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.47.2...@socialgouv/emjpm-ui-components@0.48.0) (2019-12-16)
 
 
