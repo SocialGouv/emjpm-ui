@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.2](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.13.1...@socialgouv/emjpm-ui-core@1.13.2) (2019-12-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-tabs to ^3.1.0 ([#78](https://github.com/SocialGouv/emjpm-design-system/issues/78)) ([199972e](https://github.com/SocialGouv/emjpm-design-system/commit/199972e))
+
+
+
+
+
 ## [1.13.1](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.13.0...@socialgouv/emjpm-ui-core@1.13.1) (2019-12-12)
 
 
