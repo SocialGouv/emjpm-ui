@@ -5,9 +5,15 @@ const TYPES = {
 };
 
 const mesureListItemStyle = {
+  '&:hover': {
+    button: {
+      opacity: 1,
+    },
+  },
   alignItems: 'center',
   bg: 'white',
-  justifyContent: 'space-between',
+  cursor: 'pointer',
+  justifyContent: 'flex-start',
 };
 
 const columnStyle = (isMobileHidden, isTabletHidden) => {
@@ -56,7 +62,6 @@ const labelStyle = {
   fontSize: '11px',
   fontWeight: '600',
   mb: '5px',
-  mt: '7px',
 };
 
 const descriptionStyle = (isPositive) => {

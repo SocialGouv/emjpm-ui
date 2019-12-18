@@ -69,6 +69,7 @@ const Mesure = (props) => {
     currentStatus = status;
   }
   const currentYear = new Date().getFullYear();
+
   return (
     <Fragment>
       <Card sx={cardStyle} width="100%">
@@ -103,6 +104,7 @@ const Mesure = (props) => {
                 <Text sx={labelStyle}>Numero de dossier</Text>
                 <Text sx={descriptionStyle}>{numeroDossier || 'numeroDossier non reseigné'}</Text>
               </Flex>
+
               <Flex width="150px" sx={columnStyle(true, true)}>
                 <Text sx={labelStyle}>Commune</Text>
                 <Text sx={descriptionStyle}>{ville || 'ville non reseigné'}</Text>
