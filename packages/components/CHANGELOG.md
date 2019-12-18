@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.50.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.49.0...@socialgouv/emjpm-ui-components@0.50.0) (2019-12-18)
+
+
+### Features
+
+* **mesure-list-item:** update mesure list item component for all case ([fc2295f](https://github.com/SocialGouv/emjpm-design-system/commit/fc2295f))
+
+
+
+
+
 # [0.49.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.48.0...@socialgouv/emjpm-ui-components@0.49.0) (2019-12-16)
 
 
