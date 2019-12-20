@@ -155,36 +155,36 @@ const dataMagistrat = {
 
 export const MesureListItemStoryProgress = () => (
   <Box p="4" width="1140px">
-    <MesureListItem onItemClick={action('button-click')} mesure={dataProgress} />
+    <MesureListItem onClick={action('button-click')} mesure={dataProgress} />
   </Box>
 );
 
 export const MesureListItemStoryWaiting = () => (
   <Box p="4" width="1140px">
-    <MesureListItem onItemClick={action('button-click')} mesure={dataWaiting} />
+    <MesureListItem onClick={action('button-click')} mesure={dataWaiting} />
   </Box>
 );
 
 export const MesureListItemStoryWaitingUrgent = () => (
   <Box p="4" width="1140px">
-    <MesureListItem onItemClick={action('button-click')} mesure={dataWaitingUrgent} />
+    <MesureListItem onClick={action('button-click')} mesure={dataWaitingUrgent} />
   </Box>
 );
 
 export const MesureListItemStoryClose = () => (
   <Box p="4" width="1140px">
-    <MesureListItem onItemClick={action('button-click')} mesure={dataClose} />
+    <MesureListItem onClick={action('button-click')} mesure={dataClose} />
   </Box>
 );
 
 export const MesureListItemMagistratStoryUrgent = () => (
   <Box p="4" width="1140px">
-    <MesureListItem onItemClick={action('button-click')} isMagistrat mesure={dataMagistratUrgent} />
+    <MesureListItem onClick={action('button-click')} isMagistrat mesure={dataMagistratUrgent} />
   </Box>
 );
 
 export const MesureListItemMagistratStory = () => (
   <Box p="4" width="1140px">
-    <MesureListItem onItemClick={action('button-click')} isMagistrat mesure={dataMagistrat} />
+    <MesureListItem onClick={action('button-click')} isMagistrat mesure={dataMagistrat} />
   </Box>
 );

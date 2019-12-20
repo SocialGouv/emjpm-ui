@@ -50,7 +50,7 @@ const MesureListItem = (props) => {
     hasTribunal,
     hasLocation,
     hasFolderNumber,
-    onItemClick,
+    onClick,
   } = props;
 
   let currentStatus;
@@ -62,7 +62,7 @@ const MesureListItem = (props) => {
 
   return (
     <Fragment>
-      <Card sx={cardStyle} width="100%" onClick={() => onItemClick(props)}>
+      <Card sx={cardStyle} width="100%" onClick={() => onClick(props)}>
         <Box sx={decorationStyle(status)} />
         <Flex sx={mesureListItemStyle}>
           <Box width="270px">
@@ -162,7 +162,7 @@ MesureListItem.defaultProps = {
   hasFolderNumber: true,
   hasLocation: true,
   hasTribunal: true,
-  onItemClick: null,
+  onClick: null,
 };
 
 MesureListItem.propTypes = {
@@ -191,7 +191,7 @@ MesureListItem.propTypes = {
       ville: PropTypes.string,
     }),
   ).isRequired,
-  onItemClick: PropTypes.func,
+  onClick: PropTypes.func,
 };
 
 export { MesureListItem };
