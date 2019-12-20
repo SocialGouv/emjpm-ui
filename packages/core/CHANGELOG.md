@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.13.4...@socialgouv/emjpm-ui-core@1.14.0) (2019-12-20)
+
+
+### Features
+
+* **fields:** add field comp ([#86](https://github.com/SocialGouv/emjpm-design-system/issues/86)) ([62d566a](https://github.com/SocialGouv/emjpm-design-system/commit/62d566a))
+
+
+
+
+
 ## [1.13.4](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.13.3...@socialgouv/emjpm-ui-core@1.13.4) (2019-12-20)
 
 
