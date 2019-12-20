@@ -71,7 +71,7 @@ const MesureListItem = (props) => {
               <Text sx={statusStyle(status)}>{currentStatus || 'non reseigné'}</Text>
             </Text>
             <Text sx={subtitleStyle}>{type || 'type de mesure non reseigné'}</Text>
-            {!hasTribunal && (
+            {hasTribunal && (
               <Text mt="4px" sx={subtitleStyle}>
                 {tribunal || 'Tribunal non renseigné'} {cabinet}
               </Text>
