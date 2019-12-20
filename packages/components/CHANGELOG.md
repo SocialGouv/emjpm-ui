@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.52.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.52.2...@socialgouv/emjpm-ui-components@0.52.3) (2019-12-20)
+
+
+### Bug Fixes
+
+* **mesure-list-item:** fix useless array shape ([#88](https://github.com/SocialGouv/emjpm-design-system/issues/88)) ([1b37deb](https://github.com/SocialGouv/emjpm-design-system/commit/1b37deb))
+
+
+
+
+
 ## [0.52.2](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.52.1...@socialgouv/emjpm-ui-components@0.52.2) (2019-12-20)
 
 
