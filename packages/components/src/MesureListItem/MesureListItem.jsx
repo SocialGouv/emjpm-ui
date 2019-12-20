@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Button, Card, Text } from '@socialgouv/emjpm-ui-core';
+import { Card, Text } from '@socialgouv/emjpm-ui-core';
 import PropTypes from 'prop-types';
 import React, { Fragment } from 'react';
 import { Box, Flex } from 'rebass';
@@ -46,7 +46,6 @@ const MesureListItem = (props) => {
       type,
       ville,
     },
-    buttonText,
     hasTribunal,
     hasLocation,
     hasFolderNumber,
@@ -65,18 +64,22 @@ const MesureListItem = (props) => {
       <Card sx={cardStyle} width="100%" onClick={() => onClick(props)}>
         <Box sx={decorationStyle(status)} />
         <Flex sx={mesureListItemStyle}>
-          <Box width="270px">
+          <Box minWidth="270px">
             <Text sx={titleStyle}>
               {numeroRg || 'RG-XXXXXX'}
               <Text sx={statusStyle(status)}>{currentStatus || 'non reseigné'}</Text>
             </Text>
             <Text sx={subtitleStyle}>{type || 'type de mesure non reseigné'}</Text>
-            {hasTribunal && (
-              <Text mt="4px" sx={subtitleStyle}>
+          </Box>
+
+          {hasTribunal && (
+            <Flex width="150px" sx={columnStyle(true, true)}>
+              <Text sx={labelStyle}>Tribunal</Text>
+              <Text sx={descriptionStyle}>
                 {tribunal || 'Tribunal non renseigné'} {cabinet}
               </Text>
-            )}
-          </Box>
+            </Flex>
+          )}
 
           <Flex width="100px">
             <Box alignSelf="center" pt="4px" mr="1">
@@ -89,13 +92,13 @@ const MesureListItem = (props) => {
           </Flex>
 
           {hasFolderNumber && (
-            <Flex width="120px" sx={columnStyle(true, true)}>
+            <Flex width="90px" sx={columnStyle(true, true)}>
               <Text sx={labelStyle}>Dossier</Text>
               <Text sx={descriptionStyle}>{numeroDossier || 'numeroDossier non reseigné'}</Text>
             </Flex>
           )}
 
-          <Flex width="160px" sx={columnStyle(true, true)}>
+          <Flex width="180px" sx={columnStyle(true, true)}>
             <Text sx={labelStyle}>Commune</Text>
             <Text sx={descriptionStyle}>{ville || 'ville non reseigné'}</Text>
           </Flex>
@@ -109,11 +112,7 @@ const MesureListItem = (props) => {
 
           {status === MESURE_TYPE.WAITING && (
             <Fragment>
-              <Flex width="120px" textAlign="left" sx={columnStyle(false, false)}>
-                <Text sx={labelStyle}>Date prév. juge.</Text>
-                <Text sx={descriptionStyle}>{judgmentDate || 'non reseigné'}</Text>
-              </Flex>
-              <Flex width="130px">
+              <Flex minWidth="130px">
                 <Box alignSelf="center" pt="4px" mr="1">
                   <Fragment>
                     {isUrgent && (
@@ -127,16 +126,20 @@ const MesureListItem = (props) => {
                   </Fragment>
                 </Box>
               </Flex>
+              <Flex minWidth="120px" textAlign="left" sx={columnStyle(false, false)}>
+                <Text sx={labelStyle}>Date prév. juge.</Text>
+                <Text sx={descriptionStyle}>{judgmentDate || 'non reseigné'}</Text>
+              </Flex>
             </Fragment>
           )}
 
           {status !== MESURE_TYPE.WAITING && (
-            <Flex width="150px" textAlign="left" sx={columnStyle(false, false)}>
+            <Flex minWidth="120px" textAlign="left" sx={columnStyle(false, false)}>
               <Text sx={labelStyle}>Decision du</Text>
               <Text sx={descriptionStyle}>{dateOuvertureFormated || 'non reseigné'}</Text>
             </Flex>
           )}
-
+          {/* 
           <Flex sx={{ justifyContent: 'flex-end', position: 'absolute', right: '20px' }}>
             <Button
               sx={{
@@ -147,10 +150,11 @@ const MesureListItem = (props) => {
                 outline: 'none',
                 transition: '150ms ease-in-out all',
               }}
+              variant="outline"
             >
               {buttonText}
             </Button>
-          </Flex>
+          </Flex> */}
         </Flex>
       </Card>
     </Fragment>
