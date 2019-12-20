@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.52.6](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.52.5...@socialgouv/emjpm-ui-components@0.52.6) (2019-12-20)
+
+
+### Bug Fixes
+
+* **mesure:** fix style padding ([598d5b3](https://github.com/SocialGouv/emjpm-design-system/commit/598d5b3))
+
+
+
+
+
 ## [0.52.5](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.52.4...@socialgouv/emjpm-ui-components@0.52.5) (2019-12-20)
 
 
