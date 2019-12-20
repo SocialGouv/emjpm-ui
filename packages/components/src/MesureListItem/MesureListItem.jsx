@@ -162,6 +162,7 @@ MesureListItem.defaultProps = {
   hasFolderNumber: true,
   hasLocation: true,
   hasTribunal: true,
+  onItemClick: null,
 };
 
 MesureListItem.propTypes = {
@@ -190,7 +191,7 @@ MesureListItem.propTypes = {
       ville: PropTypes.string,
     }),
   ).isRequired,
-  onItemClick: PropTypes.func.isRequired,
+  onItemClick: PropTypes.func,
 };
 
 export { MesureListItem };
