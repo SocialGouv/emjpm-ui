@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.4](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.13.3...@socialgouv/emjpm-ui-core@1.13.4) (2019-12-20)
+
+
+### Bug Fixes
+
+* **input:** remove buggy input zindex ([#85](https://github.com/SocialGouv/emjpm-design-system/issues/85)) ([bee1d33](https://github.com/SocialGouv/emjpm-design-system/commit/bee1d33))
+
+
+
+
+
 ## [1.13.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.13.2...@socialgouv/emjpm-ui-core@1.13.3) (2019-12-16)
 
 
