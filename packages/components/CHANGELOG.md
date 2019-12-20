@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.52.7](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.52.6...@socialgouv/emjpm-ui-components@0.52.7) (2019-12-20)
+
+
+### Bug Fixes
+
+* **mesure:** fix width and props ([2aaf30a](https://github.com/SocialGouv/emjpm-design-system/commit/2aaf30a))
+
+
+
+
+
 ## [0.52.6](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.52.5...@socialgouv/emjpm-ui-components@0.52.6) (2019-12-20)
 
 
