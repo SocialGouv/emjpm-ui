@@ -64,7 +64,7 @@ const MesureListItem = (props) => {
       <Card sx={cardStyle} width="100%" onClick={() => onClick(props)}>
         <Box sx={decorationStyle(status)} />
         <Flex sx={mesureListItemStyle}>
-          <Box minWidth="270px">
+          <Box minWidth="270px" mr="1">
             <Text sx={titleStyle}>
               {numeroRg || 'RG-XXXXXX'}
               <Text sx={statusStyle(status)}>{currentStatus || 'non reseigné'}</Text>
@@ -81,7 +81,7 @@ const MesureListItem = (props) => {
             </Flex>
           )}
 
-          <Flex width="100px">
+          <Flex width="80px" mr="1">
             <Box alignSelf="center" pt="4px" mr="1">
               {civilite && <Fragment>{civilite === 'F' ? <GrayFemale size="24" /> : <GrayMale size="24" />}</Fragment>}
             </Box>
