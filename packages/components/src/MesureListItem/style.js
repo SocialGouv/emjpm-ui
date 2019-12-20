@@ -5,15 +5,10 @@ const TYPES = {
 };
 
 const mesureListItemStyle = {
-  '&:hover': {
-    button: {
-      opacity: 1,
-    },
-  },
   alignItems: 'center',
-  bg: 'white',
   cursor: 'pointer',
   justifyContent: 'flex-start',
+  transition: '150ms ease-in-out all',
 };
 
 const columnStyle = (isMobileHidden, isTabletHidden) => {
@@ -25,6 +20,7 @@ const columnStyle = (isMobileHidden, isTabletHidden) => {
       display: isTabletHidden ? 'none' : 'flex',
     },
     flexDirection: 'column',
+    mr: '1',
   };
 };
 
@@ -97,6 +93,10 @@ const statusStyle = (status) => {
 };
 
 const cardStyle = {
+  '&:hover': {
+    bg: 'cardSecondary',
+  },
+  bg: 'white',
   mb: '1',
   overflow: 'hidden',
   pl: '16px',
