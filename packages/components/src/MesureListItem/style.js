@@ -39,7 +39,7 @@ const titleStyle = {
   fontFamily: 'heading',
   fontSize: '15px',
   fontWeight: '600',
-  my: '4px',
+  mb: '4px',
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   whiteSpace: 'nowrap',
@@ -57,7 +57,7 @@ const labelStyle = {
   fontFamily: 'body',
   fontSize: '11px',
   fontWeight: '600',
-  mb: '5px',
+  mb: '7px',
 };
 
 const descriptionStyle = (isPositive) => {
@@ -101,6 +101,7 @@ const cardStyle = {
   overflow: 'hidden',
   pl: '16px',
   position: 'relative',
+  pt: '14px',
 };
 
 export {
