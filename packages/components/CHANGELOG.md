@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.52.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.51.0...@socialgouv/emjpm-ui-components@0.52.0) (2019-12-20)
+
+
+### Features
+
+* **mesure-list-item:** add options to hide several col ([643654b](https://github.com/SocialGouv/emjpm-design-system/commit/643654b))
+* **mesure-list-item:** remove required onItemClick rename onClick ([22b280d](https://github.com/SocialGouv/emjpm-design-system/commit/22b280d))
+* **mesure-list-item:** remove required onItemClick rename onClick ([26cbfe4](https://github.com/SocialGouv/emjpm-design-system/commit/26cbfe4))
+
+
+
+
+
 # [0.51.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.50.1...@socialgouv/emjpm-ui-components@0.51.0) (2019-12-20)
 
 
