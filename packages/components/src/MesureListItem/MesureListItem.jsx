@@ -64,7 +64,7 @@ const MesureListItem = (props) => {
       <Card sx={cardStyle} width="100%" onClick={() => onClick(props)}>
         <Box sx={decorationStyle(status)} />
         <Flex sx={mesureListItemStyle}>
-          <Box minWidth="270px" mr="1">
+          <Box width="270px" mr="1">
             <Text sx={titleStyle}>
               {numeroRg || 'RG-XXXXXX'}
               <Text sx={statusStyle(status)}>{currentStatus || 'non reseigné'}</Text>
@@ -112,7 +112,7 @@ const MesureListItem = (props) => {
 
           {status === MESURE_TYPE.WAITING && (
             <Fragment>
-              <Flex minWidth="130px">
+              <Flex width="130px">
                 <Box alignSelf="center" pt="4px" mr="1">
                   <Fragment>
                     {isUrgent && (
@@ -126,7 +126,7 @@ const MesureListItem = (props) => {
                   </Fragment>
                 </Box>
               </Flex>
-              <Flex minWidth="120px" textAlign="left" sx={columnStyle(false, false)}>
+              <Flex width="120px" textAlign="left" sx={columnStyle(false, false)}>
                 <Text sx={labelStyle}>Date prév. juge.</Text>
                 <Text sx={descriptionStyle}>{judgmentDate || 'non reseigné'}</Text>
               </Flex>
@@ -134,7 +134,7 @@ const MesureListItem = (props) => {
           )}
 
           {status !== MESURE_TYPE.WAITING && (
-            <Flex minWidth="120px" textAlign="left" sx={columnStyle(false, false)}>
+            <Flex width="120px" textAlign="left" sx={columnStyle(false, false)}>
               <Text sx={labelStyle}>Decision du</Text>
               <Text sx={descriptionStyle}>{dateOuvertureFormated || 'non reseigné'}</Text>
             </Flex>
@@ -145,7 +145,7 @@ const MesureListItem = (props) => {
               sx={{
                 fontSize: 1,
                 fontWeight: '600',
-                minWidth: '150px',
+                width: '150px',
                 opacity: 0,
                 outline: 'none',
                 transition: '150ms ease-in-out all',
@@ -162,7 +162,6 @@ const MesureListItem = (props) => {
 };
 
 MesureListItem.defaultProps = {
-  buttonText: 'Sélectionner',
   hasFolderNumber: true,
   hasLocation: true,
   hasTribunal: true,
@@ -170,7 +169,6 @@ MesureListItem.defaultProps = {
 };
 
 MesureListItem.propTypes = {
-  buttonText: PropTypes.string,
   hasFolderNumber: PropTypes.bool,
   hasLocation: PropTypes.bool,
   hasTribunal: PropTypes.bool,
