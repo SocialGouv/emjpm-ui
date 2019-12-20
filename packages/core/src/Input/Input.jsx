@@ -29,6 +29,9 @@ const Input = (props) => {
 
   return (
     <InputWrapper size={size} isValid={isValid} hasError={hasError}>
+      <InputLabel size={size} aria-label={name} htmlFor={name} isActive={isActive}>
+        {placeholder}
+      </InputLabel>
       <InputElement
         size={size}
         aria-label={name}
@@ -44,9 +47,6 @@ const Input = (props) => {
         onBlur={() => toggleFocus(false)}
         onFocus={() => toggleFocus(true)}
       />
-      <InputLabel size={size} aria-label={name} htmlFor={name} isActive={isActive}>
-        {placeholder}
-      </InputLabel>
     </InputWrapper>
   );
 };
