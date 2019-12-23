@@ -40,14 +40,12 @@ const MesureListItem = (props) => {
       judgmentDate,
       numeroDossier,
       numeroRg,
-      residence,
       status,
       tribunal,
       type,
       ville,
     },
     hasTribunal,
-    hasLocation,
     hasFolderNumber,
     onClick,
   } = props;
@@ -73,7 +71,7 @@ const MesureListItem = (props) => {
           </Box>
 
           {hasTribunal && (
-            <Flex width="150px" sx={columnStyle(true, true)}>
+            <Flex width="280px" sx={columnStyle(true, true)}>
               <Text sx={labelStyle}>Tribunal</Text>
               <Text sx={descriptionStyle}>
                 {tribunal || 'Tribunal non renseigné'} {cabinet}
@@ -98,17 +96,10 @@ const MesureListItem = (props) => {
             </Flex>
           )}
 
-          <Flex width="180px" sx={columnStyle(true, true)}>
+          <Flex width="280px" sx={columnStyle(true, true)}>
             <Text sx={labelStyle}>Commune</Text>
             <Text sx={descriptionStyle}>{ville || 'ville non reseigné'}</Text>
           </Flex>
-
-          {hasLocation && (
-            <Flex width="150px" sx={columnStyle(true, true)}>
-              <Text sx={labelStyle}>Type de résidence</Text>
-              <Text sx={descriptionStyle}>{residence || 'Résidence non reseigné'}</Text>
-            </Flex>
-          )}
 
           {status === MESURE_TYPE.WAITING && (
             <Fragment>
@@ -134,27 +125,11 @@ const MesureListItem = (props) => {
           )}
 
           {status !== MESURE_TYPE.WAITING && (
-            <Flex width="120px" textAlign="left" sx={columnStyle(false, false)}>
+            <Flex width="80px" textAlign="left" sx={columnStyle(false, false)}>
               <Text sx={labelStyle}>Decision du</Text>
               <Text sx={descriptionStyle}>{dateOuvertureFormated || 'non reseigné'}</Text>
             </Flex>
           )}
-          {/* 
-          <Flex sx={{ justifyContent: 'flex-end', position: 'absolute', right: '20px' }}>
-            <Button
-              sx={{
-                fontSize: 1,
-                fontWeight: '600',
-                width: '150px',
-                opacity: 0,
-                outline: 'none',
-                transition: '150ms ease-in-out all',
-              }}
-              variant="outline"
-            >
-              {buttonText}
-            </Button>
-          </Flex> */}
         </Flex>
       </Card>
     </Fragment>
@@ -163,14 +138,12 @@ const MesureListItem = (props) => {
 
 MesureListItem.defaultProps = {
   hasFolderNumber: true,
-  hasLocation: true,
   hasTribunal: true,
   onClick: null,
 };
 
 MesureListItem.propTypes = {
   hasFolderNumber: PropTypes.bool,
-  hasLocation: PropTypes.bool,
   hasTribunal: PropTypes.bool,
   mesure: PropTypes.shape({
     age: PropTypes.string,

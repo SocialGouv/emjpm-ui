@@ -61,7 +61,11 @@ const LabelStyle = (props) => {
     top: props.isActive ? '-12px' : '0px',
     transition: '150ms ease-in-out all',
     width: '100%',
+<<<<<<< HEAD
     zIndex: 0
+=======
+    zIndex: 0,
+>>>>>>> fix(mesure-list-item): update sizes
   };
 };
 

@@ -188,3 +188,14 @@ export const MesureListItemMagistratStory = () => (
     <MesureListItem onClick={action('button-click')} isMagistrat mesure={dataMagistrat} />
   </Box>
 );
+
+export const MesureListItemMagistratStoryAll = () => (
+  <Box p="4" width="1140px">
+    <MesureListItem onClick={action('button-click')} isMagistrat mesure={dataMagistrat} />
+    <MesureListItem onClick={action('button-click')} mesure={dataClose} />
+    <MesureListItem onClick={action('button-click')} mesure={dataProgress} />
+    <MesureListItem onClick={action('button-click')} mesure={dataWaiting} />
+    <MesureListItem onClick={action('button-click')} mesure={dataWaitingUrgent} />
+    <MesureListItem onClick={action('button-click')} isMagistrat mesure={dataMagistratUrgent} />
+  </Box>
+);
