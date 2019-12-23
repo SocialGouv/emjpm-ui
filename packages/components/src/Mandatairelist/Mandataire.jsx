@@ -154,7 +154,7 @@ const Mandataire = (props) => {
             </Fragment>
           )}
 
-          {(isMagistrat || !isMagistratMap) && (
+          {(isMagistrat && !isMagistratMap) && (
             <Box sx={columnStyle(true, true)} width="185px">
               <Button
                 onClick={() => {
