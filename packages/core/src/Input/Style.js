@@ -15,7 +15,7 @@ const InputWrapperStyle = (props) => {
     isolation: 'isolate',
     position: 'relative',
     width: '100%',
-    zIndex: 0
+    zIndex: 0,
   };
 };
 
@@ -37,7 +37,7 @@ const InputStyle = (props) => {
     px: '2',
     transition: '150ms ease-in-out all',
     width: '100%',
-    zIndex: props.isActive ? 1 : 0
+    zIndex: props.isActive ? 1 : 0,
   };
 };
 
@@ -61,11 +61,7 @@ const LabelStyle = (props) => {
     top: props.isActive ? '-12px' : '0px',
     transition: '150ms ease-in-out all',
     width: '100%',
-<<<<<<< HEAD
-    zIndex: 0
-=======
     zIndex: 0,
->>>>>>> fix(mesure-list-item): update sizes
   };
 };
 
