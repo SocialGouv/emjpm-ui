@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.14.2...@socialgouv/emjpm-ui-core@1.14.3) (2019-12-23)
+
+
+### Bug Fixes
+
+* **merge:** fix merge conflict ([0e46e59](https://github.com/SocialGouv/emjpm-design-system/commit/0e46e59))
+* **mesure-list-item:** update sizes ([c492bac](https://github.com/SocialGouv/emjpm-design-system/commit/c492bac))
+
+
+
+
+
 ## [1.14.2](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.14.1...@socialgouv/emjpm-ui-core@1.14.2) (2019-12-20)
 
 
