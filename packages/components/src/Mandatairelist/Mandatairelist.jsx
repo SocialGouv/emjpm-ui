@@ -15,7 +15,7 @@ const Mandatairelist = (props) => {
             isMagistratMap={isMagistratMap}
             isMagistrat={isMagistrat}
             key={mandataire.id}
-            {...mandataire}
+            mandataire={mandataire}
           />
         );
       })}
