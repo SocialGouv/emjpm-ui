@@ -12,6 +12,4 @@ export * from './Antenne';
 
 export * from './MesureListItem';
 
-export * from './Components';
-
 export * from './MandataireListItem';
