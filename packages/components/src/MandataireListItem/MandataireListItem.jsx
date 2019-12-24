@@ -22,23 +22,20 @@ const MandataireListItem = (props) => {
   const {
     gestionnaire: {
       currentAvailability,
-      cvLink,
       dispoMax,
       email,
       genre,
-      hasCV,
       telephone,
       isAvailable,
       nom,
       prenom,
       ville,
-      isMagistrat,
-      isMagistratMap,
       etablissement,
       mesuresInProgress,
       mesuresAwaiting,
       type,
     },
+    isMagistratMap,
     onClick,
   } = props;
   return (
@@ -78,35 +75,16 @@ const MandataireListItem = (props) => {
             <Text sx={descriptionStyle}>{ville}</Text>
           </Flex>
 
-          {!isMagistrat && (
-            <Fragment>
-              {!isMagistratMap && (
-                <Fragment>
-                  <Flex width="200px" sx={columnStyle(true, true)}>
-                    <Text sx={labelStyle}>Email</Text>
-                    <Text sx={descriptionStyle}>{email}</Text>
-                  </Flex>
-                  <Flex width="100px" sx={columnStyle(true, true)}>
-                    <Text sx={labelStyle}>Téléphone</Text>
-                    <Text sx={descriptionStyle}>{telephone}</Text>
-                  </Flex>
-                </Fragment>
-              )}
-            </Fragment>
-          )}
-
-          {hasCV && (
-            <Box sx={columnStyle(true, true)} width="101px">
-              {cvLink && (
-                <a href={cvLink} rel="noopener noreferrer" target="_blank">
-                  <Button variant="outline">Voir le cv</Button>
-                </a>
-              )}
-            </Box>
-          )}
-
           {!isMagistratMap && (
             <Fragment>
+              <Flex width="200px" sx={columnStyle(true, true)}>
+                <Text sx={labelStyle}>Email</Text>
+                <Text sx={descriptionStyle}>{email}</Text>
+              </Flex>
+              <Flex width="100px" sx={columnStyle(true, true)}>
+                <Text sx={labelStyle}>Téléphone</Text>
+                <Text sx={descriptionStyle}>{telephone}</Text>
+              </Flex>
               <Flex sx={columnStyle(false, false)}>
                 <Text sx={labelStyle}>En attente</Text>
                 <Text sx={descriptionStyle}>{mesuresAwaiting}</Text>
@@ -117,15 +95,17 @@ const MandataireListItem = (props) => {
                   {currentAvailability === undefined ? 'NC' : currentAvailability}
                 </Text>
               </Flex>
-              <Flex sx={columnStyle(false, false)}>
-                <Text sx={labelStyle}>En cours / souhaitée</Text>
-                <Text sx={dispoDescriptionStyle(currentAvailability > 0)}>
-                  {mesuresInProgress === 0 && dispoMax === 0 ? 'NC' : mesuresInProgress}/
-                  {mesuresInProgress === 0 && dispoMax === 0 ? 'NC' : dispoMax}
-                </Text>
-              </Flex>
             </Fragment>
           )}
+
+          <Flex sx={columnStyle(false, false)}>
+            <Text sx={labelStyle}>En cours / souhaitée</Text>
+            <Text sx={dispoDescriptionStyle(currentAvailability > 0)}>
+              {mesuresInProgress === 0 && dispoMax === 0 ? 'NC' : mesuresInProgress}/
+              {mesuresInProgress === 0 && dispoMax === 0 ? 'NC' : dispoMax}
+            </Text>
+          </Flex>
+
           <Flex alignItems="center">
             <Box sx={availabilityIndicatorStyle(currentAvailability > 0)} />
           </Flex>
@@ -136,6 +116,7 @@ const MandataireListItem = (props) => {
 };
 
 MandataireListItem.defaultProps = {
+  isMagistratMap: false,
   onClick: null,
 };
 
@@ -147,10 +128,7 @@ MandataireListItem.propTypes = {
     email: PropTypes.string.isRequired,
     etablissement: PropTypes.string,
     genre: PropTypes.string.isRequired,
-    hasCV: PropTypes.bool,
     isAvailable: PropTypes.bool.isRequired,
-    isMagistrat: PropTypes.bool,
-    isMagistratMap: PropTypes.bool,
     mesuresAwaiting: PropTypes.number,
     mesuresInProgress: PropTypes.number.isRequired,
     nom: PropTypes.string.isRequired,
@@ -160,6 +138,7 @@ MandataireListItem.propTypes = {
     type: PropTypes.string.isRequired,
     ville: PropTypes.string.isRequired,
   }).isRequired,
+  isMagistratMap: PropTypes.bool,
   onClick: PropTypes.func,
 };
 

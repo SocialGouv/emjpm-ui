@@ -86,9 +86,16 @@ export default {
 };
 
 export const MandataireListItemStory = () => (
-  <Box p="4" width="1140px">
-    <MandataireListItem onClick={action('button-click')} gestionnaire={datas[0]} />
-    <MandataireListItem onClick={action('button-click')} gestionnaire={datas[1]} />
-    <MandataireListItem onClick={action('button-click')} gestionnaire={datas[2]} />
+  <Box>
+    <Box p="4" width="1140px">
+      <MandataireListItem onClick={action('button-click')} gestionnaire={datas[0]} />
+      <MandataireListItem onClick={action('button-click')} gestionnaire={datas[1]} />
+      <MandataireListItem onClick={action('button-click')} gestionnaire={datas[2]} />
+    </Box>
+    <Box p="4" width="550px">
+      <MandataireListItem onClick={action('button-click')} isMagistratMap gestionnaire={datas[0]} />
+      <MandataireListItem onClick={action('button-click')} isMagistratMap gestionnaire={datas[1]} />
+      <MandataireListItem onClick={action('button-click')} isMagistratMap gestionnaire={datas[2]} />
+    </Box>
   </Box>
 );
