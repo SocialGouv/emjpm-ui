@@ -3,6 +3,7 @@ export * from './Grid';
 export * from './Card';
 export * from './Checkbox';
 export * from './Heading';
+export * from './InlineError';
 export * from './Input';
 export * from './Radio';
 export * from './RadioGroup';
