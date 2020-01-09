@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.15.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.14.3...@socialgouv/emjpm-ui-core@1.15.0) (2020-01-09)
+
+
+### Features
+
+* **inline-error:** add inline error component ([#100](https://github.com/SocialGouv/emjpm-design-system/issues/100)) ([5ca73a6](https://github.com/SocialGouv/emjpm-design-system/commit/5ca73a6))
+
+
+
+
+
 ## [1.14.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.14.2...@socialgouv/emjpm-ui-core@1.14.3) (2019-12-23)
 
 
