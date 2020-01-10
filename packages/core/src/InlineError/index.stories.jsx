@@ -13,3 +13,9 @@ export const InlineErrorStory = () => (
     <InlineError message="Field is required" fieldId="" />
   </Box>
 );
+
+export const InlineErrorEmptyStory = () => (
+  <Box mb={2}>
+    <InlineError message="" fieldId="" />
+  </Box>
+);
