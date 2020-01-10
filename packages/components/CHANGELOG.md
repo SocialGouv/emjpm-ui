@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.54.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.54.2...@socialgouv/emjpm-ui-components@0.54.3) (2020-01-10)
+
+
+### Bug Fixes
+
+* **antenne:** add non required button ([d6c3ae6](https://github.com/SocialGouv/emjpm-design-system/commit/d6c3ae6))
+* **antenne:** add non required button ([7b9edd7](https://github.com/SocialGouv/emjpm-design-system/commit/7b9edd7))
+
+
+
+
+
 ## [0.54.2](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.54.1...@socialgouv/emjpm-ui-components@0.54.2) (2020-01-10)
 
 **Note:** Version bump only for package @socialgouv/emjpm-ui-components
