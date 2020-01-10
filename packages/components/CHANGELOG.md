@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.54.4](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.54.3...@socialgouv/emjpm-ui-components@0.54.4) (2020-01-10)
+
+**Note:** Version bump only for package @socialgouv/emjpm-ui-components
+
+
+
+
+
 ## [0.54.3](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.54.2...@socialgouv/emjpm-ui-components@0.54.3) (2020-01-10)
 
 
