@@ -14,7 +14,7 @@ import {
 } from './style';
 
 const Antenne = (props) => {
-  const { Link, linkText, href, sx, antenne } = props;
+  const { Link, linkText, href, sx, antenne, hasButton } = props;
   return (
     <Card sx={sx}>
       <Heading4 sx={antenneTitleStyle}>{antenne.name}</Heading4>
@@ -34,6 +34,7 @@ const Antenne = (props) => {
       </Flex>
 
       <Text sx={subtitle}>Préférences géographiques</Text>
+
       {antenne.preferences.length > 0 ? (
         <Fragment>
           {antenne.preferences.map((preference) => {
@@ -44,27 +45,34 @@ const Antenne = (props) => {
         <Text sx={preferenceText}>Non renseigné</Text>
       )}
 
-      <Box mt="3">
-        <Link href={href}>{linkText}</Link>
-      </Box>
+      {hasButton && (
+        <Box mt="3">
+          <Link href={href}>{linkText}</Link>
+        </Box>
+      )}
     </Card>
   );
 };
 
 Antenne.defaultProps = {
+  Link: null,
+  hasButton: true,
+  href: null,
+  linkText: null,
   sx: null,
 };
 
 Antenne.propTypes = {
-  Link: PropTypes.oneOfType([PropTypes.element, PropTypes.func]).isRequired,
+  Link: PropTypes.oneOfType([PropTypes.element, PropTypes.func]),
   antenne: PropTypes.shape({
     mesures_in_progress: PropTypes.number.isRequired,
     mesures_max: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     preferences: PropTypes.array,
   }).isRequired,
-  href: PropTypes.string.isRequired,
-  linkText: PropTypes.string.isRequired,
+  hasButton: PropTypes.bool,
+  href: PropTypes.string,
+  linkText: PropTypes.string,
   // eslint-disable-next-line react/forbid-prop-types
   sx: PropTypes.object,
 };
