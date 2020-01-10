@@ -3,12 +3,18 @@ import React from 'react';
 import { Flex, Text } from 'rebass';
 import { Exclamation } from "styled-icons/evil/Exclamation";
 
-const InlineError = ({ message, fieldId }) => (
-  <Flex id={fieldId} alignItems="center" py="2" color="error" >
-    <Exclamation size="20" />
-    <Text mx="1" fontSize="1">{message}</Text>
-  </Flex>
-);
+const InlineError = ({ message, fieldId }) => {
+  if (!message) {
+    return null;
+  }
+
+  return (
+    <Flex id={fieldId} alignItems="center" pt="1" color="error" >
+      <Exclamation size="20" />
+      <Text mx="1" fontSize="1">{message}</Text>
+    </Flex>
+  );
+};
 
 InlineError.propTypes = {
   fieldId: PropTypes.string.isRequired,
