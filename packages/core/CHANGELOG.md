@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.16.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.15.0...@socialgouv/emjpm-ui-core@1.16.0) (2020-01-10)
+
+
+### Features
+
+* **textarea:** add textarea component ([#101](https://github.com/SocialGouv/emjpm-design-system/issues/101)) ([9a16fa9](https://github.com/SocialGouv/emjpm-design-system/commit/9a16fa9))
+
+
+
+
+
 # [1.15.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.14.3...@socialgouv/emjpm-ui-core@1.15.0) (2020-01-09)
 
 
