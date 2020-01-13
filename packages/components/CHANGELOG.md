@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.54.5](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.54.4...@socialgouv/emjpm-ui-components@0.54.5) (2020-01-13)
+
+
+### Bug Fixes
+
+* **mesure-list-item:** update sizes ([61f284a](https://github.com/SocialGouv/emjpm-design-system/commit/61f284a))
+
+
+
+
+
 ## [0.54.4](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.54.3...@socialgouv/emjpm-ui-components@0.54.4) (2020-01-10)
 
 **Note:** Version bump only for package @socialgouv/emjpm-ui-components
