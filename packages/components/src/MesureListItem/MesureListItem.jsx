@@ -62,7 +62,7 @@ const MesureListItem = (props) => {
       <Card sx={cardStyle} width="100%" onClick={() => onClick(props)}>
         <Box sx={decorationStyle(status)} />
         <Flex sx={mesureListItemStyle}>
-          <Box width="270px" mr="1">
+          <Box minWidth="220px" mr="1">
             <Text sx={titleStyle}>
               {numeroRg || 'RG-XXXXXX'}
               <Text sx={statusStyle(status)}>{currentStatus || 'non reseigné'}</Text>
@@ -79,7 +79,7 @@ const MesureListItem = (props) => {
             </Flex>
           )}
 
-          <Flex width="80px" mr="1">
+          <Flex minWidth="50px" mr="1">
             <Box alignSelf="center" pt="4px" mr="1">
               {civilite && <Fragment>{civilite === 'F' ? <GrayFemale size="24" /> : <GrayMale size="24" />}</Fragment>}
             </Box>
@@ -125,7 +125,7 @@ const MesureListItem = (props) => {
           )}
 
           {status !== MESURE_TYPE.WAITING && (
-            <Flex width="80px" textAlign="left" sx={columnStyle(false, false)}>
+            <Flex minWidth="70px" textAlign="left" sx={columnStyle(false, false)}>
               <Text sx={labelStyle}>Decision du</Text>
               <Text sx={descriptionStyle}>{dateOuvertureFormated || 'non reseigné'}</Text>
             </Flex>

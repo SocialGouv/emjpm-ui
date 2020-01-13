@@ -24,7 +24,7 @@ const dataProgress = {
   latitude: 43.712,
   longitude: 7.23827,
   numeroDossier: 'AMBLPIE',
-  numeroRg: '19/00519',
+  numeroRg: 'RG-00000000',
   residence: 'A Domicile',
   status: 'Mesure en cours',
   tiId: null,
@@ -48,7 +48,7 @@ const dataWaiting = {
   latitude: 43.712,
   longitude: 7.23827,
   numeroDossier: 'AMBLPIE',
-  numeroRg: '19/00519',
+  numeroRg: 'RG-00000000',
   residence: 'A Domicile',
   status: 'Mesure en attente',
   tiId: null,
@@ -197,5 +197,17 @@ export const MesureListItemMagistratStoryAll = () => (
     <MesureListItem onClick={action('button-click')} mesure={dataWaiting} />
     <MesureListItem onClick={action('button-click')} mesure={dataWaitingUrgent} />
     <MesureListItem onClick={action('button-click')} isMagistrat mesure={dataMagistratUrgent} />
+  </Box>
+);
+
+export const MesureListItemMagistratStoryAllSmall = () => (
+  <Box p="4" width="550px">
+    <MesureListItem
+      hasLocation={false}
+      hasTribunal={false}
+      hasFolderNumber={false}
+      onClick={action('button-click')}
+      mesure={dataProgress}
+    />
   </Box>
 );
