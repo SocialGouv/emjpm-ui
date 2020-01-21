@@ -52,6 +52,14 @@ const subtitleStyle = {
   fontWeight: '600',
 };
 
+const typeStyle = {
+  color: 'mediumGray',
+  fontFamily: 'body',
+  fontSize: '12px',
+  fontWeight: '600',
+  maxWidth: '220px',
+};
+
 const labelStyle = {
   color: 'mediumGray',
   fontFamily: 'body',
@@ -115,4 +123,5 @@ export {
   descriptionStyle,
   decorationStyle,
   cardStyle,
+  typeStyle,
 };

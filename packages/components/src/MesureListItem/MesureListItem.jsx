@@ -15,8 +15,8 @@ import {
   labelStyle,
   mesureListItemStyle,
   statusStyle,
-  subtitleStyle,
   titleStyle,
+  typeStyle,
 } from './style';
 
 const GrayMale = styled(Male)`
@@ -67,7 +67,7 @@ const MesureListItem = (props) => {
               {numeroRg || 'RG-XXXXXX'}
               <Text sx={statusStyle(status)}>{currentStatus || 'non reseigné'}</Text>
             </Text>
-            <Text sx={subtitleStyle}>{type || 'type de mesure non reseigné'}</Text>
+            <Text sx={typeStyle}>{type || 'type de mesure non reseigné'}</Text>
           </Box>
 
           {hasTribunal && (
