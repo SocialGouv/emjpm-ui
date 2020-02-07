@@ -85,7 +85,7 @@ const MandataireListItem = (props) => {
                 <Text sx={labelStyle}>Téléphone</Text>
                 <Text sx={descriptionStyle}>{telephone}</Text>
               </Flex>
-              <Flex sx={columnStyle(false, false)}>
+              <Flex width="90px" sx={columnStyle(false, false)}>
                 <Text sx={labelStyle}>En attente</Text>
                 <Text sx={descriptionStyle}>{mesuresAwaiting}</Text>
               </Flex>
