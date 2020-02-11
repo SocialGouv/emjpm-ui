@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.18.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.17.0...@socialgouv/emjpm-ui-core@1.18.0) (2020-02-11)
+
+
+### Features
+
+* **checkbox:** fix checkbox without on change ([eb5f60d](https://github.com/SocialGouv/emjpm-design-system/commit/eb5f60d))
+
+
+
+
+
 # [1.17.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.16.0...@socialgouv/emjpm-ui-core@1.17.0) (2020-01-10)
 
 
