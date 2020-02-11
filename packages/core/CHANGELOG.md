@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.19.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.18.0...@socialgouv/emjpm-ui-core@1.19.0) (2020-02-11)
+
+
+### Bug Fixes
+
+* **input:** allow input number value ([#115](https://github.com/SocialGouv/emjpm-design-system/issues/115)) ([e3a0af9](https://github.com/SocialGouv/emjpm-design-system/commit/e3a0af9))
+
+
+### Features
+
+* **checkbox:** fix checkbox without on change and isChecked ([0fe44c1](https://github.com/SocialGouv/emjpm-design-system/commit/0fe44c1))
+
+
+
+
+
 # [1.18.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-core@1.17.0...@socialgouv/emjpm-ui-core@1.18.0) (2020-02-11)
 
 
