@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, Flex, Text } from 'rebass';
 import { Check } from 'styled-icons/fa-solid';
 
@@ -16,11 +16,19 @@ const BaseCheckBox = (props) => {
 };
 
 const CheckBox = (props) => {
-  const { label, name, isChecked } = props;
+  const { label, name, isChecked, onChange } = props;
   return (
     <Box sx={CheckboxWrapperStyle}>
       <Box htmlFor={name} as="label">
-        <Box sx={CheckboxInputStyle()} as="input" name={name} id={name} checked={isChecked} type="checkbox" />
+        <Box
+          sx={CheckboxInputStyle()}
+          onChange={() => onChange()}
+          as="input"
+          name={name}
+          id={name}
+          checked={isChecked}
+          type="checkbox"
+        />
         <Flex>
           <BaseCheckBox checked={isChecked} />
           <Text lineHeight="20px">{label}</Text>
@@ -34,6 +42,7 @@ CheckBox.propTypes = {
   isChecked: PropTypes.bool.isRequired,
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 export { CheckBox };

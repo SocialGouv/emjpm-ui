@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { CheckBox } from '.';
 
@@ -7,4 +7,16 @@ export default {
   title: 'Core |Checkbox',
 };
 
-export const TextStory = () => <CheckBox label="label" name="test" />;
+export const TextStory = () => {
+  const [isToogleChecked, toogleCheck] = useState(true);
+  return (
+    <CheckBox
+      label="label"
+      isChecked={isToogleChecked}
+      onChange={() => {
+        toogleCheck(!isToogleChecked);
+      }}
+      name="test"
+    />
+  );
+};
