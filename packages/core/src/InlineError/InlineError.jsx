@@ -16,9 +16,13 @@ const InlineError = ({ message, fieldId }) => {
   );
 };
 
+InlineError.defaultProps = {
+  message: ""
+};
+
 InlineError.propTypes = {
   fieldId: PropTypes.string.isRequired,
-  message: PropTypes.string.isRequired
+  message: PropTypes.string
 };
 
 export { InlineError };

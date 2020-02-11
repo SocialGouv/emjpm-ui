@@ -16,6 +16,6 @@ export const InlineErrorStory = () => (
 
 export const InlineErrorEmptyStory = () => (
   <Box mb={2}>
-    <InlineError message="" fieldId="" />
+    <InlineError message={undefined} fieldId="" />
   </Box>
 );
