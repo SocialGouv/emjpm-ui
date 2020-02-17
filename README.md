@@ -1,6 +1,8 @@
 # emjpm-ui
 ui library for emjpm
 
+[![netlify](https://www.netlify.com/img/global/badges/netlify-color-accent.svg)](https://www.netlify.com/)
+
 Storybook with auto docs can be found here https://emjpm-design-system.netlify.com
 
 Components
