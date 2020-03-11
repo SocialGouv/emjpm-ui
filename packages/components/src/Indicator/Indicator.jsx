@@ -30,9 +30,9 @@ const Indicator = (props) => {
   }
 
   return (
-    <Card height="100%">
+    <Card justifyContent="space-between" flexDirection="column" display="flex" height="100%">
       <Heading4>{title}</Heading4>
-      <Heading0 sx={IndicatorTextStyle(indicator < 0)} mt="7">
+      <Heading0 sx={IndicatorTextStyle(indicator < 0)}>
         {indicator}
       </Heading0>
     </Card>
