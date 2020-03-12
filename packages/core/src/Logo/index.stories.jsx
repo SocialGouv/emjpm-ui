@@ -8,3 +8,5 @@ export default {
 };
 
 export const LogoStory = () => <Logo />;
+
+export const LogoCustomStory = () => <Logo title="eMJPM Titre" />;

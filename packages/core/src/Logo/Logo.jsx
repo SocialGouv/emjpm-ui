@@ -6,7 +6,8 @@ import { Marianne } from './Marianne';
 import { LogoStyle, logoTextStyle } from './style';
 
 const Logo = (props) => {
-  const { hasTitle } = props;
+  const { hasTitle, title } = props;
+
   return (
     <Flex>
       <Box sx={LogoStyle}>
@@ -14,7 +15,7 @@ const Logo = (props) => {
       </Box>
       {hasTitle && (
         <Box>
-          <Text sx={logoTextStyle}>e-MJPM</Text>
+          <Text sx={logoTextStyle}>{title}</Text>
         </Box>
       )}
     </Flex>
@@ -23,10 +24,12 @@ const Logo = (props) => {
 
 Logo.propTypes = {
   hasTitle: PropTypes.bool,
+  title: PropTypes.string
 };
 
 Logo.defaultProps = {
   hasTitle: true,
+  title: "e-MJPM"
 };
 
 export { Logo };
