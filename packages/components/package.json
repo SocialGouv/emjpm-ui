@@ -1,6 +1,6 @@
 {
   "name": "@socialgouv/emjpm-ui-components",
-  "version": "0.54.12",
+  "version": "0.54.13",
   "author": "Incubateur des Ministères Sociaux <dsi-incubateur@sg.social.gouv.fr> (https://incubateur.social.gouv.fr)",
   "license": "Apache-2.0",
   "homepage": "https://emjpm-design-system.netlify.com",
@@ -17,7 +17,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.23",
-    "@socialgouv/emjpm-ui-core": "^1.20.1",
+    "@socialgouv/emjpm-ui-core": "^1.20.2",
     "@storybook/addon-actions": "^5.2.8",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
