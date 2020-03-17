@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.55.0](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.54.13...@socialgouv/emjpm-ui-components@0.55.0) (2020-03-17)
+
+
+### Features
+
+* **mandataire:** add cusor to list items ([df2ebba](https://github.com/SocialGouv/emjpm-design-system/commit/df2ebba))
+
+
+
+
+
 ## [0.54.13](https://github.com/SocialGouv/emjpm-design-system/compare/@socialgouv/emjpm-ui-components@0.54.12...@socialgouv/emjpm-ui-components@0.54.13) (2020-03-16)
 
 **Note:** Version bump only for package @socialgouv/emjpm-ui-components
